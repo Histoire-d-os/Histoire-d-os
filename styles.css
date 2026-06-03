@@ -915,6 +915,266 @@ h3 {
   font-size: 1.1rem;
 }
 
+.pedagogy-body {
+  background:
+    linear-gradient(180deg, rgba(247, 241, 230, 0.8), rgba(239, 227, 207, 0.95)),
+    var(--bone);
+}
+
+.document-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 32px;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.document-main {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 46px 0 78px;
+}
+
+.document-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 42px;
+  background: var(--charcoal);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.document-hero::after {
+  position: absolute;
+  right: -60px;
+  bottom: -80px;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(255, 250, 240, 0.28);
+  border-radius: 50%;
+  content: "";
+}
+
+.document-hero-school {
+  background: linear-gradient(135deg, #2a261e, #684637);
+}
+
+.document-hero-museum {
+  background: linear-gradient(135deg, #1f2f2b, #3f7569);
+}
+
+.document-hero-critical {
+  background: linear-gradient(135deg, #2a1b17, #7b4435);
+}
+
+.document-hero .eyebrow,
+.document-hero h1,
+.document-hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.document-hero .eyebrow {
+  color: #e3ba80;
+}
+
+.document-hero h1 {
+  color: var(--white);
+}
+
+.document-hero p {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.12rem;
+}
+
+.doc-facts {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0 0;
+}
+
+.doc-facts div {
+  border: 1px solid rgba(255, 250, 240, 0.24);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.08);
+  padding: 14px;
+}
+
+.doc-facts dt {
+  color: #e3ba80;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.doc-facts dd {
+  margin: 5px 0 0;
+  color: var(--white);
+  font-weight: 800;
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.doc-card,
+.doc-section,
+.source-box,
+.visitor-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  box-shadow: var(--shadow);
+}
+
+.doc-card,
+.doc-section,
+.source-box {
+  padding: 26px;
+}
+
+.doc-card-accent {
+  border-color: rgba(63, 117, 105, 0.36);
+  background: #edf3ed;
+}
+
+.doc-card h2,
+.doc-section h2,
+.source-box h2 {
+  margin-bottom: 16px;
+  color: var(--patina-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+}
+
+.doc-card h3,
+.doc-section h3 {
+  color: var(--ink);
+}
+
+.doc-card p,
+.doc-section p,
+.source-box li {
+  color: var(--ink);
+}
+
+.doc-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.doc-prompt {
+  margin: 0 0 10px;
+  color: var(--terracotta) !important;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.timeline li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.timeline span {
+  border-radius: 999px;
+  background: rgba(159, 79, 56, 0.12);
+  color: var(--terracotta);
+  padding: 5px 10px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.timeline h3,
+.timeline p {
+  margin: 0;
+}
+
+.timeline p {
+  margin-top: 6px;
+}
+
+.doc-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.doc-columns article {
+  border-left: 3px solid var(--patina);
+  background: rgba(63, 117, 105, 0.07);
+  padding: 16px;
+}
+
+.visitor-card {
+  max-width: 640px;
+  padding: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 240, 0.92), rgba(239, 227, 207, 0.82)),
+    var(--chalk);
+}
+
+.statement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.statement-grid p {
+  margin: 0;
+  border-left: 4px solid var(--terracotta);
+  border-radius: 8px;
+  background: rgba(159, 79, 56, 0.08);
+  padding: 14px;
+}
+
+.source-box {
+  margin-top: 24px;
+  background: #f3e6d0;
+}
+
+.source-box ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.source-box a {
+  color: var(--patina-dark);
+  font-weight: 900;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .back-to-top {
   position: fixed;
   left: 18px;
@@ -976,8 +1236,14 @@ h3 {
   .model-strip,
   .research-layout,
   .book-spread,
-  .book-spread-reverse {
+  .book-spread-reverse,
+  .doc-grid,
+  .doc-columns {
     grid-template-columns: 1fr;
+  }
+
+  .doc-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .book-spread-reverse figure {
@@ -1135,6 +1401,12 @@ h3 {
     padding: 18px 20px;
   }
 
+  .document-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px 20px;
+  }
+
   .book-back {
     width: 100%;
   }
@@ -1142,6 +1414,24 @@ h3 {
   .book-main {
     width: calc(100% - 32px);
     padding: 38px 0 58px;
+  }
+
+  .document-main {
+    width: calc(100% - 32px);
+    padding: 34px 0 56px;
+  }
+
+  .document-hero {
+    padding: 26px;
+  }
+
+  .doc-facts,
+  .statement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline li {
+    grid-template-columns: 1fr;
   }
 
   .book-cover {
@@ -1159,8 +1449,48 @@ h3 {
 
   .book-page,
   .book-question,
-  .teacher-note {
+  .teacher-note,
+  .doc-card,
+  .doc-section,
+  .source-box {
     padding: 22px;
+  }
+}
+
+@media print {
+  .site-header,
+  .book-header,
+  .document-header,
+  .back-to-top {
+    display: none !important;
+  }
+
+  body,
+  .pedagogy-body,
+  .book-body {
+    background: var(--white);
+    color: var(--ink);
+  }
+
+  .book-main,
+  .document-main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .document-hero,
+  .doc-card,
+  .doc-section,
+  .source-box,
+  .book-page,
+  .book-question,
+  .teacher-note {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
   }
 }
 

@@ -11,6 +11,7 @@ Première version statique du site du projet **Histoires d'os**, construit autou
 - `assets/logo-officiel-histoires-dos.jpg` : logo officiel du projet.
 - `assets/recit-achille/` : illustrations du récit d'ouverture sur Achille et l'astragale.
 - `ressources/` : premières fiches d'activités, glossaire de départ et corrigé raisonné.
+- `ressources/document-*.html` : documents pédagogiques détaillés, imprimables et sourcés.
 
 Le site fonctionne sans dépendances et peut être ouvert directement dans un navigateur.
 
