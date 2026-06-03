@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Histoires d'os explore l'astragale comme objet scientifique, archéozoologique et culturel pour les écoles, les musées et les publics curieux."
+    >
+    <title>Histoires d'os | Astragale, archéozoologie et médiation</title>
+    <link rel="preload" as="image" href="assets/logo-officiel-histoires-dos.jpg">
+    <link rel="preload" as="image" href="assets/hero-astragale.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Accueil Histoires d'os">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>Histoires d'os</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="#parcours">Parcours</a>
+        <a href="#activites">Activités</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#ressources">Ressources</a>
+        <a href="#glossaire">Glossaire</a>
+        <a href="#recherche">Recherche</a>
+      </nav>
+      <div class="header-actions">
+        <label class="language-label" for="language-select">Langue</label>
+        <select class="language-select" id="language-select" data-language-select aria-label="Choisir la langue">
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+          <option value="it">IT</option>
+          <option value="en">EN</option>
+        </select>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <img
+          class="hero-media"
+          src="assets/hero-astragale.png"
+          alt="Un astragale posé sur une table d'étude archéologique."
+        >
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Archéozoologie et médiation</p>
+          <h1 class="hero-logo-title" id="hero-title">
+            <img
+              class="official-logo"
+              src="assets/logo-officiel-histoires-dos.jpg"
+              alt=""
+            >
+            <span class="sr-only">Histoires d'os</span>
+          </h1>
+          <p class="hero-lede">
+            L'astragale n'est pas seulement un osselet de jeu. C'est un indice pour lire les animaux,
+            les corps, les gestes, les croyances et les récits à travers les époques.
+          </p>
+          <div class="hero-actions" aria-label="Accès rapides">
+            <a class="button button-primary" href="#parcours">Choisir un parcours</a>
+            <a class="button button-secondary" href="#glossaire">Consulter le glossaire</a>
+          </div>
+          <ul class="hero-threads" aria-label="Fils rouges du projet">
+            <li>
+              <strong>Observer</strong>
+              Identifier la forme et les indices visibles.
+            </li>
+            <li>
+              <strong>Situer</strong>
+              Replacer l'os dans le corps et dans le mouvement.
+            </li>
+            <li>
+              <strong>Interpréter</strong>
+              Distinguer ce que l'os prouve de ce qu'il invite à questionner.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-light" id="parcours" aria-labelledby="parcours-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <p class="eyebrow">Parcours</p>
+            <h2 id="parcours-title">Deux lieux, deux manières d'apprendre</h2>
+            <p>
+              Le projet se déploie en classe et au musée avec des temporalités distinctes, mais un même
+              noyau scientifique : comprendre comment un os devient un support de raisonnement.
+            </p>
+          </div>
+
+          <div class="tabs" aria-label="Parcours de médiation">
+            <div class="tab-list" role="tablist" aria-label="Choisir un parcours">
+              <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-ecole" id="tab-ecole" data-tab="ecole">
+                Écoles
+              </button>
+              <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-musee" id="tab-musee" data-tab="musee">
+                Musées
+              </button>
+              <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="panel-enseignants" id="tab-enseignants" data-tab="enseignants">
+                Enseignant·es
+              </button>
+            </div>
+
+            <article class="tab-panel is-active" role="tabpanel" id="panel-ecole" aria-labelledby="tab-ecole" data-panel="ecole">
+              <div class="panel-copy">
+                <p class="panel-kicker">8-12 ans</p>
+                <h3>Observer, situer, interpréter</h3>
+                <p>
+                  La séquence scolaire part de la manipulation et monte vers l'argumentation :
+                  reconnaître l'astragale, le replacer dans le corps, puis discuter les usages culturels
+                  sans confondre époque, région et tradition.
+                </p>
+              </div>
+              <ol class="step-list">
+                <li><span>1</span><strong>Découverte</strong> Comparer des formes, classer, formuler des hypothèses.</li>
+                <li><span>2</span><strong>Identification</strong> Associer un astragale à un animal par indices simples.</li>
+                <li><span>3</span><strong>Localisation</strong> Retrouver l'os dans le tarse et comprendre la locomotion.</li>
+                <li><span>4</span><strong>Inférence</strong> Dire ce que l'os permet d'affirmer, et ce qui reste prudent.</li>
+                <li><span>5</span><strong>Culture</strong> Examiner jeux, amulettes, mythes et récits transformés.</li>
+              </ol>
+            </article>
+
+            <article class="tab-panel" role="tabpanel" id="panel-musee" aria-labelledby="tab-musee" data-panel="musee" hidden>
+              <div class="panel-copy">
+                <p class="panel-kicker">Visite libre ou accompagnée</p>
+                <h3>Une mission d'enquête dans les collections</h3>
+                <p>
+                  Le visiteur apprend à repérer l'astragale du mouton, puis transfère ce savoir à
+                  d'autres animaux. Chaque station suit une règle courte : une question, une action,
+                  une validation.
+                </p>
+              </div>
+              <ol class="step-list">
+                <li><span>1</span><strong>Regarder</strong> Identifier deux repères visuels sur un astragale modèle.</li>
+                <li><span>2</span><strong>Comparer</strong> Chercher les ressemblances sur un autre squelette.</li>
+                <li><span>3</span><strong>Placer</strong> Situer la zone de la cheville ou du tarse.</li>
+                <li><span>4</span><strong>Expliquer</strong> Justifier la réponse avec un indice anatomique.</li>
+                <li><span>5</span><strong>Prolonger</strong> Accéder aux contenus longs par fiche ou QR code.</li>
+              </ol>
+            </article>
+
+            <article class="tab-panel" role="tabpanel" id="panel-enseignants" aria-labelledby="tab-enseignants" data-panel="enseignants" hidden>
+              <div class="panel-copy">
+                <p class="panel-kicker">Préparation de séance</p>
+                <h3>Des ressources courtes, sourçables et réutilisables</h3>
+                <p>
+                  La version enseignant·e privilégie les objectifs, le matériel, le déroulé, les erreurs
+                  fréquentes et le corrigé raisonné. La version complète garde la bibliographie, les
+                  sources et les nuances scientifiques.
+                </p>
+              </div>
+              <ol class="step-list">
+                <li><span>1</span><strong>Objectifs</strong> Nommer les compétences sans afficher de codes incertains.</li>
+                <li><span>2</span><strong>Matériel</strong> Images, reproductions, fiche de vocabulaire, traces écrites.</li>
+                <li><span>3</span><strong>Questions</strong> Faire verbaliser les indices et les limites de l'hypothèse.</li>
+                <li><span>4</span><strong>Corrections</strong> Distinguer récit simplifié et état des connaissances.</li>
+                <li><span>5</span><strong>Prolongements</strong> Relier sciences du vivant, histoire culturelle et musée.</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-activities" id="activites" aria-labelledby="activites-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <p class="eyebrow">Activités</p>
+            <h2 id="activites-title">Premières activités prêtes à lancer</h2>
+            <p>
+              Ces formats courts transforment l'astragale en support d'enquête : les élèves et les
+              visiteurs observent, placent, justifient, puis distinguent ce qui est attesté de ce qui
+              reste à vérifier.
+            </p>
+          </div>
+
+          <div class="activity-grid">
+            <article class="activity-card">
+              <div class="activity-meta" aria-label="Public et durée">
+                <span>École</span>
+                <span>8-10 ans</span>
+                <span>25 min</span>
+              </div>
+              <h3>Mission astragale</h3>
+              <p>
+                Les élèves comparent trois formes osseuses, repèrent l'astragale, puis expliquent deux
+                indices qui justifient leur choix.
+              </p>
+              <ul class="activity-checklist">
+                <li>Classer par ressemblances visibles.</li>
+                <li>Nommer deux repères morphologiques.</li>
+                <li>Formuler une hypothèse prudente.</li>
+              </ul>
+              <a class="text-link" href="ressources/fiche-activite-mission-astragale.md">Ouvrir la fiche</a>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-meta" aria-label="Public et durée">
+                <span>Musée</span>
+                <span>Familles</span>
+                <span>15 min</span>
+              </div>
+              <h3>Où est l'os ?</h3>
+              <p>
+                Une mission de visite courte : partir d'un mouton, retrouver la zone de l'astragale sur
+                un autre animal, puis valider avec un indice anatomique.
+              </p>
+              <ul class="activity-checklist">
+                <li>Observer une image modèle.</li>
+                <li>Transférer le repère vers une autre espèce.</li>
+                <li>Expliquer le lien avec la locomotion.</li>
+              </ul>
+              <a class="text-link" href="ressources/fiche-musee-ou-est-l-os.md">Ouvrir la fiche</a>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-meta" aria-label="Public et durée">
+                <span>École</span>
+                <span>10-12 ans</span>
+                <span>30 min</span>
+              </div>
+              <h3>Vrai, prudent, à vérifier</h3>
+              <p>
+                Les élèves trient des phrases sur l'osselet, Achille et les usages culturels pour
+                distinguer preuve, hypothèse et récit simplifié.
+              </p>
+              <ul class="activity-checklist">
+                <li>Repérer les affirmations trop rapides.</li>
+                <li>Reformuler avec nuance.</li>
+                <li>Relier vocabulaire, source et contexte.</li>
+              </ul>
+              <a class="text-link" href="ressources/fiche-activite-vrai-prudent-verifier.md">Ouvrir la fiche</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-earth" id="atelier" aria-labelledby="atelier-title">
+        <div class="section-inner two-column">
+          <div class="section-header">
+            <p class="eyebrow">Atelier de raisonnement</p>
+            <h2 id="atelier-title">Ce que l'on croyait, ce que l'on sait mieux aujourd'hui</h2>
+            <p>
+              Le site installe un réflexe critique : ne pas répéter les récits commodes quand les sources
+              demandent de distinguer les périodes, les régions et les usages.
+            </p>
+          </div>
+          <div class="belief-grid" aria-label="Corrections de récits">
+            <article>
+              <h3>Osselets et dés</h3>
+              <p class="label">Récit trop simple</p>
+              <p>Les osselets seraient les premiers dés naturels, partout et depuis toujours.</p>
+              <p class="label">Formulation retenue</p>
+              <p>Un même os a pu servir de support biologique, ludique, rituel ou symbolique selon les contextes.</p>
+            </article>
+            <article>
+              <h3>Achille</h3>
+              <p class="label">Récit trop simple</p>
+              <p>Le talon vulnérable serait une évidence homérique.</p>
+              <p class="label">Formulation retenue</p>
+              <p>Le talon d'Achille est un cas de réception tardive et de transformation des récits antiques.</p>
+            </article>
+            <article>
+              <h3>Vocabulaire</h3>
+              <p class="label">Récit trop simple</p>
+              <p>Astragale, talus et osselet pourraient être employés indifféremment.</p>
+              <p class="label">Formulation retenue</p>
+              <p>Chaque terme dépend du contexte : anatomie, archéozoologie, jeu, langue et période.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="ressources" aria-labelledby="ressources-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <p class="eyebrow">Ressources</p>
+            <h2 id="ressources-title">Un écosystème de supports</h2>
+            <p>
+              Chaque ressource a un rôle distinct afin que le site reste lisible pour les enfants, utile
+              pour les enseignant·es et transférable aux musées.
+            </p>
+          </div>
+          <div class="resource-grid">
+            <a class="resource-card" href="ressources/fiche-activite-mission-astragale.md">
+              <span>01</span>
+              <h3>Fiche activité école</h3>
+              <p>Déroulé prêt à utiliser pour observer, comparer et justifier l'identification.</p>
+            </a>
+            <a class="resource-card" href="ressources/fiche-musee-ou-est-l-os.md">
+              <span>02</span>
+              <h3>Fiche mission musée</h3>
+              <p>Consigne courte pour retrouver l'astragale dans les collections ou les vitrines.</p>
+            </a>
+            <a class="resource-card" href="ressources/glossaire-depart.md">
+              <span>03</span>
+              <h3>Glossaire de départ</h3>
+              <p>Termes essentiels pour éviter les confusions entre os, jeu, talus et astragale.</p>
+            </a>
+            <a class="resource-card" href="ressources/corrige-raisonne.md">
+              <span>04</span>
+              <h3>Corrigé raisonné</h3>
+              <p>Réponses-types qui expliquent le raisonnement plutôt que de donner seulement le résultat.</p>
+            </a>
+            <a class="resource-card" href="#activites">
+              <span>05</span>
+              <h3>Banque d'activités</h3>
+              <p>Trois premières activités visibles sur le site, prêtes à compléter avec images et modèles.</p>
+            </a>
+            <a class="resource-card" href="#recherche">
+              <span>06</span>
+              <h3>Droits et sources</h3>
+              <p>Espace prévu pour les crédits, les références, les versions et les droits d'images.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-patina" id="modeles" aria-labelledby="modeles-title">
+        <div class="section-inner model-strip">
+          <div>
+            <p class="eyebrow">Modèles 3D</p>
+            <h2 id="modeles-title">Comprendre l'orientation de l'os</h2>
+          </div>
+          <p>
+            Les futurs modèles 3D devront servir le raisonnement spatial : surfaces articulaires,
+            orientation, comparaison entre espèces et mouvement. La page réserve déjà cette place dans
+            l'architecture du site.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-light" id="glossaire" aria-labelledby="glossaire-title">
+        <div class="section-inner">
+          <div class="section-header">
+            <p class="eyebrow">Glossaire</p>
+            <h2 id="glossaire-title">Nommer sans confondre</h2>
+            <p>
+              Les termes sont courts pour rester accessibles, mais assez précis pour protéger le projet
+              des raccourcis fréquents.
+            </p>
+          </div>
+          <label class="search-label" for="glossary-search">Filtrer les termes</label>
+          <input class="search-input" id="glossary-search" type="search" placeholder="Ex. astragale, Achille, talus" autocomplete="off">
+          <div class="glossary-grid" data-glossary-list>
+            <article data-term="astragale os tarse cheville animal">
+              <h3>Astragale</h3>
+              <p>Os du tarse impliqué dans l'articulation et la locomotion, observé chez de nombreux animaux.</p>
+            </article>
+            <article data-term="talus anatomie humaine moderne">
+              <h3>Talus</h3>
+              <p>Nom courant en anatomie humaine moderne pour l'os anciennement appelé astragale.</p>
+            </article>
+            <article data-term="osselet jeu oreille confusion">
+              <h3>Osselet</h3>
+              <p>Mot qui peut désigner un petit os, une pièce de jeu, ou les osselets de l'oreille.</p>
+            </article>
+            <article data-term="archeozoologie animaux traces os">
+              <h3>Archéozoologie</h3>
+              <p>Étude des restes animaux pour comprendre espèces, pratiques, milieux et usages humains.</p>
+            </article>
+            <article data-term="homologie comparaison corps animal humain">
+              <h3>Homologie</h3>
+              <p>Relation entre structures comparables chez des espèces différentes, sans les rendre identiques.</p>
+            </article>
+            <article data-term="Achille mythe reception talon tradition">
+              <h3>Achille</h3>
+              <p>Exemple de récit antique transformé par des traditions postérieures autour de la vulnérabilité.</p>
+            </article>
+            <article data-term="Talos bronze cheville mouvement mythe">
+              <h3>Talos</h3>
+              <p>Figure mythique dont la vulnérabilité près de la cheville permet d'aborder corps et mouvement.</p>
+            </article>
+            <article data-term="inference hypothese preuve prudence">
+              <h3>Inférence</h3>
+              <p>Raisonnement qui part d'un indice observé, tout en distinguant preuve, hypothèse et limite.</p>
+            </article>
+          </div>
+          <p class="empty-state" data-empty-state hidden>Aucun terme ne correspond à cette recherche.</p>
+        </div>
+      </section>
+
+      <section class="section section-charcoal" id="recherche" aria-labelledby="recherche-title">
+        <div class="section-inner research-layout">
+          <div>
+            <p class="eyebrow">Recherche et gouvernance</p>
+            <h2 id="recherche-title">Un site fait pour durer après l'exposition</h2>
+          </div>
+          <div class="research-copy">
+            <p>
+              La prochaine étape éditoriale consiste à relier chaque exemple public à un dossier de
+              sources : bibliographie, images autorisées, modèles 3D, crédits et date de mise à jour.
+            </p>
+            <p>
+              Cette première version prépare la structure, la direction visuelle et les parcours. Les
+              contenus longs pourront ensuite être ajoutés sans mélanger les publics ni les usages.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Histoires d'os</p>
+      <p>Première version du site - <span data-year></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
