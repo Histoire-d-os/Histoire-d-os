@@ -765,6 +765,156 @@ h3 {
   margin: 0;
 }
 
+.book-body {
+  background: var(--bone);
+}
+
+.book-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 32px;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.book-brand {
+  color: var(--white);
+}
+
+.book-back {
+  border-color: rgba(255, 255, 255, 0.38);
+  color: var(--white);
+}
+
+.book-main {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 52px 0 76px;
+}
+
+.book-cover {
+  display: grid;
+  gap: 18px;
+  max-width: 850px;
+  margin: 0 auto 46px;
+  text-align: center;
+}
+
+.book-cover h1 {
+  color: var(--ink);
+}
+
+.book-cover p:not(.eyebrow) {
+  margin: 0 auto;
+  max-width: 680px;
+  color: var(--smoke);
+  font-size: 1.12rem;
+}
+
+.book-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  gap: 28px;
+  align-items: stretch;
+  margin: 28px 0;
+}
+
+.book-spread-reverse {
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+}
+
+.book-spread-reverse figure {
+  order: 2;
+}
+
+.book-spread figure {
+  min-height: 410px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--charcoal);
+  box-shadow: var(--shadow);
+}
+
+.book-spread img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-page,
+.book-question,
+.teacher-note {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  box-shadow: var(--shadow);
+}
+
+.book-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 410px;
+  padding: 34px;
+}
+
+.book-page h2,
+.book-question h2,
+.teacher-note h2 {
+  margin-bottom: 18px;
+  color: var(--patina-dark);
+}
+
+.book-page p,
+.book-question p,
+.teacher-note p {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.book-page p:last-child,
+.book-question p:last-child,
+.teacher-note p:last-child {
+  margin-bottom: 0;
+}
+
+.page-number {
+  width: fit-content;
+  border-bottom: 2px solid var(--terracotta);
+  color: var(--terracotta) !important;
+  font-weight: 900;
+}
+
+.book-question {
+  margin: 42px 0 22px;
+  padding: 36px;
+  background: var(--patina-dark);
+  color: var(--white);
+}
+
+.book-question h2,
+.book-question p {
+  color: var(--white);
+}
+
+.book-question .eyebrow {
+  color: #d7a86c;
+}
+
+.teacher-note {
+  padding: 28px;
+  background: #f3e6d0;
+}
+
+.teacher-note h2 {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+}
+
 .back-to-top {
   position: fixed;
   left: 18px;
@@ -824,8 +974,14 @@ h3 {
   .tab-panel,
   .two-column,
   .model-strip,
-  .research-layout {
+  .research-layout,
+  .book-spread,
+  .book-spread-reverse {
     grid-template-columns: 1fr;
+  }
+
+  .book-spread-reverse figure {
+    order: 0;
   }
 }
 
@@ -971,6 +1127,40 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     padding: 24px 20px;
+  }
+
+  .book-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px 20px;
+  }
+
+  .book-back {
+    width: 100%;
+  }
+
+  .book-main {
+    width: calc(100% - 32px);
+    padding: 38px 0 58px;
+  }
+
+  .book-cover {
+    text-align: left;
+  }
+
+  .book-spread figure,
+  .book-page {
+    min-height: 0;
+  }
+
+  .book-spread figure {
+    aspect-ratio: 4 / 3;
+  }
+
+  .book-page,
+  .book-question,
+  .teacher-note {
+    padding: 22px;
   }
 }
 

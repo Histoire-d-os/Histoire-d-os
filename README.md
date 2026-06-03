@@ -9,6 +9,7 @@ Première version statique du site du projet **Histoires d'os**, construit autou
 - `script.js` : navigation mobile, onglets de parcours et filtre du glossaire.
 - `assets/hero-astragale.png` : visuel d'accueil généré pour le projet.
 - `assets/logo-officiel-histoires-dos.jpg` : logo officiel du projet.
+- `assets/recit-achille/` : illustrations du récit d'ouverture sur Achille et l'astragale.
 - `ressources/` : premières fiches d'activités, glossaire de départ et corrigé raisonné.
 
 Le site fonctionne sans dépendances et peut être ouvert directement dans un navigateur.
