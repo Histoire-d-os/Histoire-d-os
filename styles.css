@@ -1175,6 +1175,207 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.document-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 20px 0 26px;
+}
+
+.resource-download-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.worksheet-section {
+  break-inside: avoid;
+}
+
+.answer-lines {
+  min-height: 96px;
+  border-radius: 8px;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 27px,
+      rgba(42, 38, 30, 0.24) 28px
+    );
+}
+
+.answer-lines.compact {
+  min-height: 62px;
+}
+
+.answer-lines.long {
+  min-height: 160px;
+}
+
+.response-box {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.68);
+  padding: 16px;
+}
+
+.confidence-scale,
+.check-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.confidence-scale {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.confidence-scale legend {
+  color: var(--terracotta);
+  font-weight: 900;
+}
+
+.confidence-scale label,
+.check-grid label {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.check-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.observation-table,
+.assessment-grid {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--ink);
+}
+
+.observation-table caption,
+.assessment-grid caption {
+  margin-bottom: 10px;
+  color: var(--terracotta);
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.observation-table th,
+.observation-table td,
+.assessment-grid th,
+.assessment-grid td {
+  border: 1px solid var(--line);
+  padding: 12px;
+  vertical-align: top;
+}
+
+.observation-table th,
+.assessment-grid th {
+  background: rgba(63, 117, 105, 0.12);
+  color: var(--patina-dark);
+  font-weight: 900;
+  text-align: left;
+}
+
+.observation-table td:empty::after {
+  display: block;
+  min-height: 54px;
+  content: "";
+}
+
+.asset-placeholder {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  border: 2px dashed rgba(63, 117, 105, 0.45);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(63, 117, 105, 0.08), rgba(159, 79, 56, 0.08)),
+    rgba(255, 250, 240, 0.72);
+  padding: 22px;
+  text-align: center;
+}
+
+.asset-placeholder.large {
+  min-height: 260px;
+}
+
+.asset-placeholder p {
+  max-width: 520px;
+  margin: 0;
+}
+
+.asset-placeholder p + p {
+  margin-top: 8px;
+}
+
+.repere-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.sentence-starters {
+  display: grid;
+  gap: 10px;
+  border-left: 3px solid var(--terracotta);
+  background: rgba(159, 79, 56, 0.08);
+  padding: 16px;
+}
+
+.sentence-starters p {
+  margin: 0;
+  font-weight: 800;
+}
+
+.student-production {
+  border-left: 5px solid var(--patina);
+  border-radius: 8px;
+  background: rgba(63, 117, 105, 0.08);
+  padding: 22px;
+}
+
+.student-production p {
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.museum-fields {
+  display: grid;
+  gap: 12px;
+}
+
+.museum-fields p {
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  font-weight: 800;
+}
+
+.museum-fields span {
+  display: inline-block;
+  min-width: min(360px, 100%);
+  border-bottom: 1px solid rgba(42, 38, 30, 0.42);
+}
+
+.page-break {
+  break-before: page;
+}
+
+.print-only {
+  display: none !important;
+}
+
 .back-to-top {
   position: fixed;
   left: 18px;
@@ -1226,6 +1427,7 @@ h3 {
   }
 
   .resource-grid,
+  .resource-download-grid,
   .activity-grid,
   .glossary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1238,7 +1440,8 @@ h3 {
   .book-spread,
   .book-spread-reverse,
   .doc-grid,
-  .doc-columns {
+  .doc-columns,
+  .repere-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1376,6 +1579,7 @@ h3 {
   }
 
   .resource-grid,
+  .resource-download-grid,
   .activity-grid,
   .glossary-grid {
     grid-template-columns: 1fr;
@@ -1426,12 +1630,29 @@ h3 {
   }
 
   .doc-facts,
-  .statement-grid {
+  .statement-grid,
+  .check-grid,
+  .confidence-scale {
     grid-template-columns: 1fr;
   }
 
   .timeline li {
     grid-template-columns: 1fr;
+  }
+
+  .document-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .document-actions .button {
+    width: 100%;
+  }
+
+  .observation-table,
+  .assessment-grid {
+    display: block;
+    overflow-x: auto;
   }
 
   .book-cover {
@@ -1458,11 +1679,22 @@ h3 {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
   .site-header,
   .book-header,
   .document-header,
+  .document-actions,
+  .no-print,
   .back-to-top {
     display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
   }
 
   body,
@@ -1470,6 +1702,7 @@ h3 {
   .book-body {
     background: var(--white);
     color: var(--ink);
+    font-size: 10.5pt;
   }
 
   .book-main,
@@ -1484,13 +1717,91 @@ h3 {
   .source-box,
   .book-page,
   .book-question,
-  .teacher-note {
+  .teacher-note,
+  .worksheet-section,
+  .visitor-card {
+    border-color: #888;
+    background: var(--white) !important;
     box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .document-hero {
+    color: var(--ink);
+    padding: 18px;
+  }
+
+  .document-hero::after {
+    display: none;
+  }
+
+  .document-hero .eyebrow,
+  .document-hero h1,
+  .document-hero p,
+  .doc-facts dd {
+    color: var(--ink);
+  }
+
+  .doc-facts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .doc-facts div {
+    border-color: #888;
+    background: var(--white);
+  }
+
+  .resource-download-grid,
+  .repere-grid,
+  .doc-grid,
+  .doc-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-card {
+    min-height: 0;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .asset-placeholder {
+    border-color: #777;
+    background: var(--white);
+  }
+
+  .answer-lines {
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 23px,
+        #9a9a9a 24px
+      );
+  }
+
+  .page-break {
+    break-before: page;
+  }
+
+  .observation-table,
+  .assessment-grid {
+    font-size: 9pt;
+    break-inside: auto;
+  }
+
+  .observation-table tr,
+  .assessment-grid tr {
     break-inside: avoid;
   }
 
   a {
     color: inherit;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    font-weight: 400;
   }
 }
 
