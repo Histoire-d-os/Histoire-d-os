@@ -1444,6 +1444,144 @@ h3 {
   margin-top: 8px;
 }
 
+.object-card-grid,
+.use-card-grid,
+.context-card-grid,
+.hypothesis-board,
+.object-biography,
+.evidence-grid {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.object-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.use-card-grid,
+.context-card-grid,
+.hypothesis-board {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.evidence-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.object-biography {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  counter-reset: object-life;
+}
+
+.object-card,
+.use-card,
+.context-card,
+.object-life-step,
+.museum-label-template {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.84);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  break-inside: avoid;
+}
+
+.object-card {
+  border-style: dashed;
+}
+
+.object-card h2,
+.use-card h2,
+.context-card h2,
+.object-life-step h2,
+.museum-label-template h2 {
+  margin-top: 0;
+  color: var(--patina-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.28rem;
+}
+
+.object-card .asset-placeholder {
+  min-height: 220px;
+  margin: 12px 0 16px;
+}
+
+.use-card {
+  border-left: 5px solid var(--terracotta);
+}
+
+.context-card {
+  border-left: 5px solid var(--patina);
+}
+
+.context-card .doc-prompt,
+.object-card .doc-prompt {
+  color: var(--terracotta);
+  font-weight: 900;
+}
+
+.hypothesis-board article,
+.evidence-grid label {
+  border-left: 4px solid var(--patina);
+  border-radius: 8px;
+  background: rgba(63, 117, 105, 0.08);
+  padding: 16px;
+}
+
+.evidence-grid label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.certainty-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(63, 117, 105, 0.1);
+  padding: 4px 10px;
+  color: var(--patina-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.object-life-step {
+  position: relative;
+  padding-left: 72px;
+}
+
+.object-life-step > span {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--patina);
+  color: var(--white);
+  font-weight: 900;
+}
+
+.museum-label-template {
+  margin-top: 24px;
+  border-left: 6px solid var(--terracotta);
+  background: #f6ead8;
+}
+
+.interpretation-table {
+  min-width: 920px;
+}
+
+.doc-section:has(.interpretation-table) {
+  overflow-x: auto;
+}
+
 .repere-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1819,6 +1957,12 @@ h3 {
   .resource-grid,
   .resource-download-grid,
   .card-sheet,
+  .object-card-grid,
+  .use-card-grid,
+  .context-card-grid,
+  .hypothesis-board,
+  .object-biography,
+  .evidence-grid,
   .activity-grid,
   .glossary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1833,6 +1977,12 @@ h3 {
   .doc-grid,
   .doc-columns,
   .repere-grid,
+  .object-card-grid,
+  .use-card-grid,
+  .context-card-grid,
+  .hypothesis-board,
+  .object-biography,
+  .evidence-grid,
   .source-card,
   .album-template {
     grid-template-columns: 1fr;
@@ -2061,7 +2211,8 @@ h3 {
   .association-board,
   .correction-table,
   .asset-status,
-  .source-vs-interpretation {
+  .source-vs-interpretation,
+  .interpretation-table {
     display: block;
     overflow-x: auto;
   }
@@ -2101,6 +2252,10 @@ h3 {
   .doc-section,
   .source-box {
     padding: 22px;
+  }
+
+  .object-life-step {
+    padding-left: 64px;
   }
 }
 
@@ -2147,6 +2302,11 @@ h3 {
   .worksheet-section,
   .visitor-card,
   .source-card,
+  .object-card,
+  .use-card,
+  .context-card,
+  .object-life-step,
+  .museum-label-template,
   .chronology-card,
   .questionnaire-block,
   .album-page {
@@ -2186,6 +2346,12 @@ h3 {
   .repere-grid,
   .doc-grid,
   .doc-columns,
+  .object-card-grid,
+  .use-card-grid,
+  .context-card-grid,
+  .hypothesis-board,
+  .object-biography,
+  .evidence-grid,
   .source-card,
   .album-template,
   .chronology-sheet {
@@ -2248,7 +2414,8 @@ h3 {
   .association-board,
   .correction-table,
   .asset-status,
-  .source-vs-interpretation {
+  .source-vs-interpretation,
+  .interpretation-table {
     font-size: 9pt;
     break-inside: auto;
   }
@@ -2259,7 +2426,8 @@ h3 {
   .association-board tr,
   .correction-table tr,
   .asset-status tr,
-  .source-vs-interpretation tr {
+  .source-vs-interpretation tr,
+  .interpretation-table tr {
     break-inside: avoid;
   }
 
