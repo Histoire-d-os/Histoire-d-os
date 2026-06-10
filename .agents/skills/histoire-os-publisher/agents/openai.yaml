@@ -1,0 +1,4 @@
+interface:
+  display_name: "Histoire d'os publisher"
+  short_description: "Publier et valider les ressources Histoire-d-os"
+  default_prompt: "Utilise cette compétence pour auditer, modifier et valider les ressources pédagogiques du projet Histoire-d-os."
