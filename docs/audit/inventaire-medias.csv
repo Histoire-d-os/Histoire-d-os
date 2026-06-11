@@ -1,0 +1,9 @@
+﻿source_page,media_path,declared_in,alt,local_exists,public_status,notes
+index.html,assets/hero-astragale.png,html img,Un astragale posé sur une table d'étude archéologique.,yes,200,
+index.html,assets/logo-officiel-histoires-dos.jpg,html img,,yes,200,
+ressources/activite-03-corpus-images.html,assets/recit-achille/03-images-fleches.png,html img,"Illustration pédagogique d'Achille et de flèches, créée pour le récit d'ouverture.",yes,200,
+ressources/activite-03-exemple-production.html,assets/recit-achille/04-astragale-classe.png,html img,Illustration pédagogique d'un astragale observé en classe.,yes,200,
+ressources/recit-achille-astragale.html,assets/recit-achille/01-troie-ouverture.png,html img,Achille regarde la ville de Troie au loin.,yes,200,
+ressources/recit-achille-astragale.html,assets/recit-achille/02-thetis-legende.png,html img,"Thetis près d'une rivière mythique, avec un motif lumineux autour de la cheville.",yes,200,
+ressources/recit-achille-astragale.html,assets/recit-achille/03-images-fleches.png,html img,"Fragment de vase étudié sur une table, avec une scène antique stylisée d'Achille et des flèches.",yes,200,
+ressources/recit-achille-astragale.html,assets/recit-achille/04-astragale-classe.png,html img,Un astragale observé sur une table de classe avec des supports d'enquête.,yes,200,

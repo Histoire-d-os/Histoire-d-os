@@ -1,0 +1,100 @@
+{
+  "screenshots": [
+    "accueil-desktop.png",
+    "accueil-mobile.png",
+    "section-parcours.png",
+    "section-activites.png",
+    "section-ressources.png",
+    "page-eleve.png",
+    "page-enseignant.png",
+    "page-musee.png",
+    "recit-achille.png",
+    "page-problematique-grille-interpretation.png",
+    "print-fiche-mission-astragale.png",
+    "print-guide-musee-os.png"
+  ],
+  "interaction": {
+    "menu": {
+      "expanded": "true",
+      "bodyOpen": true,
+      "navDisplay": "flex"
+    },
+    "tabs": {
+      "museeVisible": true,
+      "enseignantsVisible": true,
+      "selected": "tab-enseignants"
+    },
+    "language": {
+      "lang": "en",
+      "title": "Bone Stories | Astragalus, archaeozoology and mediation",
+      "nav": "Pathways",
+      "untranslatedActivity": false
+    },
+    "glossary": {
+      "emptyVisible": true,
+      "visibleAfterAstragale": 1
+    },
+    "backToTop": {
+      "visible": false,
+      "y": 900
+    }
+  },
+  "responsiveOverflows": 0,
+  "consoleRows": 0,
+  "consoleErrors": 0,
+  "network404": 0,
+  "printResults": [
+    {
+      "page": "ressources/document-mission-astragale.html",
+      "filename": "document-mission-astragale.pdf",
+      "metrics": {
+        "scrollWidth": 779,
+        "clientWidth": 779,
+        "bodyText": 8689,
+        "printButtonsVisible": 1,
+        "tableOverflow": [],
+        "sourceBox": true,
+        "imageCount": 0
+      }
+    },
+    {
+      "page": "ressources/document-musee-ou-est-l-os.html",
+      "filename": "document-musee-ou-est-l-os.pdf",
+      "metrics": {
+        "scrollWidth": 779,
+        "clientWidth": 779,
+        "bodyText": 5787,
+        "printButtonsVisible": 1,
+        "tableOverflow": [],
+        "sourceBox": true,
+        "imageCount": 0
+      }
+    },
+    {
+      "page": "ressources/document-vrai-prudent-verifier.html",
+      "filename": "document-vrai-prudent-verifier.pdf",
+      "metrics": {
+        "scrollWidth": 779,
+        "clientWidth": 779,
+        "bodyText": 3515,
+        "printButtonsVisible": 1,
+        "tableOverflow": [],
+        "sourceBox": true,
+        "imageCount": 0
+      }
+    },
+    {
+      "page": "ressources/recit-achille-astragale.html",
+      "filename": "recit-achille-astragale.pdf",
+      "metrics": {
+        "scrollWidth": 779,
+        "clientWidth": 779,
+        "bodyText": 2654,
+        "printButtonsVisible": 1,
+        "tableOverflow": [],
+        "sourceBox": false,
+        "imageCount": 4
+      }
+    }
+  ]
+}
