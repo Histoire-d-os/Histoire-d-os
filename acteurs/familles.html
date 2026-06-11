@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body class="pedagogy-body">
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
     <header class="document-header no-print">
       <a class="brand book-brand" href="../index.html#parcours" aria-label="Retour à l'accueil Histoires d'os">
         <span class="brand-mark" aria-hidden="true">H</span>
@@ -20,7 +21,7 @@
       <a class="button button-secondary book-back" href="../index.html#parcours">Retour à l'accueil</a>
     </header>
 
-    <main class="document-main">
+    <main class="document-main" id="main-content">
       <section class="document-hero document-hero-school" aria-labelledby="document-title">
         <p class="eyebrow">Familles et grand public</p>
         <h1 id="document-title">Découvrir l'astragale sans dossier professionnel</h1>
@@ -37,9 +38,16 @@
         </dl>
       </section>
 
-      <nav class="document-actions no-print" aria-label="Actions de la page">
+      <nav
+        class="document-actions no-print"
+        aria-label="Actions de la page"
+        data-document-status="parcours découverte disponible, validations visuelles encore signalées"
+        data-document-version="v0.2"
+        data-document-date="2026-06-11"
+      >
         <a class="button button-secondary" href="../ressources/recit-achille-astragale.html">Lire le récit</a>
         <a class="button button-secondary" href="../index.html#glossaire">Voir le glossaire</a>
+        <button class="button button-primary" type="button" data-print-document>Imprimer cette synthèse</button>
       </nav>
 
       <p class="notice-box">
@@ -55,7 +63,7 @@
             montre que les mythes changent, que les mots glissent et qu'un petit os peut devenir une
             question d'enquête.
           </p>
-          <p class="status-note">Statut : récit illustré disponible — statut des illustrations à garder visible.</p>
+          <p class="status-note" data-status="droits">Statut : récit illustré disponible — statut des illustrations à garder visible.</p>
           <ul class="resource-link-list">
             <li><a href="../ressources/recit-achille-astragale.html">Lire Le petit os d'Achille</a></li>
           </ul>
@@ -68,7 +76,7 @@
             postérieur chez de nombreux mammifères. Le repérer aide à parler du mouvement, de
             l'équilibre et de la comparaison entre animaux.
           </p>
-          <p class="status-note">Statut : explication introductive — images anatomiques définitives à valider.</p>
+          <p class="status-note" data-status="visuels-manquants">Statut : explication introductive — images anatomiques définitives à valider.</p>
           <ul class="resource-link-list">
             <li><a href="../ressources/activite-01-trouver-astragale.html">Voir la page de découverte</a></li>
           </ul>
@@ -95,9 +103,10 @@
             <li>Dis ce que tu supposes, puis ce qui manque pour vérifier.</li>
             <li>Essaie une phrase prudente : "Je pense que..., parce que..., mais il faudrait..."</li>
           </ol>
-          <p class="status-note">Statut : activité courte — elle ne remplace pas une identification scientifique.</p>
+          <p class="status-note" data-status="prototype">Statut : activité courte — elle ne remplace pas une identification scientifique.</p>
         </article>
       </section>
     </main>
+    <script src="../ressources/document-actions.js"></script>
   </body>
 </html>

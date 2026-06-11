@@ -1,0 +1,296 @@
+{
+  "runner": "Chrome DevTools Protocol fallback",
+  "playwright": "npx unavailable: missing npm npx-cli.js",
+  "screenshots": [
+    "docs/qa/p2-print-design/home-desktop.png",
+    "docs/qa/p2-print-design/home-mobile.png",
+    "docs/qa/p2-print-design/enseignants-desktop.png",
+    "docs/qa/p2-print-design/musees-desktop.png",
+    "docs/qa/p2-print-design/familles-desktop.png",
+    "docs/qa/p2-print-design/approfondir-desktop.png",
+    "docs/qa/p2-print-design/mission-astragale-desktop.png",
+    "docs/qa/p2-print-design/musee-ou-est-os-desktop.png",
+    "docs/qa/p2-print-design/vrai-prudent-desktop.png",
+    "docs/qa/p2-print-design/recit-achille-desktop.png",
+    "docs/qa/p2-print-design/grille-interpretation-desktop.png",
+    "docs/qa/p2-print-design/mission-astragale-print.png",
+    "docs/qa/p2-print-design/musee-ou-est-os-print.png",
+    "docs/qa/p2-print-design/vrai-prudent-print.png",
+    "docs/qa/p2-print-design/recit-achille-print.png",
+    "docs/qa/p2-print-design/grille-interpretation-print.png",
+    "docs/qa/p2-print-design/familles-desktop-rerun.png",
+    "docs/qa/p2-print-design/recit-achille-print-lite.png"
+  ],
+  "pdfs": [
+    "tmp/pdfs/mission-astragale-print.pdf",
+    "tmp/pdfs/musee-ou-est-os-print.pdf",
+    "tmp/pdfs/vrai-prudent-print.pdf",
+    "tmp/pdfs/recit-achille-print.pdf",
+    "tmp/pdfs/grille-interpretation-print.pdf"
+  ],
+  "checks": [
+    {
+      "slug": "home-desktop",
+      "mode": "screen",
+      "title": "Histoires d'os | Astragale, archéozoologie et médiation",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [],
+      "statusNotes": 10,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "home-mobile",
+      "mode": "screen",
+      "title": "Histoires d'os | Astragale, archéozoologie et médiation",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [],
+      "statusNotes": 10,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "enseignants-desktop",
+      "mode": "screen",
+      "title": "Enseignant·es | Histoires d'os",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : prototypes structurés, validations humaines encore nécessairesVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 5,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "musees-desktop",
+      "mode": "screen",
+      "title": "Musées et médiation | Histoires d'os",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : médiations en prototype, contraintes de manipulation à confirmer localementVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 4,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "familles-desktop",
+      "mode": "screen",
+      "title": "Familles et grand public | Histoires d'os",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : parcours découverte disponible, validations visuelles encore signaléesVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 3,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "approfondir-desktop",
+      "mode": "screen",
+      "title": "Approfondir | Histoires d'os",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : espace de travail public, documents internes signalés comme telsVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 3,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "mission-astragale-desktop",
+      "mode": "screen",
+      "title": "Guide enseignant — Trouver l'astragale | Activité 1",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : prototype avancé, impression A4 et validation scientifique à confirmerVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 0,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "musee-ou-est-os-desktop",
+      "mode": "screen",
+      "title": "Guide musée — Trouver l'astragale | Activité 1",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : prototype avancé, contraintes de manipulation et impression A4 à confirmerVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 0,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "vrai-prudent-desktop",
+      "mode": "screen",
+      "title": "Vrai, prudent, à vérifier | Document pédagogique",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : contenu en cours, impression et relecture pédagogique à testerVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 0,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "recit-achille-desktop",
+      "mode": "screen",
+      "title": "Le petit os d'Achille | Histoires d'os",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : récit pédagogique illustré, images non sources et droits à vérifierVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 1,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "grille-interpretation-desktop",
+      "mode": "screen",
+      "title": "Grille d'interprétation | Activité 4",
+      "lang": "fr",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "actionBlocks": [
+        {
+          "hasMeta": true,
+          "hasPrintButton": true,
+          "statusText": "Statut : grille prototype, débordement A4 corrigé à vérifier en impressionVersion : v0.2Date : 2026-06-11"
+        }
+      ],
+      "statusNotes": 1,
+      "viewportOverflow": 0,
+      "tableOverflow": []
+    },
+    {
+      "slug": "keyboard",
+      "skipLinkFocus": true,
+      "menuEscape": {
+        "expanded": "false",
+        "focusReturned": true
+      },
+      "endKeyTab": "enseignants"
+    },
+    {
+      "slug": "mission-astragale-print",
+      "mode": "print",
+      "viewportOverflow": 0,
+      "hiddenActions": true,
+      "sourceBoxes": 1,
+      "visibleTables": 2,
+      "overflowingTables": []
+    },
+    {
+      "slug": "musee-ou-est-os-print",
+      "mode": "print",
+      "viewportOverflow": 0,
+      "hiddenActions": true,
+      "sourceBoxes": 1,
+      "visibleTables": 1,
+      "overflowingTables": []
+    },
+    {
+      "slug": "vrai-prudent-print",
+      "mode": "print",
+      "viewportOverflow": 0,
+      "hiddenActions": true,
+      "sourceBoxes": 1,
+      "visibleTables": 0,
+      "overflowingTables": []
+    },
+    {
+      "slug": "recit-achille-print",
+      "mode": "print",
+      "viewportOverflow": 0,
+      "hiddenActions": true,
+      "sourceBoxes": 1,
+      "visibleTables": 0,
+      "overflowingTables": []
+    },
+    {
+      "slug": "grille-interpretation-print",
+      "mode": "print",
+      "viewportOverflow": 0,
+      "hiddenActions": true,
+      "sourceBoxes": 0,
+      "visibleTables": 1,
+      "overflowingTables": []
+    },
+    {
+      "slug": "familles-desktop-rerun",
+      "mode": "screen",
+      "hasSkipLink": true,
+      "hasMainTarget": true,
+      "hasMeta": true,
+      "hasPrintButton": true,
+      "viewportOverflow": 0,
+      "consoleErrors": []
+    },
+    {
+      "slug": "recit-achille-print-lite",
+      "mode": "print",
+      "viewportOverflow": 0,
+      "hiddenActions": true,
+      "printedImages": 0,
+      "sourceBoxes": 1
+    }
+  ],
+  "consoleErrors": [],
+  "notes": [
+    "Second full run was interrupted by a Windows file write lock on grille-interpretation-print.png after screenshots/PDFs had been generated; familles was rechecked separately after adding its print button.",
+    "R?cit Achille reprinted with bitmap illustrations hidden in print to keep the temporary PDF light."
+  ]
+}

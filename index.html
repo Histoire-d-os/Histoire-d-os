@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
     <header class="site-header" data-header>
       <a class="brand" href="#accueil" aria-label="Accueil Histoires d'os">
         <span class="brand-mark" aria-hidden="true">H</span>
@@ -39,7 +40,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero" id="accueil" aria-labelledby="hero-title">
         <img
           class="hero-media"
@@ -100,25 +101,25 @@
               <span>01</span>
               <h3>Enseignant·es</h3>
               <p>Fiches élèves, guides, corrigés et ressources imprimables pour les 8-12 ans.</p>
-              <p class="status-note">Statut : prototypes structurés — PER, visuels et impression à confirmer.</p>
+              <p class="status-note" data-status="impression">Statut : prototypes structurés — PER, visuels et impression à confirmer.</p>
             </a>
             <a class="audience-entry-card" href="acteurs/musees.html">
               <span>02</span>
               <h3>Musées et médiation</h3>
               <p>Préparer une station, choisir le matériel et identifier les contraintes de manipulation.</p>
-              <p class="status-note">Statut : médiations en cours de validation — collections et droits à vérifier.</p>
+              <p class="status-note" data-status="droits">Statut : médiations en cours de validation — collections et droits à vérifier.</p>
             </a>
             <a class="audience-entry-card" href="acteurs/familles.html">
               <span>03</span>
               <h3>Familles</h3>
               <p>Entrer par le récit d'Achille, le glossaire et une observation simple de l'astragale.</p>
-              <p class="status-note">Statut : parcours découverte disponible — dossiers complets réservés aux adultes.</p>
+              <p class="status-note" data-status="en-cours">Statut : parcours découverte disponible — dossiers complets réservés aux adultes.</p>
             </a>
             <a class="audience-entry-card" href="acteurs/approfondir.html">
               <span>04</span>
               <h3>Approfondir</h3>
               <p>Retrouver les sources, décisions éditoriales, validations à venir et limites scientifiques.</p>
-              <p class="status-note">Statut : espace de travail — bibliographie et droits à compléter.</p>
+              <p class="status-note" data-status="droits">Statut : espace de travail — bibliographie et droits à compléter.</p>
             </a>
           </div>
 
@@ -224,7 +225,7 @@
                 Les élèves localisent la région du tarse, formulent une hypothèse, justifient avec des
                 indices et comparent avec un autre mammifère.
               </p>
-              <p class="status-note">Statut : prototype avancé — images anatomiques, modèle 3D et impression à confirmer.</p>
+              <p class="status-note" data-status="impression">Statut : prototype avancé — images anatomiques, modèle 3D et impression à confirmer.</p>
               <ul class="activity-checklist">
                 <li>Observer un mouvement ou un document.</li>
                 <li>Situer l'articulation entre jambe et pied.</li>
@@ -244,7 +245,7 @@
                 Une mission de visite : partir d'un mammifère de référence, retrouver la région de
                 l'astragale sur un second animal, puis verbaliser les indices.
               </p>
-              <p class="status-note">Statut : prototype avancé — objets manipulables et contraintes de collection à valider.</p>
+              <p class="status-note" data-status="validation-scientifique">Statut : prototype avancé — objets manipulables et contraintes de collection à valider.</p>
               <ul class="activity-checklist">
                 <li>Repérer le membre postérieur.</li>
                 <li>Transférer le repère vers une autre espèce.</li>
@@ -264,7 +265,7 @@
                 Les élèves observent plusieurs astragales, construisent des critères de comparaison,
                 les associent à des animaux et justifient leurs propositions avec plusieurs indices.
               </p>
-              <p class="status-note">Statut : prototype — animaux, photographies, critères et corrigé à valider.</p>
+              <p class="status-note" data-status="validation-scientifique">Statut : prototype — animaux, photographies, critères et corrigé à valider.</p>
               <ul class="activity-checklist">
                 <li>Décrire avant de deviner.</li>
                 <li>Comparer plusieurs caractères.</li>
@@ -285,7 +286,7 @@
                 Les élèves observent des images, étudient un schéma du talus, ordonnent des cartes
                 chronologiques et construisent un album collectif sur la transformation du "talon d'Achille".
               </p>
-              <p class="status-note">Statut : en cours de validation — corpus d'images, schéma du talus et droits à vérifier.</p>
+              <p class="status-note" data-status="droits">Statut : en cours de validation — corpus d'images, schéma du talus et droits à vérifier.</p>
               <ul class="activity-checklist">
                 <li>Observer une image avant de l'interpréter.</li>
                 <li>Distinguer les versions et les périodes.</li>
@@ -306,7 +307,7 @@
                 Les élèves observent des astragales naturels ou transformés, confrontent plusieurs
                 hypothèses d'usage et utilisent le contexte archéologique pour produire un cartel argumenté.
               </p>
-              <p class="status-note">Statut : prototype — objets, notices, images et interprétations à confirmer.</p>
+              <p class="status-note" data-status="prototype">Statut : prototype — objets, notices, images et interprétations à confirmer.</p>
               <ul class="activity-checklist">
                 <li>Décrire avant d'interpréter.</li>
                 <li>Rechercher les traces de transformation.</li>
@@ -328,7 +329,7 @@
                 Les élèves trient des phrases sur l'osselet, Achille et les usages culturels pour
                 distinguer preuve, hypothèse et récit simplifié.
               </p>
-              <p class="status-note">Statut : contenu en cours — impression et relecture pédagogique à tester.</p>
+              <p class="status-note" data-status="impression">Statut : contenu en cours — impression et relecture pédagogique à tester.</p>
               <ul class="activity-checklist">
                 <li>Repérer les affirmations trop rapides.</li>
                 <li>Reformuler avec nuance.</li>

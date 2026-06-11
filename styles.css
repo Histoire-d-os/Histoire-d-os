@@ -51,6 +51,29 @@ img {
   white-space: nowrap;
 }
 
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 100;
+  transform: translateY(-160%);
+  border: 2px solid var(--patina-dark);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--patina-dark);
+  padding: 10px 14px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(42, 34, 24, 0.18);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 3px solid rgba(33, 79, 73, 0.42);
+  outline-offset: 3px;
+}
+
 a {
   color: inherit;
 }
@@ -203,6 +226,16 @@ select {
   color: inherit;
   padding: 9px 12px;
   cursor: pointer;
+}
+
+.nav-toggle:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.34);
+  outline-offset: 3px;
+}
+
+.site-header.is-scrolled .nav-toggle:focus-visible,
+.site-header.is-open .nav-toggle:focus-visible {
+  outline-color: rgba(63, 117, 105, 0.42);
 }
 
 .nav-toggle-lines {
@@ -695,6 +728,28 @@ h3 {
   color: var(--ink) !important;
   font-size: 0.94rem;
   font-weight: 800;
+}
+
+.status-note[data-status="prototype"] {
+  border-left-color: var(--terracotta);
+  background: rgba(159, 79, 56, 0.08);
+}
+
+.status-note[data-status="en-cours"],
+.status-note[data-status="impression"] {
+  border-left-color: var(--ochre);
+  background: rgba(152, 96, 54, 0.1);
+}
+
+.status-note[data-status="visuels-manquants"],
+.status-note[data-status="droits"] {
+  border-left-color: #7b5b2f;
+  background: rgba(123, 91, 47, 0.1);
+}
+
+.status-note[data-status="validation-scientifique"] {
+  border-left-color: var(--patina-dark);
+  background: rgba(63, 117, 105, 0.1);
 }
 
 .text-link {
@@ -1337,6 +1392,29 @@ h3 {
   margin: 20px 0 26px;
 }
 
+.document-meta-strip {
+  display: flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--smoke);
+  font-size: 0.82rem;
+}
+
+.document-meta-strip li {
+  border: 1px solid rgba(63, 117, 105, 0.24);
+  border-radius: 999px;
+  background: rgba(63, 117, 105, 0.08);
+  padding: 5px 10px;
+}
+
+.document-meta-strip strong {
+  color: var(--patina-dark);
+}
+
 .resource-download-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1730,6 +1808,13 @@ h3 {
 
 .interpretation-table {
   min-width: 920px;
+}
+
+.degree-options {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
 }
 
 .doc-section:has(.interpretation-table) {
@@ -2437,12 +2522,22 @@ h3 {
     margin: 12mm;
   }
 
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    background: #fff;
+  }
+
   .site-header,
   .book-header,
   .document-header,
   .document-actions,
   .no-print,
-  .back-to-top {
+  .back-to-top,
+  .skip-link {
     display: none !important;
   }
 
@@ -2453,9 +2548,12 @@ h3 {
   body,
   .pedagogy-body,
   .book-body {
-    background: var(--white);
-    color: var(--ink);
+    background: #fff !important;
+    color: #111;
     font-size: 10.5pt;
+    line-height: 1.45;
+    orphans: 3;
+    widows: 3;
   }
 
   .book-main,
@@ -2483,14 +2581,31 @@ h3 {
   .questionnaire-block,
   .album-page {
     border-color: #888;
-    background: var(--white) !important;
+    background: #fff !important;
     box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  .eyebrow {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p,
+  li,
+  dt,
+  dd {
     break-inside: avoid;
   }
 
   .document-hero {
     color: var(--ink);
     padding: 18px;
+    break-inside: avoid;
   }
 
   .document-hero::after {
@@ -2510,7 +2625,7 @@ h3 {
 
   .doc-facts div {
     border-color: #888;
-    background: var(--white);
+    background: #fff;
   }
 
   .resource-download-grid,
@@ -2538,6 +2653,7 @@ h3 {
     min-height: 0;
     box-shadow: none;
     break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .study-card {
@@ -2556,14 +2672,14 @@ h3 {
 
   .asset-placeholder {
     border-color: #777;
-    background: var(--white);
+    background: #fff;
   }
 
   .anatomy-board,
   .album-image-slot,
   .chronology-track div {
     border-color: #777;
-    background: var(--white);
+    background: #fff;
   }
 
   .answer-lines {
@@ -2588,8 +2704,13 @@ h3 {
   .asset-status,
   .source-vs-interpretation,
   .interpretation-table {
+    display: table;
+    width: 100%;
+    max-width: 100%;
     font-size: 9pt;
     break-inside: auto;
+    table-layout: fixed;
+    overflow-wrap: anywhere;
   }
 
   .observation-table tr,
@@ -2603,6 +2724,62 @@ h3 {
     break-inside: avoid;
   }
 
+  .interpretation-table {
+    min-width: 0;
+  }
+
+  .interpretation-table th,
+  .interpretation-table td {
+    padding: 5pt;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .interpretation-table th:nth-child(6),
+  .interpretation-table td:nth-child(6) {
+    width: 24%;
+  }
+
+  .book-spread,
+  .book-spread.book-spread-reverse {
+    grid-template-columns: 1fr;
+    gap: 8mm;
+    border-color: #888;
+    background: #fff !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .book-spread figure {
+    min-height: 0;
+    max-height: none;
+    border: 1px dashed #888;
+    background: #fff !important;
+  }
+
+  .book-spread img {
+    display: none;
+  }
+
+  .book-spread figure::before {
+    content: "Illustration disponible dans la version écran du récit.";
+    display: block;
+    padding: 8mm;
+    color: #333;
+    font-size: 9pt;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .status-note,
+  .notice-box,
+  .sentence-starters,
+  .student-production {
+    border-color: #777 !important;
+    background: #fff !important;
+    color: #111 !important;
+  }
+
   .association-zones {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2612,9 +2789,14 @@ h3 {
   }
 
   a[href^="http"]::after {
+    content: "";
+  }
+
+  .source-box a[href^="http"]::after {
     content: " (" attr(href) ")";
     font-size: 8pt;
     font-weight: 400;
+    overflow-wrap: anywhere;
   }
 }
 

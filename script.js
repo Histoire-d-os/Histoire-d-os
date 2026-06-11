@@ -679,11 +679,11 @@ const attributeTranslations = {
 };
 
 const setHeaderState = () => {
-  header.classList.toggle("is-scrolled", window.scrollY > 12);
+  header?.classList.toggle("is-scrolled", window.scrollY > 12);
 };
 
 const setBackToTopState = () => {
-  backToTop.classList.toggle("is-visible", window.scrollY > 360);
+  backToTop?.classList.toggle("is-visible", window.scrollY > 360);
 };
 
 setHeaderState();
@@ -691,19 +691,32 @@ setBackToTopState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
 window.addEventListener("scroll", setBackToTopState, { passive: true });
 
-navToggle.addEventListener("click", () => {
+const closeNavigation = (restoreFocus = false) => {
+  if (!navToggle || !header) return;
+  navToggle.setAttribute("aria-expanded", "false");
+  header.classList.remove("is-open");
+  document.body.classList.remove("nav-open");
+  if (restoreFocus) navToggle.focus();
+};
+
+navToggle?.addEventListener("click", () => {
   const isOpen = navToggle.getAttribute("aria-expanded") === "true";
   navToggle.setAttribute("aria-expanded", String(!isOpen));
-  header.classList.toggle("is-open", !isOpen);
+  header?.classList.toggle("is-open", !isOpen);
   document.body.classList.toggle("nav-open", !isOpen);
 });
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    navToggle.setAttribute("aria-expanded", "false");
-    header.classList.remove("is-open");
-    document.body.classList.remove("nav-open");
+    closeNavigation();
   });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  if (navToggle?.getAttribute("aria-expanded") === "true") {
+    closeNavigation(true);
+  }
 });
 
 const readSavedLanguage = () => {
@@ -851,21 +864,27 @@ tabButtons.forEach((button) => {
   });
 
   button.addEventListener("keydown", (event) => {
-    if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
 
     event.preventDefault();
     const currentIndex = [...tabButtons].indexOf(button);
     const offset = event.key === "ArrowRight" ? 1 : -1;
-    const nextIndex = (currentIndex + offset + tabButtons.length) % tabButtons.length;
+    const nextIndex = event.key === "Home"
+      ? 0
+      : event.key === "End"
+        ? tabButtons.length - 1
+        : (currentIndex + offset + tabButtons.length) % tabButtons.length;
     const nextButton = tabButtons[nextIndex];
     nextButton.focus();
     activateTab(nextButton.dataset.tab);
   });
 });
 
-activateTab("ecole");
+if (tabButtons.length > 0) {
+  activateTab("ecole");
+}
 
-glossarySearch.addEventListener("input", () => {
+glossarySearch?.addEventListener("input", () => {
   const query = glossarySearch.value.trim().toLocaleLowerCase("fr");
   let visibleCount = 0;
 
@@ -876,7 +895,7 @@ glossarySearch.addEventListener("input", () => {
     if (isVisible) visibleCount += 1;
   });
 
-  emptyState.hidden = visibleCount > 0;
+  if (emptyState) emptyState.hidden = visibleCount > 0;
 });
 
-year.textContent = new Date().getFullYear();
+if (year) year.textContent = new Date().getFullYear();

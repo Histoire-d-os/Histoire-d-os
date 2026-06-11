@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body class="book-body">
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
     <header class="book-header">
       <a class="brand book-brand" href="../index.html#ressources" aria-label="Retour aux ressources Histoires d'os">
         <span class="brand-mark" aria-hidden="true">H</span>
@@ -19,7 +20,7 @@
       <a class="button button-secondary book-back" href="../index.html#ressources">Retour aux ressources</a>
     </header>
 
-    <main class="book-main">
+    <main class="book-main" id="main-content">
       <section class="book-cover" aria-labelledby="book-title">
         <p class="eyebrow">Récit d'ouverture</p>
         <h1 id="book-title">Le petit os d'Achille</h1>
@@ -29,12 +30,18 @@
         </p>
       </section>
 
-      <nav class="document-actions no-print" aria-label="Actions du récit">
+      <nav
+        class="document-actions no-print"
+        aria-label="Actions du récit"
+        data-document-status="récit pédagogique illustré, images non sources et droits à vérifier"
+        data-document-version="v0.2"
+        data-document-date="2026-06-11"
+      >
         <a class="button button-secondary" href="activite-03-achille-histoire-transformee.html">Dossier activité 3</a>
         <button class="button button-primary" type="button" data-print-document>Imprimer ou enregistrer en PDF</button>
       </nav>
 
-      <p class="status-note">
+      <p class="status-note" data-status="droits">
         Statut : récit pédagogique illustré — les images sont des illustrations contemporaines du site.
         Elles ne constituent pas des sources historiques, archéologiques ou anatomiques.
       </p>
@@ -140,6 +147,20 @@
           qui distingue images, textes, vocabulaire et sources.
         </p>
       </aside>
+
+      <section class="source-box" aria-labelledby="illustration-status-title">
+        <h2 id="illustration-status-title">Statut des images et des sources</h2>
+        <p>
+          Les images de ce petit livre sont des illustrations contemporaines du site. Elles servent à
+          soutenir l'entrée en récit, mais ne doivent pas être citées comme sources antiques,
+          archéologiques ou anatomiques.
+        </p>
+        <ul class="doc-list">
+          <li><strong>Sources de travail :</strong> voir le dossier de l'activité 3 pour les textes, images et références à valider.</li>
+          <li><strong>Droits :</strong> crédits et autorisations à confirmer avant tout usage hors prototype pédagogique.</li>
+          <li><strong>Impression :</strong> mise en page A4 testée en prototype ; relecture humaine encore nécessaire.</li>
+        </ul>
+      </section>
     </main>
     <script src="document-actions.js"></script>
   </body>
