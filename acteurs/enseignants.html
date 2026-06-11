@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Entrée enseignants pour accéder aux fiches élèves, guides, corrigés et statuts des activités Histoires d'os."
+      content="Tableau de bord enseignant pour choisir une activité, construire une séquence et imprimer les ressources Histoires d'os."
     >
     <title>Enseignant·es | Histoires d'os</title>
     <link rel="icon" href="../assets/logo-officiel-histoires-dos.jpg">
@@ -24,119 +24,169 @@
     <main class="document-main" id="main-content">
       <section class="document-hero document-hero-school" aria-labelledby="document-title">
         <p class="eyebrow">Parcours enseignant·es</p>
-        <h1 id="document-title">Préparer une séquence avec l'astragale</h1>
+        <h1 id="document-title">Choisir et préparer une activité</h1>
         <p>
-          Cette entrée rassemble les fiches élèves, guides et corrigés déjà présents dans le site. Elle
-          signale aussi les ressources qui restent en prototype afin de ne pas confondre structure
-          pédagogique et validation complète.
+          Cette page sert de tableau de bord : choisir une activité, rejoindre la page de séquence,
+          puis ouvrir directement les fiches, guides et corrigés déjà disponibles.
         </p>
         <dl class="doc-facts">
           <div><dt>Âge</dt><dd>8-12 ans</dd></div>
-          <div><dt>Ressources</dt><dd>Fiches, guides, corrigés</dd></div>
+          <div><dt>Accès</dt><dd>Activités · séquence · PER</dd></div>
           <div><dt>Statut global</dt><dd>Prototypes structurés</dd></div>
-          <div><dt>PER</dt><dd>Correspondances à finaliser</dd></div>
+          <div><dt>Validation</dt><dd>Humaine encore nécessaire</dd></div>
         </dl>
       </section>
 
       <nav
         class="document-actions no-print"
         aria-label="Actions de la page"
-        data-document-status="prototypes structurés, validations humaines encore nécessaires"
-        data-document-version="v0.2"
+        data-document-status="tableau de bord enseignant, ressources en prototype ou validation"
+        data-document-version="v0.3"
         data-document-date="2026-06-11"
       >
-        <a class="button button-secondary" href="../index.html#activites">Voir les activités</a>
+        <a class="button button-secondary" href="enseignants-sequence.html">Construire une séquence</a>
+        <a class="button button-secondary" href="enseignants-per.html">Repères PER</a>
         <a class="button button-secondary" href="musees.html">Entrée musées</a>
         <button class="button button-primary" type="button" data-print-document>Imprimer cette synthèse</button>
       </nav>
 
+      <section class="teacher-quick-actions" aria-label="Accès rapides enseignant">
+        <a class="quick-action-card" href="#choisir-activite">
+          <span>1</span>
+          <strong>Choisir une activité</strong>
+          <em>Durée, objectif, production et statut.</em>
+        </a>
+        <a class="quick-action-card" href="enseignants-sequence.html">
+          <span>2</span>
+          <strong>Construire une séquence</strong>
+          <em>Séance isolée, mini-séquence ou parcours interdisciplinaire.</em>
+        </a>
+        <a class="quick-action-card" href="#imprimer">
+          <span>3</span>
+          <strong>Imprimer les ressources</strong>
+          <em>Fiches élèves, guides et corrigés existants.</em>
+        </a>
+      </section>
+
       <p class="status-note" data-status="validation-scientifique">
-        Statut : version française en cours de stabilisation. Les activités ci-dessous ne doivent pas
-        être présentées comme validées tant que les visuels, droits, impressions et relectures humaines
-        ne sont pas documentés.
+        Statut : les ressources ci-dessous sont structurées pour préparer le travail. Elles ne doivent
+        pas être présentées comme prêtes à utiliser tant que les visuels, droits, impressions et
+        relectures humaines ne sont pas documentés.
       </p>
 
-      <section class="actor-grid" aria-label="Accès rapides par activité">
-        <article class="actor-card">
-          <h2>Activité 1 — Trouver l'astragale</h2>
-          <ul class="doc-list">
-            <li><strong>Durée :</strong> 45 à 60 min en classe.</li>
-            <li><strong>Disciplines :</strong> sciences du vivant, observation, vocabulaire, argumentation.</li>
-            <li><strong>Disponible :</strong> fiche élève, planche de repérage, guide enseignant, guide musée, corrigé.</li>
-            <li><strong>Manquant :</strong> images anatomiques validées, modèle 3D, crédits complets, test A4 final.</li>
-            <li><strong>PER :</strong> à finaliser ; aucun code précis n'est publié ici.</li>
-          </ul>
-          <p class="status-note" data-status="impression">Statut : prototype avancé — validation scientifique et impression à confirmer.</p>
-          <ul class="resource-link-list" aria-label="Ressources activité 1">
-            <li><a href="../ressources/activite-01-fiche-eleve-classe.html">Fiche élève classe</a></li>
-            <li><a href="../ressources/document-mission-astragale.html">Guide enseignant</a></li>
-            <li><a href="../ressources/activite-01-corrige-evaluation.html">Corrigé et évaluation</a></li>
-            <li><a href="../ressources/activite-01-trouver-astragale.html">Page centrale de l'activité</a></li>
-          </ul>
-        </article>
+      <section class="doc-section" id="choisir-activite" aria-labelledby="choose-title">
+        <h2 id="choose-title">Quelle activité choisir ?</h2>
+        <div class="teacher-dashboard-grid">
+          <article class="teacher-activity-card">
+            <p class="eyebrow">Activité 1</p>
+            <h3>Trouver l'astragale</h3>
+            <ul class="doc-list">
+              <li><strong>Durée :</strong> 45 à 60 min.</li>
+              <li><strong>Objectif principal :</strong> observer, situer, justifier.</li>
+              <li><strong>Ressources disponibles :</strong> fiche élève, guide, corrigé, fiche de repérage.</li>
+            </ul>
+            <p class="status-note" data-status="impression">Statut : prototype avancé — visuels anatomiques, modèle 3D et impression physique à confirmer.</p>
+            <div class="resource-actions">
+              <a class="button button-secondary" href="../ressources/activite-01-trouver-astragale.html">Page centrale</a>
+              <a class="button button-secondary" href="../ressources/activite-01-fiche-eleve-classe.html">Fiche élève</a>
+            </div>
+          </article>
 
-        <article class="actor-card">
-          <h2>Activité 2 — Associer un astragale à un animal</h2>
-          <ul class="doc-list">
-            <li><strong>Durée :</strong> 45 à 60 min en classe.</li>
-            <li><strong>Disciplines :</strong> archéozoologie, comparaison, raisonnement scientifique.</li>
-            <li><strong>Disponible :</strong> fiches élèves, cartes, grille, guides, corrigé provisoire.</li>
-            <li><strong>Manquant :</strong> espèces retenues, photographies orientées, critères et corrigé validés.</li>
-            <li><strong>PER :</strong> à finaliser ; formulation prudente seulement.</li>
-          </ul>
-          <p class="status-note" data-status="validation-scientifique">Statut : prototype — corpus animal, visuels et validation scientifique à compléter.</p>
-          <ul class="resource-link-list" aria-label="Ressources activité 2">
-            <li><a href="../ressources/activite-02-fiche-eleve-classe.html">Fiche élève classe</a></li>
-            <li><a href="../ressources/activite-02-guide-enseignant.html">Guide enseignant</a></li>
-            <li><a href="../ressources/activite-02-corrige-evaluation.html">Corrigé et évaluation</a></li>
-            <li><a href="../ressources/activite-02-associer-astragale-animal.html">Page centrale de l'activité</a></li>
-          </ul>
-        </article>
+          <article class="teacher-activity-card">
+            <p class="eyebrow">Activité 2</p>
+            <h3>Associer un astragale à un animal</h3>
+            <ul class="doc-list">
+              <li><strong>Durée :</strong> 45 à 60 min.</li>
+              <li><strong>Objectif principal :</strong> comparer, classer, argumenter.</li>
+              <li><strong>Ressources disponibles :</strong> fiches élèves, cartes, grille, guides, corrigé provisoire.</li>
+            </ul>
+            <p class="status-note" data-status="validation-scientifique">Statut : prototype — espèces, corpus, critères et corrigé à valider archéozoologiquement.</p>
+            <div class="resource-actions">
+              <a class="button button-secondary" href="../ressources/activite-02-associer-astragale-animal.html">Page centrale</a>
+              <a class="button button-secondary" href="../ressources/activite-02-fiche-eleve-classe.html">Fiche élève</a>
+            </div>
+          </article>
 
-        <article class="actor-card">
-          <h2>Activité 3 — Achille et la transformation d'un récit</h2>
-          <ul class="doc-list">
-            <li><strong>Durée :</strong> 50 min à 2 séances.</li>
-            <li><strong>Disciplines :</strong> français, histoire culturelle, image, vocabulaire, anatomie.</li>
-            <li><strong>Disponible :</strong> récit d'ouverture, fiches, corpus, questionnaire, guides, corrigé.</li>
-            <li><strong>Manquant :</strong> corpus iconographique antique final, droits, validation du schéma du talus.</li>
-            <li><strong>PER :</strong> à finaliser après stabilisation du dossier français.</li>
-          </ul>
-          <p class="status-note" data-status="visuels-manquants">Statut : en cours de validation — sources, images et schéma anatomique à confirmer.</p>
-          <ul class="resource-link-list" aria-label="Ressources activité 3">
-            <li><a href="../ressources/activite-03-fiche-eleve-classe.html">Fiche élève classe</a></li>
-            <li><a href="../ressources/activite-03-guide-enseignant.html">Guide enseignant</a></li>
-            <li><a href="../ressources/activite-03-corrige-evaluation.html">Corrigé et évaluation</a></li>
-            <li><a href="../ressources/activite-03-achille-histoire-transformee.html">Page centrale de l'activité</a></li>
-          </ul>
-        </article>
+          <article class="teacher-activity-card">
+            <p class="eyebrow">Activité 3</p>
+            <h3>Achille : comment une histoire se transforme-t-elle ?</h3>
+            <ul class="doc-list">
+              <li><strong>Durée :</strong> 50 min à 2 séances.</li>
+              <li><strong>Objectif principal :</strong> distinguer récit, source, image et interprétation.</li>
+              <li><strong>Ressources disponibles :</strong> récit, fiches, corpus, questionnaire, guide, corrigé.</li>
+            </ul>
+            <p class="status-note" data-status="visuels-manquants">Statut : en cours — corpus historique, droits et schéma du talus à valider.</p>
+            <div class="resource-actions">
+              <a class="button button-secondary" href="../ressources/activite-03-achille-histoire-transformee.html">Page centrale</a>
+              <a class="button button-secondary" href="../ressources/activite-03-fiche-eleve-classe.html">Fiche élève</a>
+            </div>
+          </article>
 
-        <article class="actor-card">
-          <h2>Activité 4 — Un os, plusieurs vies</h2>
-          <ul class="doc-list">
-            <li><strong>Durée :</strong> 50 min à 2 séances.</li>
-            <li><strong>Disciplines :</strong> histoire, archéologie, sciences, argumentation, écriture de cartel.</li>
-            <li><strong>Disponible :</strong> fiches, cartes objets/usages/contextes, grille, guides, corrigé.</li>
-            <li><strong>Manquant :</strong> objets définitifs, notices, droits, images et validation des interprétations.</li>
-            <li><strong>PER :</strong> à finaliser ; aucune couverture complète d'objectif n'est affirmée.</li>
-          </ul>
-          <p class="status-note" data-status="validation-scientifique">Statut : prototype — corpus d'objets et validation scientifique à compléter.</p>
-          <ul class="resource-link-list" aria-label="Ressources activité 4">
-            <li><a href="../ressources/activite-04-fiche-eleve-classe.html">Fiche élève classe</a></li>
-            <li><a href="../ressources/activite-04-guide-enseignant.html">Guide enseignant</a></li>
-            <li><a href="../ressources/activite-04-corrige-evaluation.html">Corrigé et évaluation</a></li>
-            <li><a href="../ressources/activite-04-un-os-plusieurs-vies.html">Page centrale de l'activité</a></li>
-          </ul>
-        </article>
+          <article class="teacher-activity-card">
+            <p class="eyebrow">Activité 4</p>
+            <h3>Un os, plusieurs vies</h3>
+            <ul class="doc-list">
+              <li><strong>Durée :</strong> 50 min à 2 séances.</li>
+              <li><strong>Objectif principal :</strong> interpréter un objet avec prudence.</li>
+              <li><strong>Ressources disponibles :</strong> fiches, cartes, grille, guides, corrigé.</li>
+            </ul>
+            <p class="status-note" data-status="validation-scientifique">Statut : prototype — objets, notices, droits et interprétations à confirmer.</p>
+            <div class="resource-actions">
+              <a class="button button-secondary" href="../ressources/activite-04-un-os-plusieurs-vies.html">Page centrale</a>
+              <a class="button button-secondary" href="../ressources/activite-04-fiche-eleve-classe.html">Fiche élève</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="imprimer" aria-labelledby="print-title">
+        <h2 id="print-title">Ressources à imprimer</h2>
+        <table class="observation-table planning-table">
+          <caption>Accès direct aux supports existants</caption>
+          <thead>
+            <tr>
+              <th scope="col">Activité</th>
+              <th scope="col">Fiche élève</th>
+              <th scope="col">Guide enseignant</th>
+              <th scope="col">Corrigé ou évaluation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><a href="../ressources/activite-01-fiche-eleve-classe.html">Fiche classe</a></td>
+              <td><a href="../ressources/document-mission-astragale.html">Guide enseignant</a></td>
+              <td><a href="../ressources/activite-01-corrige-evaluation.html">Corrigé</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><a href="../ressources/activite-02-fiche-eleve-classe.html">Fiche classe</a></td>
+              <td><a href="../ressources/activite-02-guide-enseignant.html">Guide enseignant</a></td>
+              <td><a href="../ressources/activite-02-corrige-evaluation.html">Corrigé provisoire</a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><a href="../ressources/activite-03-fiche-eleve-classe.html">Fiche classe</a></td>
+              <td><a href="../ressources/activite-03-guide-enseignant.html">Guide enseignant</a></td>
+              <td><a href="../ressources/activite-03-corrige-evaluation.html">Corrigé</a></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td><a href="../ressources/activite-04-fiche-eleve-classe.html">Fiche classe</a></td>
+              <td><a href="../ressources/activite-04-guide-enseignant.html">Guide enseignant</a></td>
+              <td><a href="../ressources/activite-04-corrige-evaluation.html">Corrigé</a></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section class="source-box" aria-labelledby="teacher-limits-title">
-        <h2 id="teacher-limits-title">Validations à prévoir avant diffusion large</h2>
+        <h2 id="teacher-limits-title">À garder visible avant diffusion large</h2>
         <ul>
-          <li>Relire les correspondances PER et publier seulement des formulations validées.</li>
-          <li>Tester les impressions A4 en couleur et en niveaux de gris.</li>
-          <li>Remplacer les placeholders uniquement par des médias dont la source, les droits et la légende sont documentés.</li>
-          <li>Conserver une distinction nette entre observation, hypothèse, interprétation et conclusion.</li>
+          <li>La page <a href="enseignants-sequence.html">Construire une séquence</a> propose des scénarios, pas une progression obligatoire.</li>
+          <li>La page <a href="enseignants-per.html">Repères PER</a> formule des contributions possibles, à adapter au degré et à la classe.</li>
+          <li>Les ressources manquantes restent à finaliser — voir registre des ressources manquantes.</li>
+          <li>Aucune activité n'est marquée prête à utiliser sans validation scientifique, pédagogique, juridique et impression papier.</li>
         </ul>
       </section>
     </main>

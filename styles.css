@@ -1392,6 +1392,17 @@ h3 {
   margin: 20px 0 26px;
 }
 
+.document-main .button-secondary {
+  border-color: rgba(63, 117, 105, 0.34);
+  background: rgba(63, 117, 105, 0.08);
+  color: var(--patina-dark);
+}
+
+.document-main .button-secondary:focus-visible,
+.document-main .button-secondary:hover {
+  background: rgba(63, 117, 105, 0.15);
+}
+
 .document-meta-strip {
   display: flex;
   flex: 1 1 100%;
@@ -1413,6 +1424,160 @@ h3 {
 
 .document-meta-strip strong {
   color: var(--patina-dark);
+}
+
+.teacher-quick-actions,
+.teacher-dashboard-grid,
+.sequence-grid,
+.per-domain-grid,
+.activity-detail-list {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.teacher-quick-actions,
+.sequence-grid,
+.per-domain-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.teacher-dashboard-grid,
+.activity-detail-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.quick-action-card,
+.teacher-activity-card,
+.sequence-card,
+.per-domain-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.quick-action-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 6px 14px;
+  align-items: start;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.quick-action-card span {
+  grid-row: span 2;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(63, 117, 105, 0.38);
+  border-radius: 50%;
+  background: rgba(63, 117, 105, 0.1);
+  color: var(--patina-dark);
+  font-weight: 900;
+}
+
+.quick-action-card strong,
+.sequence-card h3,
+.teacher-activity-card h3,
+.per-domain-card h3 {
+  color: var(--patina-dark);
+}
+
+.quick-action-card em {
+  color: var(--smoke);
+  font-style: normal;
+}
+
+.quick-action-card:hover,
+.quick-action-card:focus-visible {
+  border-color: var(--patina);
+  outline: 3px solid rgba(63, 117, 105, 0.28);
+  outline-offset: 3px;
+}
+
+.teacher-activity-card,
+.sequence-card,
+.per-domain-card {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.teacher-activity-card > *,
+.sequence-card > *,
+.per-domain-card > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sequence-card-muted {
+  background: #f3e6d0;
+}
+
+.resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.detail-list div {
+  border-top: 1px solid rgba(214, 198, 170, 0.8);
+  padding-top: 10px;
+}
+
+.detail-list div:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.detail-list dt {
+  color: var(--terracotta);
+  font-weight: 900;
+}
+
+.detail-list dd {
+  margin: 4px 0 0;
+}
+
+.detail-list a,
+.planning-table a,
+.curriculum-map a {
+  color: var(--patina-dark);
+  font-weight: 900;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.planning-table,
+.curriculum-map {
+  margin-top: 14px;
+  table-layout: fixed;
+}
+
+.per-note {
+  border-left: 4px solid var(--patina);
+  border-radius: 8px;
+  background: rgba(63, 117, 105, 0.08);
+  padding: 16px;
+  font-weight: 750;
+}
+
+.trace-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
 }
 
 .resource-download-grid {
@@ -2205,6 +2370,9 @@ h3 {
   .audience-entry-grid,
   .actor-grid,
   .activity-grid,
+  .teacher-quick-actions,
+  .sequence-grid,
+  .per-domain-grid,
   .glossary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2217,6 +2385,8 @@ h3 {
   .book-spread-reverse,
   .doc-grid,
   .doc-columns,
+  .teacher-dashboard-grid,
+  .activity-detail-list,
   .repere-grid,
   .object-card-grid,
   .use-card-grid,
@@ -2382,9 +2552,22 @@ h3 {
   .audience-entry-grid,
   .actor-grid,
   .activity-grid,
+  .teacher-quick-actions,
+  .teacher-dashboard-grid,
+  .sequence-grid,
+  .per-domain-grid,
+  .activity-detail-list,
   .glossary-grid,
   .chronology-sheet {
     grid-template-columns: 1fr;
+  }
+
+  .quick-action-card {
+    grid-template-columns: 36px minmax(0, 1fr);
+  }
+
+  .resource-actions .button {
+    width: 100%;
   }
 
   .resource-card {
@@ -2536,6 +2719,8 @@ h3 {
   .document-header,
   .document-actions,
   .no-print,
+  .teacher-quick-actions,
+  .resource-actions,
   .back-to-top,
   .skip-link {
     display: none !important;
@@ -2630,6 +2815,10 @@ h3 {
 
   .resource-download-grid,
   .card-sheet,
+  .teacher-dashboard-grid,
+  .sequence-grid,
+  .per-domain-grid,
+  .activity-detail-list,
   .repere-grid,
   .doc-grid,
   .doc-columns,
@@ -2654,6 +2843,26 @@ h3 {
     box-shadow: none;
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  .teacher-activity-card,
+  .sequence-card,
+  .per-domain-card,
+  .quick-action-card {
+    border-color: #888;
+    background: #fff !important;
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .detail-list div {
+    border-color: #888;
+  }
+
+  .per-note {
+    border-color: #777;
+    background: #fff !important;
   }
 
   .study-card {

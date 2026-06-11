@@ -1,0 +1,229 @@
+{
+  "baseUrl": "http://127.0.0.1:63191/Histoire-d-os/",
+  "generatedAt": "2026-06-11T14:02:37.888Z",
+  "pages": [
+    {
+      "pagePath": "index.html",
+      "viewport": {
+        "width": 1365,
+        "height": 900
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/home-prefix-desktop.png",
+      "printWorks": null,
+      "title": "Histoires d'os | Astragale, archéozoologie et médiation",
+      "h1Count": 1,
+      "printButtons": 0,
+      "statusNotes": [
+        "impression",
+        "droits",
+        "en-cours",
+        "droits",
+        "impression",
+        "validation-scientifique",
+        "validation-scientifique",
+        "droits",
+        "prototype",
+        "impression"
+      ],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "acteurs/enseignants.html",
+      "viewport": {
+        "width": 1365,
+        "height": 900
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/enseignants-desktop.png",
+      "printWorks": true,
+      "title": "Enseignant·es | Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [
+        "validation-scientifique",
+        "impression",
+        "validation-scientifique",
+        "visuels-manquants",
+        "validation-scientifique"
+      ],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "acteurs/enseignants.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/enseignants-mobile.png",
+      "printWorks": true,
+      "title": "Enseignant·es | Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [
+        "validation-scientifique",
+        "impression",
+        "validation-scientifique",
+        "visuels-manquants",
+        "validation-scientifique"
+      ],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "acteurs/enseignants-sequence.html",
+      "viewport": {
+        "width": 1365,
+        "height": 900
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/enseignants-sequence-desktop.png",
+      "printWorks": true,
+      "title": "Construire une séquence avec Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [
+        "impression",
+        "validation-scientifique",
+        "prototype"
+      ],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "acteurs/enseignants-sequence.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/enseignants-sequence-mobile.png",
+      "printWorks": true,
+      "title": "Construire une séquence avec Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [
+        "impression",
+        "validation-scientifique",
+        "prototype"
+      ],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "acteurs/enseignants-per.html",
+      "viewport": {
+        "width": 1365,
+        "height": 900
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/enseignants-per-desktop.png",
+      "printWorks": true,
+      "title": "Repères PER pour la planification | Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [
+        "prototype"
+      ],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "acteurs/enseignants-per.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/enseignants-per-mobile.png",
+      "printWorks": true,
+      "title": "Repères PER pour la planification | Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [
+        "prototype"
+      ],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "ressources/activite-01-trouver-astragale.html",
+      "viewport": {
+        "width": 1365,
+        "height": 900
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/activity-01-linked.png",
+      "printWorks": true,
+      "title": "Activité 1 — Trouver l'astragale | Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    },
+    {
+      "pagePath": "ressources/activite-02-associer-astragale-animal.html",
+      "viewport": {
+        "width": 1365,
+        "height": 900
+      },
+      "screenshot": "docs/qa/p3-enseignants-per/activity-02-linked.png",
+      "printWorks": true,
+      "title": "Activité 2 — À quel animal appartient cet astragale ? | Histoires d'os",
+      "h1Count": 1,
+      "printButtons": 1,
+      "statusNotes": [],
+      "badLinks": [],
+      "pdfLinks": [],
+      "missingImages": [],
+      "horizontalOverflow": 0,
+      "skipLinkTarget": true
+    }
+  ],
+  "mobileMenu": {
+    "opened": {
+      "open": true,
+      "expanded": "true"
+    },
+    "closed": {
+      "open": false,
+      "expanded": "false"
+    }
+  },
+  "skipLink": {
+    "focused": true,
+    "targetExists": true,
+    "text": "Aller au contenu principal"
+  },
+  "printLayout": {
+    "actionsHidden": true,
+    "headerHidden": true,
+    "sourcesVisible": true,
+    "statusesVisible": true,
+    "overflow": 0,
+    "screenshot": "docs/qa/p3-enseignants-per/enseignants-sequence-print.png",
+    "temporaryPdf": "tmp/pdfs/enseignants-sequence-p3.pdf"
+  },
+  "consoleErrors": [],
+  "networkIssues": []
+}
