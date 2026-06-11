@@ -1,0 +1,36 @@
+{
+  "base": "http://127.0.0.1:8124",
+  "captures": [
+    "docs/qa/p1-navigation/home-desktop.png",
+    "docs/qa/p1-navigation/home-mobile.png",
+    "docs/qa/p1-navigation/enseignants-desktop.png",
+    "docs/qa/p1-navigation/musees-desktop.png",
+    "docs/qa/p1-navigation/familles-desktop.png",
+    "docs/qa/p1-navigation/approfondir-desktop.png",
+    "docs/qa/p1-navigation/home-prefix-desktop.png",
+    "docs/qa/p1-navigation/home-mobile-menu.png",
+    "docs/qa/p1-navigation/enseignants-print-preview.png"
+  ],
+  "consoleErrors": [],
+  "badResponses": [],
+  "menuState": {
+    "expanded": "true",
+    "visible": "flex"
+  },
+  "focusSamples": [
+    "Menu"
+  ],
+  "homeEntrances": [
+    "/acteurs/enseignants.html",
+    "/acteurs/musees.html",
+    "/acteurs/familles.html",
+    "/acteurs/approfondir.html"
+  ],
+  "returnLinks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "prefixTested": "http://127.0.0.1:8124/Histoire-d-os/index.html"
+}

@@ -814,16 +814,21 @@ const applyLanguage = (language) => {
   const nextLanguage = supportedLanguages.has(language) ? language : "fr";
   document.documentElement.lang = nextLanguage;
   document.documentElement.dataset.activeLanguage = nextLanguage;
-  languageSelect.value = nextLanguage;
+  if (languageSelect) languageSelect.value = nextLanguage;
   translatePage(nextLanguage);
   saveLanguage(nextLanguage);
 };
 
-applyLanguage(readSavedLanguage() || "fr");
+if (languageSelect) {
+  applyLanguage(readSavedLanguage() || "fr");
 
-languageSelect.addEventListener("change", (event) => {
-  applyLanguage(event.target.value);
-});
+  languageSelect.addEventListener("change", (event) => {
+    applyLanguage(event.target.value);
+  });
+} else {
+  document.documentElement.lang = defaultLanguage;
+  document.documentElement.dataset.activeLanguage = defaultLanguage;
+}
 
 const activateTab = (target) => {
   tabButtons.forEach((item) => {

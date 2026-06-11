@@ -3,7 +3,7 @@
   --bone: #efe3cf;
   --limestone: #f7f1e6;
   --chalk: #fffaf0;
-  --ochre: #b6763f;
+  --ochre: #986036;
   --terracotta: #9f4f38;
   --patina: #3f7569;
   --patina-dark: #214f49;
@@ -138,6 +138,22 @@ select {
   gap: 10px;
 }
 
+.language-note {
+  max-width: 330px;
+  margin: 0;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 7px 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.language-note-short {
+  display: none;
+}
+
 .language-label {
   font-size: 0.76rem;
   font-weight: 800;
@@ -165,7 +181,9 @@ select {
 }
 
 .site-header.is-scrolled .language-select,
-.site-header.is-open .language-select {
+.site-header.is-open .language-select,
+.site-header.is-scrolled .language-note,
+.site-header.is-open .language-note {
   background: rgba(63, 117, 105, 0.08);
 }
 
@@ -346,7 +364,7 @@ h3 {
 
 .button-primary:focus-visible,
 .button-primary:hover {
-  background: #986036;
+  background: #78492d;
   outline: 0;
 }
 
@@ -432,6 +450,15 @@ h3 {
   font-size: 1.06rem;
 }
 
+.section-header-compact {
+  margin: 0;
+}
+
+.section-header-compact h2 {
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+}
+
 .section-patina .eyebrow,
 .section-charcoal .eyebrow {
   color: #d7a86c;
@@ -445,6 +472,48 @@ h3 {
 .tabs {
   display: grid;
   gap: 22px;
+}
+
+.audience-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.audience-entry-card {
+  display: grid;
+  min-height: 100%;
+  align-content: start;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  text-decoration: none;
+}
+
+.audience-entry-card:focus-visible,
+.audience-entry-card:hover {
+  border-color: var(--patina);
+  outline: 0;
+  transform: translateY(-2px);
+}
+
+.audience-entry-card span {
+  color: var(--terracotta);
+  font-weight: 900;
+}
+
+.audience-entry-card h3 {
+  margin: 18px 0 0;
+  color: var(--patina-dark);
+}
+
+.audience-entry-card p {
+  margin: 0;
+  color: var(--smoke);
 }
 
 .tab-list {
@@ -616,6 +685,16 @@ h3 {
   margin: 0;
   padding-left: 18px;
   color: var(--ink);
+}
+
+.status-note {
+  border-left: 4px solid var(--terracotta);
+  border-radius: 8px;
+  background: rgba(159, 79, 56, 0.08);
+  padding: 12px 14px;
+  color: var(--ink) !important;
+  font-size: 0.94rem;
+  font-weight: 800;
 }
 
 .text-link {
@@ -1173,6 +1252,81 @@ h3 {
   font-weight: 900;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
+}
+
+.actor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.actor-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.actor-card h2,
+.actor-card h3 {
+  margin-top: 0;
+  color: var(--patina-dark);
+}
+
+.actor-card p {
+  color: var(--ink);
+}
+
+.resource-link-list {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resource-link-list a {
+  color: var(--patina-dark);
+  font-weight: 900;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.status-list {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.status-list li {
+  border-left: 4px solid var(--terracotta);
+  border-radius: 8px;
+  background: rgba(159, 79, 56, 0.08);
+  padding: 12px 14px;
+}
+
+.notice-box {
+  border: 1px solid rgba(159, 79, 56, 0.35);
+  border-radius: 8px;
+  background: #f3e6d0;
+  padding: 18px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.button:focus-visible,
+.text-link:focus-visible,
+.resource-card:focus-visible,
+.audience-entry-card:focus-visible,
+.document-header a:focus-visible,
+.book-header a:focus-visible,
+.resource-link-list a:focus-visible {
+  outline: 3px solid rgba(33, 79, 73, 0.72);
+  outline-offset: 3px;
 }
 
 .document-actions {
@@ -1963,6 +2117,8 @@ h3 {
   .hypothesis-board,
   .object-biography,
   .evidence-grid,
+  .audience-entry-grid,
+  .actor-grid,
   .activity-grid,
   .glossary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2019,6 +2175,20 @@ h3 {
     overflow: hidden;
     clip: rect(0 0 0 0);
     white-space: nowrap;
+  }
+
+  .language-note {
+    max-width: 148px;
+    padding: 6px 8px;
+    font-size: 0.66rem;
+  }
+
+  .language-note-full {
+    display: none;
+  }
+
+  .language-note-short {
+    display: inline;
   }
 
   .language-select {
@@ -2124,6 +2294,8 @@ h3 {
   .resource-grid,
   .resource-download-grid,
   .card-sheet,
+  .audience-entry-grid,
+  .actor-grid,
   .activity-grid,
   .glossary-grid,
   .chronology-sheet {

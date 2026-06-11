@@ -10,6 +10,7 @@
     <title>Histoires d'os | Astragale, archéozoologie et médiation</title>
     <link rel="preload" as="image" href="assets/logo-officiel-histoires-dos.jpg">
     <link rel="preload" as="image" href="assets/hero-astragale.png">
+    <link rel="icon" href="assets/logo-officiel-histoires-dos.jpg">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -21,19 +22,16 @@
       <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
         <a href="#parcours">Parcours</a>
         <a href="#activites">Activités</a>
-        <a href="#atelier">Atelier</a>
+        <a href="acteurs/enseignants.html">Enseignant·es</a>
+        <a href="acteurs/musees.html">Musées</a>
         <a href="#ressources">Ressources</a>
-        <a href="#glossaire">Glossaire</a>
-        <a href="#recherche">Recherche</a>
+        <a href="acteurs/approfondir.html">Approfondir</a>
       </nav>
       <div class="header-actions">
-        <label class="language-label" for="language-select">Langue</label>
-        <select class="language-select" id="language-select" data-language-select aria-label="Choisir la langue">
-          <option value="fr">FR</option>
-          <option value="de">DE</option>
-          <option value="it">IT</option>
-          <option value="en">EN</option>
-        </select>
+        <p class="language-note">
+          <span class="language-note-full">Version française en cours de stabilisation. Les traductions DE/IT/EN seront ajoutées après validation des contenus.</span>
+          <span class="language-note-short" aria-hidden="true">FR en stabilisation. DE/IT/EN après validation.</span>
+        </p>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span class="nav-toggle-lines" aria-hidden="true"></span>
           <span class="nav-toggle-label">Menu</span>
@@ -65,6 +63,7 @@
           </p>
           <div class="hero-actions" aria-label="Accès rapides">
             <a class="button button-primary" href="#parcours">Choisir un parcours</a>
+            <a class="button button-secondary" href="acteurs/enseignants.html">Accès enseignant·es</a>
             <a class="button button-secondary" href="#glossaire">Consulter le glossaire</a>
           </div>
           <ul class="hero-threads" aria-label="Fils rouges du projet">
@@ -88,14 +87,46 @@
         <div class="section-inner">
           <div class="section-header">
             <p class="eyebrow">Parcours</p>
-            <h2 id="parcours-title">Deux lieux, deux manières d'apprendre</h2>
+            <h2 id="parcours-title">Choisir son entrée dans le projet</h2>
             <p>
-              Le projet se déploie en classe et au musée avec des temporalités distinctes, mais un même
-              noyau scientifique : comprendre comment un os devient un support de raisonnement.
+              Le projet s'adresse aux classes, aux musées, aux familles et aux personnes qui veulent
+              approfondir les sources. Les ressources sont publiées progressivement avec des statuts
+              explicites lorsque des validations restent à obtenir.
             </p>
           </div>
 
+          <div class="audience-entry-grid" aria-label="Entrées par public">
+            <a class="audience-entry-card" href="acteurs/enseignants.html">
+              <span>01</span>
+              <h3>Enseignant·es</h3>
+              <p>Fiches élèves, guides, corrigés et ressources imprimables pour les 8-12 ans.</p>
+              <p class="status-note">Statut : prototypes structurés — PER, visuels et impression à confirmer.</p>
+            </a>
+            <a class="audience-entry-card" href="acteurs/musees.html">
+              <span>02</span>
+              <h3>Musées et médiation</h3>
+              <p>Préparer une station, choisir le matériel et identifier les contraintes de manipulation.</p>
+              <p class="status-note">Statut : médiations en cours de validation — collections et droits à vérifier.</p>
+            </a>
+            <a class="audience-entry-card" href="acteurs/familles.html">
+              <span>03</span>
+              <h3>Familles</h3>
+              <p>Entrer par le récit d'Achille, le glossaire et une observation simple de l'astragale.</p>
+              <p class="status-note">Statut : parcours découverte disponible — dossiers complets réservés aux adultes.</p>
+            </a>
+            <a class="audience-entry-card" href="acteurs/approfondir.html">
+              <span>04</span>
+              <h3>Approfondir</h3>
+              <p>Retrouver les sources, décisions éditoriales, validations à venir et limites scientifiques.</p>
+              <p class="status-note">Statut : espace de travail — bibliographie et droits à compléter.</p>
+            </a>
+          </div>
+
           <div class="tabs" aria-label="Parcours de médiation">
+            <div class="section-header section-header-compact">
+              <p class="eyebrow">Médiation</p>
+              <h2>Deux lieux, deux manières d'apprendre</h2>
+            </div>
             <div class="tab-list" role="tablist" aria-label="Choisir un parcours">
               <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-ecole" id="tab-ecole" data-tab="ecole">
                 Écoles
@@ -172,11 +203,12 @@
         <div class="section-inner">
           <div class="section-header">
             <p class="eyebrow">Activités</p>
-            <h2 id="activites-title">Premières activités prêtes à lancer</h2>
+            <h2 id="activites-title">Premières activités en cours de stabilisation</h2>
             <p>
               Ces formats courts transforment l'astragale en support d'enquête : les élèves et les
               visiteurs observent, placent, justifient, puis distinguent ce qui est attesté de ce qui
-              reste à vérifier.
+              reste à vérifier. Les activités sont utilisables comme prototypes documentés ; les visuels,
+              droits, impressions et validations scientifiques restent signalés lorsque nécessaire.
             </p>
           </div>
 
@@ -192,6 +224,7 @@
                 Les élèves localisent la région du tarse, formulent une hypothèse, justifient avec des
                 indices et comparent avec un autre mammifère.
               </p>
+              <p class="status-note">Statut : prototype avancé — images anatomiques, modèle 3D et impression à confirmer.</p>
               <ul class="activity-checklist">
                 <li>Observer un mouvement ou un document.</li>
                 <li>Situer l'articulation entre jambe et pied.</li>
@@ -211,6 +244,7 @@
                 Une mission de visite : partir d'un mammifère de référence, retrouver la région de
                 l'astragale sur un second animal, puis verbaliser les indices.
               </p>
+              <p class="status-note">Statut : prototype avancé — objets manipulables et contraintes de collection à valider.</p>
               <ul class="activity-checklist">
                 <li>Repérer le membre postérieur.</li>
                 <li>Transférer le repère vers une autre espèce.</li>
@@ -230,6 +264,7 @@
                 Les élèves observent plusieurs astragales, construisent des critères de comparaison,
                 les associent à des animaux et justifient leurs propositions avec plusieurs indices.
               </p>
+              <p class="status-note">Statut : prototype — animaux, photographies, critères et corrigé à valider.</p>
               <ul class="activity-checklist">
                 <li>Décrire avant de deviner.</li>
                 <li>Comparer plusieurs caractères.</li>
@@ -250,6 +285,7 @@
                 Les élèves observent des images, étudient un schéma du talus, ordonnent des cartes
                 chronologiques et construisent un album collectif sur la transformation du "talon d'Achille".
               </p>
+              <p class="status-note">Statut : en cours de validation — corpus d'images, schéma du talus et droits à vérifier.</p>
               <ul class="activity-checklist">
                 <li>Observer une image avant de l'interpréter.</li>
                 <li>Distinguer les versions et les périodes.</li>
@@ -270,6 +306,7 @@
                 Les élèves observent des astragales naturels ou transformés, confrontent plusieurs
                 hypothèses d'usage et utilisent le contexte archéologique pour produire un cartel argumenté.
               </p>
+              <p class="status-note">Statut : prototype — objets, notices, images et interprétations à confirmer.</p>
               <ul class="activity-checklist">
                 <li>Décrire avant d'interpréter.</li>
                 <li>Rechercher les traces de transformation.</li>
@@ -291,6 +328,7 @@
                 Les élèves trient des phrases sur l'osselet, Achille et les usages culturels pour
                 distinguer preuve, hypothèse et récit simplifié.
               </p>
+              <p class="status-note">Statut : contenu en cours — impression et relecture pédagogique à tester.</p>
               <ul class="activity-checklist">
                 <li>Repérer les affirmations trop rapides.</li>
                 <li>Reformuler avec nuance.</li>
@@ -351,23 +389,23 @@
           <div class="resource-grid">
             <a class="resource-card" href="ressources/activite-01-trouver-astragale.html">
               <span>01</span>
-              <h3>Dossier complet — Activité 1</h3>
-              <p>Page centrale avec fiches élèves, guides, corrigé, planche de repérage et suivi des validations.</p>
+              <h3>Dossier d'activité 1</h3>
+              <p>Page centrale avec fiches élèves, guides, corrigé, planche de repérage et validations à compléter.</p>
             </a>
             <a class="resource-card" href="ressources/activite-02-associer-astragale-animal.html">
               <span>02</span>
-              <h3>Dossier complet — Activité 2</h3>
-              <p>Cartes, fiches d'observation, grille d'association, guides adultes, correction raisonnée et exemple de production.</p>
+              <h3>Dossier d'activité 2</h3>
+              <p>Cartes, fiches d'observation, grille d'association, guides adultes et corrections à valider.</p>
             </a>
             <a class="resource-card" href="ressources/activite-03-achille-histoire-transformee.html">
               <span>03</span>
-              <h3>Dossier complet — Activité 3</h3>
-              <p>Corpus d'images, schéma anatomique, questionnaire, cartes chronologiques, guides adultes, corrigé et modèle d'album collectif.</p>
+              <h3>Dossier d'activité 3</h3>
+              <p>Corpus d'images, schéma provisoire, questionnaire, cartes chronologiques, guides et album collectif.</p>
             </a>
             <a class="resource-card" href="ressources/activite-04-un-os-plusieurs-vies.html">
               <span>04</span>
-              <h3>Dossier complet — Activité 4</h3>
-              <p>Cartes d'objets, cartes d'usages et de contextes, fiches d'observation, biographie d'objet, guides adultes, correction et exemple de production.</p>
+              <h3>Dossier d'activité 4</h3>
+              <p>Cartes d'objets, usages et contextes avec notices, images et interprétations à confirmer.</p>
             </a>
             <a class="resource-card" href="ressources/document-mission-astragale.html">
               <span>05</span>
@@ -397,7 +435,7 @@
             <a class="resource-card" href="#activites">
               <span>10</span>
               <h3>Banque d'activités</h3>
-              <p>Activités visibles sur le site, prêtes à compléter avec images, cartes et modèles validés.</p>
+              <p>Activités visibles sur le site, à compléter avec images, cartes, modèles et validations.</p>
             </a>
             <a class="resource-card" href="ressources/recit-achille-astragale.html">
               <span>11</span>
