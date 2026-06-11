@@ -1580,6 +1580,146 @@ h3 {
   padding-left: 20px;
 }
 
+.museum-format-grid,
+.museum-relance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.museum-relance-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.museum-relance-grid article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(63, 117, 105, 0.07);
+  padding: 18px;
+}
+
+.museum-relance-grid h3 {
+  margin-top: 0;
+  color: var(--patina-dark);
+}
+
+.museum-relance-grid ul,
+.museum-checklist {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.museum-checklist {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-left: 0;
+  list-style: none;
+}
+
+.museum-checklist li {
+  border: 1px solid rgba(63, 117, 105, 0.24);
+  border-radius: 8px;
+  background: rgba(255, 250, 240, 0.72);
+  padding: 10px 12px 10px 34px;
+  position: relative;
+}
+
+.museum-checklist li::before {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--patina);
+  border-radius: 2px;
+  content: "";
+}
+
+.mediation-flow {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: mediation-step;
+}
+
+.mediation-flow li {
+  counter-increment: mediation-step;
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) auto;
+  gap: 8px 14px;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  padding: 16px;
+}
+
+.mediation-flow li::before {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(63, 117, 105, 0.38);
+  border-radius: 50%;
+  background: rgba(63, 117, 105, 0.1);
+  color: var(--patina-dark);
+  content: counter(mediation-step);
+  font-weight: 900;
+}
+
+.mediation-flow strong {
+  color: var(--patina-dark);
+  font-size: 1.05rem;
+}
+
+.mediation-flow span {
+  border: 1px solid rgba(159, 79, 56, 0.3);
+  border-radius: 999px;
+  background: rgba(159, 79, 56, 0.08);
+  color: var(--terracotta);
+  padding: 4px 9px;
+  font-weight: 900;
+}
+
+.mediation-flow p {
+  grid-column: 2 / -1;
+  margin: 0;
+}
+
+.handling-warning {
+  border: 2px solid rgba(159, 79, 56, 0.5);
+  border-radius: 8px;
+  background: #f3e6d0;
+  color: var(--ink);
+  margin: 24px 0;
+  padding: 20px;
+  font-weight: 850;
+}
+
+.handling-warning h2 {
+  margin-top: 0;
+  color: var(--terracotta);
+}
+
+.handling-warning ul {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.adaptation-matrix {
+  table-layout: fixed;
+}
+
+.adaptation-matrix strong {
+  color: var(--patina-dark);
+}
+
 .resource-download-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2373,6 +2513,9 @@ h3 {
   .teacher-quick-actions,
   .sequence-grid,
   .per-domain-grid,
+  .museum-format-grid,
+  .museum-relance-grid,
+  .museum-checklist,
   .glossary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2557,6 +2700,9 @@ h3 {
   .sequence-grid,
   .per-domain-grid,
   .activity-detail-list,
+  .museum-format-grid,
+  .museum-relance-grid,
+  .museum-checklist,
   .glossary-grid,
   .chronology-sheet {
     grid-template-columns: 1fr;
@@ -2568,6 +2714,15 @@ h3 {
 
   .resource-actions .button {
     width: 100%;
+  }
+
+  .mediation-flow li {
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  .mediation-flow span,
+  .mediation-flow p {
+    grid-column: 2 / -1;
   }
 
   .resource-card {
@@ -2751,6 +2906,7 @@ h3 {
   .doc-card,
   .doc-section,
   .source-box,
+  .handling-warning,
   .book-page,
   .book-question,
   .teacher-note,
@@ -2819,6 +2975,8 @@ h3 {
   .sequence-grid,
   .per-domain-grid,
   .activity-detail-list,
+  .museum-format-grid,
+  .museum-relance-grid,
   .repere-grid,
   .doc-grid,
   .doc-columns,
@@ -2848,12 +3006,23 @@ h3 {
   .teacher-activity-card,
   .sequence-card,
   .per-domain-card,
-  .quick-action-card {
+  .quick-action-card,
+  .museum-relance-grid article,
+  .mediation-flow li,
+  .museum-checklist li {
     border-color: #888;
     background: #fff !important;
     box-shadow: none;
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  .museum-checklist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .handling-warning {
+    border-color: #777;
   }
 
   .detail-list div {
