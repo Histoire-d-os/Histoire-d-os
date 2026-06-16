@@ -30,7 +30,7 @@ actionBlocks.forEach((actions) => {
   list.className = "document-meta-strip";
   list.setAttribute("aria-label", "Statut du document");
 
-  appendMetaItem(list, "Statut", findNearbyStatus(actions) || "prototype à vérifier");
+  appendMetaItem(list, "Statut", findNearbyStatus(actions) || "document à vérifier");
   appendMetaItem(list, "Version", actions.dataset.documentVersion || "v0.1");
   appendMetaItem(list, "Date", actions.dataset.documentDate || "2026-06-11");
 
