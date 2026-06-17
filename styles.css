@@ -2769,6 +2769,21 @@ h3 {
     padding: 26px;
   }
 
+  .document-hero h1,
+  .print-header h1 {
+    font-size: clamp(2.05rem, 13vw, 2.8rem);
+    overflow-wrap: anywhere;
+  }
+
+  .document-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .document-actions .button {
+    width: 100%;
+  }
+
   .doc-facts,
   .statement-grid,
   .check-grid,
