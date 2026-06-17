@@ -2771,8 +2771,9 @@ h3 {
 
   .document-hero h1,
   .print-header h1 {
-    font-size: clamp(2.05rem, 13vw, 2.8rem);
-    overflow-wrap: anywhere;
+    font-size: clamp(1.9rem, 9.5vw, 2.8rem);
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 
   .document-actions {
@@ -3503,5 +3504,37 @@ h3 {
   .download-list li {
     border-color: #777;
     background: #fff !important;
+  }
+
+  .compact-print-page .print-section {
+    margin: 10px 0;
+    padding: 10px;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .compact-print-page .print-header {
+    gap: 4px;
+    padding-bottom: 8px;
+  }
+
+  .compact-print-page h1 {
+    font-size: 28pt;
+  }
+
+  .compact-print-page h2 {
+    font-size: 18pt;
+  }
+
+  .compact-print-page .asset-status th,
+  .compact-print-page .asset-status td {
+    padding: 5px 6px;
+    font-size: 8.8pt;
+    line-height: 1.25;
+  }
+
+  .compact-print-page .answer-lines,
+  .compact-print-page .answer-lines.compact {
+    min-height: 17mm;
   }
 }
