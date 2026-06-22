@@ -13,12 +13,25 @@
   </head>
   <body class="pedagogy-body">
     <a class="skip-link" href="#main-content">Aller au contenu principal</a>
-    <header class="document-header no-print">
-      <a class="brand book-brand" href="../index.html#parcours" aria-label="Retour à l'accueil Histoires d'os">
+    <header class="site-header site-header-solid no-print" data-header>
+      <a class="brand" href="../index.html" aria-label="Accueil Histoires d'os">
         <span class="brand-mark" aria-hidden="true">H</span>
         <span>Histoires d'os</span>
       </a>
-      <a class="button button-secondary book-back" href="../index.html#parcours">Retour à l'accueil</a>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="../index.html">Accueil</a>
+        <a href="enseignants.html">Écoles</a>
+        <a href="musees.html">Musées</a>
+        <a href="../index.html#activites">Activités</a>
+        <a href="../ressources/supports-en-ligne.html">Supports en ligne</a>
+        <a href="approfondir.html" aria-current="page">Approfondir</a>
+      </nav>
+      <div class="header-actions">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+      </div>
     </header>
 
     <main class="document-main" id="main-content">
@@ -120,6 +133,7 @@
         </article>
       </section>
     </main>
+    <script src="../script.js"></script>
     <script src="../ressources/document-actions.js"></script>
   </body>
 </html>

@@ -12,12 +12,25 @@
   </head>
   <body class="pedagogy-body">
     <a class="skip-link" href="#main-content">Aller au contenu principal</a>
-    <header class="document-header no-print">
-      <a class="brand book-brand" href="../index.html#activites" aria-label="Retour aux activités Histoires d'os">
+    <header class="site-header site-header-solid no-print" data-header>
+      <a class="brand" href="../index.html" aria-label="Accueil Histoires d'os">
         <span class="brand-mark" aria-hidden="true">H</span>
         <span>Histoires d'os</span>
       </a>
-      <a class="button button-secondary book-back" href="../index.html#activites">Retour aux activités</a>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a href="../index.html">Accueil</a>
+        <a href="../acteurs/enseignants.html">Écoles</a>
+        <a href="../acteurs/musees.html">Musées</a>
+        <a href="../index.html#activites" aria-current="page">Activités</a>
+        <a href="supports-en-ligne.html">Supports en ligne</a>
+        <a href="../acteurs/approfondir.html">Approfondir</a>
+      </nav>
+      <div class="header-actions">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="nav-toggle-label">Menu</span>
+        </button>
+      </div>
     </header>
 
     <main class="document-main" id="main-content">
@@ -52,6 +65,17 @@
         Statut : activité pilote avec images publiables intégrées. Les documents HTML sont utilisables pour une première séance,
         avec relecture scientifique et retour d'usage encore nécessaires.
       </p>
+
+      <nav class="activity-context-links no-print" aria-label="Choisir le contexte d'utilisation">
+        <a class="activity-context-link" id="ecole" href="../acteurs/enseignants.html#choisir-activite">
+          <strong>École</strong>
+          <span>Fiche élève, guide enseignant et corrigé.</span>
+        </a>
+        <a class="activity-context-link" id="musee" href="../acteurs/musees.html#choisir-activite">
+          <strong>Musée</strong>
+          <span>Station d'observation et adaptation aux collections.</span>
+        </a>
+      </nav>
 
       <section class="doc-grid" aria-labelledby="short-title">
         <article class="doc-card doc-card-accent">
@@ -236,6 +260,7 @@
         </ul>
       </section>
     </main>
+    <script src="../script.js"></script>
     <script src="document-actions.js"></script>
   </body>
 </html>
