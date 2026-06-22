@@ -3880,6 +3880,123 @@ h3 {
   color: var(--smoke);
 }
 
+.supports-section {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.supports-section > h2 {
+  margin-bottom: 18px;
+}
+
+.supports-section + .supports-section {
+  margin-top: 36px;
+}
+
+.support-type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  gap: 14px;
+}
+
+.support-type-card {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 128px 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--chalk);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.support-type-card:focus-visible,
+.support-type-card:hover {
+  border-color: var(--patina);
+  outline: 3px solid rgba(63, 117, 105, 0.22);
+  outline-offset: 2px;
+  transform: translateY(-2px);
+}
+
+.support-type-media {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: var(--bone);
+}
+
+.support-type-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.support-type-card > div:last-child {
+  padding: 16px;
+}
+
+.support-type-card h3 {
+  color: var(--patina-dark);
+}
+
+.support-type-card p {
+  margin: 8px 0 0;
+  color: var(--smoke);
+  font-size: 0.94rem;
+}
+
+.support-type-placeholder {
+  background: var(--patina-dark);
+  color: var(--white);
+}
+
+.support-type-placeholder span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.support-type-credits {
+  background: var(--charcoal);
+}
+
+.online-support-card,
+.support-type-card,
+.supports-note {
+  scroll-margin-top: 100px;
+}
+
+.compact-support-list {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0 16px;
+  padding-left: 18px;
+  color: var(--ink);
+}
+
+.compact-support-list li::marker {
+  color: var(--terracotta);
+}
+
+.supports-note {
+  margin: 28px 0;
+}
+
+.supports-missing-list {
+  font-weight: 400;
+}
+
+.supports-missing-list ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 18px;
+}
+
 @media (max-width: 1100px) {
   .site-header {
     gap: 12px;

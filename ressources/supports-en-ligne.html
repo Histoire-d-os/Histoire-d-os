@@ -39,8 +39,8 @@
         <p class="eyebrow">Images, cartes et planches</p>
         <h1 id="document-title">Supports en ligne</h1>
         <p>
-          Des ressources visuelles à ouvrir sur écran, à projeter ou à imprimer depuis le navigateur.
-          Chaque support conserve ses légendes, ses crédits et son statut de validation.
+          Images, cartes, planches et ressources visuelles à projeter, imprimer ou utiliser pendant
+          les activités. Chaque support conserve ses légendes, ses crédits et son statut de validation.
         </p>
         <dl class="doc-facts">
           <div><dt>Format</dt><dd>Pages HTML</dd></div>
@@ -55,11 +55,11 @@
         conserve des emplacements explicites tant que les objets, notices et droits ne sont pas validés.
       </p>
 
-      <section class="doc-section" aria-labelledby="online-supports-title">
-        <h2 id="online-supports-title">Choisir un support</h2>
-        <div class="online-support-grid">
-          <article class="online-support-card">
-            <div class="online-support-media">
+      <section class="doc-section supports-section" aria-labelledby="support-types-title">
+        <h2 id="support-types-title">Quels supports sont disponibles ?</h2>
+        <div class="support-type-grid">
+          <a class="support-type-card" href="#activite-1">
+            <div class="support-type-media">
               <img
                 src="../assets/images/activite-01/talus-humain-vue-anterolaterale-bodyparts3d.png"
                 alt="Talus humain en rouge, vue antérolatérale."
@@ -67,17 +67,92 @@
               >
             </div>
             <div>
+              <h3>Images anatomiques</h3>
+              <p>Talus humain, pied de mouton, squelettes et comparaisons animales.</p>
+            </div>
+          </a>
+
+          <a class="support-type-card" href="#activite-2">
+            <div class="support-type-media">
+              <img
+                src="../assets/images/activite-02/cheval-quarter-horse.jpg"
+                alt="Cheval photographié de profil, utilisé sur une carte animal."
+                loading="lazy"
+              >
+            </div>
+            <div>
+              <h3>Cartes d'activités</h3>
+              <p>Cartes animaux, cartes objets, cartes de chronologie et supports à découper.</p>
+            </div>
+          </a>
+
+          <a class="support-type-card" href="#activite-3">
+            <div class="support-type-media">
+              <img
+                src="../assets/images/activite-01/planche-comparative-leconte-1922.jpg"
+                alt="Planche comparative ancienne montrant des membres de plusieurs mammifères."
+                loading="lazy"
+              >
+            </div>
+            <div>
+              <h3>Planches et illustrations</h3>
+              <p>Planches anciennes, images commentées et supports de discussion contextualisés.</p>
+            </div>
+          </a>
+
+          <a class="support-type-card" href="#modeles-3d">
+            <div class="support-type-media support-type-placeholder" aria-hidden="true">
+              <span>3D</span>
+            </div>
+            <div>
+              <h3>Modèles 3D</h3>
+              <p>Ressources en préparation : modèles à vérifier avant publication.</p>
+            </div>
+          </a>
+
+          <a class="support-type-card" href="#credits">
+            <div class="support-type-media support-type-placeholder support-type-credits" aria-hidden="true">
+              <span>©</span>
+            </div>
+            <div>
+              <h3>Sources et crédits</h3>
+              <p>Auteurs, licences, provenance des images et limites d'usage.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="doc-section supports-section" aria-labelledby="activities-supports-title">
+        <h2 id="activities-supports-title">Supports par activité</h2>
+        <div class="online-support-grid">
+          <article class="online-support-card" id="activite-1">
+            <div class="online-support-media">
+              <img
+                src="../assets/images/activite-01/pied-mouton-talus-dundee.jpg"
+                alt="Pied de mouton squelettisé avec des repères anatomiques."
+                loading="lazy"
+              >
+            </div>
+            <div>
               <p class="eyebrow">Activité 1</p>
-              <h3>Repérer le talus/astragale</h3>
-              <p>Vues anatomiques, pied de mouton, squelette et planche comparative ancienne contextualisée.</p>
+              <h3>Trouver l'astragale</h3>
+              <ul class="compact-support-list">
+                <li>Talus humain.</li>
+                <li>Pied et squelette de mouton.</li>
+                <li>Schéma ancien de jambe de vache.</li>
+                <li>Planche comparative ancienne contextualisée.</li>
+                <li>Fiche élève, guide enseignant et support images.</li>
+              </ul>
               <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-01-support-images.html">Ouvrir les images</a>
+                <a class="button button-secondary" href="print/activite-01-support-images.html">Support images</a>
+                <a class="button button-secondary" href="print/activite-01-fiche-eleve.html">Fiche élève</a>
+                <a class="button button-secondary" href="print/activite-01-guide-enseignant.html">Guide enseignant</a>
                 <a class="text-link" href="activite-01-trouver-astragale.html">Voir l'activité</a>
               </div>
             </div>
           </article>
 
-          <article class="online-support-card">
+          <article class="online-support-card" id="activite-2">
             <div class="online-support-media">
               <img
                 src="../assets/images/activite-02/mouton-domestique-ribadeo.jpg"
@@ -87,48 +162,66 @@
             </div>
             <div>
               <p class="eyebrow">Activité 2</p>
-              <h3>Comparer animaux et anatomie</h3>
-              <p>Cartes animaux et supports anatomiques. Les cartes d'os A-D restent provisoires.</p>
+              <h3>Associer un os à un animal</h3>
+              <ul class="compact-support-list">
+                <li>Cartes animaux.</li>
+                <li>Cartes os provisoires.</li>
+                <li>Support images et guide enseignant.</li>
+                <li><strong>À compléter :</strong> os A-D validés.</li>
+              </ul>
               <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-02-support-images.html">Ouvrir les images</a>
-                <a class="button button-secondary" href="print/activite-02-cartes-animaux.html">Ouvrir les cartes</a>
+                <a class="button button-secondary" href="print/activite-02-cartes-animaux.html">Cartes animaux</a>
+                <a class="button button-secondary" href="print/activite-02-support-images.html">Support images</a>
+                <a class="button button-secondary" href="print/activite-02-guide-enseignant.html">Guide enseignant</a>
                 <a class="text-link" href="activite-02-associer-astragale-animal.html">Voir l'activité</a>
               </div>
             </div>
           </article>
 
-          <article class="online-support-card">
+          <article class="online-support-card" id="activite-3">
             <div class="online-support-media">
               <img
-                src="../assets/images/activite-03/mort-achille-rothaug-moderne.jpg"
-                alt="Représentation moderne de la mort d'Achille par Alexander Rothaug."
+                src="../assets/images/activite-03/thetis-achille-borel-tradition-tardive.jpg"
+                alt="Représentation tardive de Thétis plongeant Achille dans l'eau."
                 loading="lazy"
               >
             </div>
             <div>
               <p class="eyebrow">Activité 3</p>
-              <h3>Comparer récits et images</h3>
-              <p>Tradition tardive, œuvres modernes, illustration contemporaine et appui anatomique.</p>
+              <h3>Achille : une histoire qui change</h3>
+              <ul class="compact-support-list">
+                <li>Images de traditions tardives et modernes.</li>
+                <li>Cartes chronologie.</li>
+                <li>Support images et guide enseignant.</li>
+                <li><strong>À compléter :</strong> corpus antique validé.</li>
+              </ul>
               <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-03-support-images.html">Ouvrir les images</a>
-                <a class="button button-secondary" href="print/activite-03-cartes-chronologie.html">Ouvrir la chronologie</a>
+                <a class="button button-secondary" href="print/activite-03-support-images.html">Support images</a>
+                <a class="button button-secondary" href="print/activite-03-cartes-chronologie.html">Chronologie</a>
+                <a class="button button-secondary" href="print/activite-03-guide-enseignant.html">Guide enseignant</a>
                 <a class="text-link" href="activite-03-achille-histoire-transformee.html">Voir l'activité</a>
               </div>
             </div>
           </article>
 
-          <article class="online-support-card">
+          <article class="online-support-card" id="activite-4">
             <div class="online-support-media online-support-placeholder" role="img" aria-label="Emplacement de support en attente de validation.">
               <span>Objets A à E</span>
               <strong>À documenter</strong>
             </div>
             <div>
               <p class="eyebrow">Activité 4</p>
-              <h3>Interpréter avec prudence</h3>
-              <p>Aucune fausse image d'objet n'est proposée. Les cartes indiquent précisément les ressources à compléter.</p>
+              <h3>Un os, plusieurs vies</h3>
+              <ul class="compact-support-list">
+                <li>Cartes objets provisoires.</li>
+                <li>Fiche d'observation et guide enseignant.</li>
+                <li>Aucune fausse image archéologique publiée.</li>
+                <li><strong>À compléter :</strong> objets A-E avec notices et droits.</li>
+              </ul>
               <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-04-support-images.html">Ouvrir le support</a>
-                <a class="button button-secondary" href="print/activite-04-cartes-objets.html">Ouvrir les cartes</a>
+                <a class="button button-secondary" href="print/activite-04-cartes-objets.html">Cartes objets</a>
+                <a class="button button-secondary" href="print/activite-04-fiche-eleve.html">Fiche d'observation</a>
+                <a class="button button-secondary" href="print/activite-04-guide-enseignant.html">Guide enseignant</a>
                 <a class="text-link" href="activite-04-un-os-plusieurs-vies.html">Voir l'activité</a>
               </div>
             </div>
@@ -136,12 +229,37 @@
         </div>
       </section>
 
-      <section class="source-box" aria-labelledby="credits-title">
-        <h2 id="credits-title">Crédits et limites</h2>
+      <section class="source-note supports-note" id="modeles-3d" aria-labelledby="models-title">
+        <h2 id="models-title">Modèles 3D</h2>
         <p>
-          Les crédits détaillés figurent dans chaque support et dans les pages d'activités. Les illustrations
-          modernes ou contemporaines ne sont pas présentées comme des sources antiques, et les placeholders
-          restent visibles lorsque les médias scientifiques ou archéologiques ne sont pas validés.
+          Des modèles 3D sont en cours de vérification. Ils seront publiés uniquement lorsque les droits,
+          les crédits et l'usage pédagogique seront confirmés. Aucun modèle Sketchfab ou MorphoSource
+          n'est intégré dans cette version.
+        </p>
+      </section>
+
+      <section class="doc-section supports-section" aria-labelledby="missing-title">
+        <h2 id="missing-title">Ressources à compléter</h2>
+        <div class="missing-resource-note supports-missing-list">
+          <ul>
+            <li>Os A-D validés pour l'activité 2.</li>
+            <li>Corpus antique validé pour l'activité 3.</li>
+            <li>Objets A-E documentés pour l'activité 4.</li>
+            <li>Modèles 3D avec droits, crédits et usage pédagogique vérifiés.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="source-box" id="credits" aria-labelledby="credits-title">
+        <h2 id="credits-title">Crédits principaux</h2>
+        <p>
+          Les crédits détaillés figurent sous chaque image et dans les pages d'activités. Parmi les sources
+          publiques utilisées : BodyParts3D / DBCLS, Caroline Eroline, Museum of Veterinary Anatomy FMVZ USP,
+          Antoine Borel, Peter Paul Rubens et Alexander Rothaug.
+        </p>
+        <p>
+          Pour comprendre les statuts, les droits et les limites scientifiques, consulter
+          <a href="../acteurs/approfondir.html">la page Approfondir</a>.
         </p>
       </section>
     </main>
