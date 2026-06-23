@@ -1,0 +1,285 @@
+{
+  "summary": [
+    {
+      "lang": "fr",
+      "route": "home",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/index.html",
+      "title": "Histoires d'os | Activités pour écoles et musées"
+    },
+    {
+      "lang": "fr",
+      "route": "home",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/index.html",
+      "title": "Histoires d'os | Activités pour écoles et musées"
+    },
+    {
+      "lang": "fr",
+      "route": "teachers",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/acteurs/enseignants.html",
+      "title": "Enseignant·es | Histoires d'os"
+    },
+    {
+      "lang": "fr",
+      "route": "teachers",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/acteurs/enseignants.html",
+      "title": "Enseignant·es | Histoires d'os"
+    },
+    {
+      "lang": "fr",
+      "route": "museums",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/acteurs/musees.html",
+      "title": "Musées et médiation | Histoires d'os"
+    },
+    {
+      "lang": "fr",
+      "route": "museums",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/acteurs/musees.html",
+      "title": "Musées et médiation | Histoires d'os"
+    },
+    {
+      "lang": "fr",
+      "route": "supports",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/ressources/supports-en-ligne.html",
+      "title": "Supports en ligne | Histoires d'os"
+    },
+    {
+      "lang": "fr",
+      "route": "supports",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/ressources/supports-en-ligne.html",
+      "title": "Supports en ligne | Histoires d'os"
+    },
+    {
+      "lang": "fr",
+      "route": "activity-01",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/ressources/activite-01-trouver-astragale.html",
+      "title": "Activité 1 — Trouver l'astragale | Histoires d'os"
+    },
+    {
+      "lang": "fr",
+      "route": "activity-01",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/ressources/activite-01-trouver-astragale.html",
+      "title": "Activité 1 — Trouver l'astragale | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "home",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/en/index.html",
+      "title": "Histoires d'os | Activities for schools and museums"
+    },
+    {
+      "lang": "en",
+      "route": "home",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/en/index.html",
+      "title": "Histoires d'os | Activities for schools and museums"
+    },
+    {
+      "lang": "en",
+      "route": "teachers",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/en/acteurs/enseignants.html",
+      "title": "Teachers | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "teachers",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/en/acteurs/enseignants.html",
+      "title": "Teachers | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "museums",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/en/acteurs/musees.html",
+      "title": "Museums and mediation | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "museums",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/en/acteurs/musees.html",
+      "title": "Museums and mediation | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "supports",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/en/ressources/supports-en-ligne.html",
+      "title": "Online resources | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "supports",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/en/ressources/supports-en-ligne.html",
+      "title": "Online resources | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "activity-01",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/en/ressources/activite-01-trouver-astragale.html",
+      "title": "Activity 1 — Find the astragalus | Histoires d'os"
+    },
+    {
+      "lang": "en",
+      "route": "activity-01",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/en/ressources/activite-01-trouver-astragale.html",
+      "title": "Activity 1 — Find the astragalus | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "home",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/de/index.html",
+      "title": "Histoires d'os | Aktivitäten für Schulen und Museen"
+    },
+    {
+      "lang": "de",
+      "route": "home",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/de/index.html",
+      "title": "Histoires d'os | Aktivitäten für Schulen und Museen"
+    },
+    {
+      "lang": "de",
+      "route": "teachers",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/de/acteurs/enseignants.html",
+      "title": "Lehrpersonen | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "teachers",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/de/acteurs/enseignants.html",
+      "title": "Lehrpersonen | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "museums",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/de/acteurs/musees.html",
+      "title": "Museen und Vermittlung | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "museums",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/de/acteurs/musees.html",
+      "title": "Museen und Vermittlung | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "supports",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/de/ressources/supports-en-ligne.html",
+      "title": "Online-Materialien | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "supports",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/de/ressources/supports-en-ligne.html",
+      "title": "Online-Materialien | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "activity-01",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/de/ressources/activite-01-trouver-astragale.html",
+      "title": "Aktivität 1 — Den Astragalus finden | Histoires d'os"
+    },
+    {
+      "lang": "de",
+      "route": "activity-01",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/de/ressources/activite-01-trouver-astragale.html",
+      "title": "Aktivität 1 — Den Astragalus finden | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "home",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/it/index.html",
+      "title": "Histoires d'os | Attività per scuole e musei"
+    },
+    {
+      "lang": "it",
+      "route": "home",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/it/index.html",
+      "title": "Histoires d'os | Attività per scuole e musei"
+    },
+    {
+      "lang": "it",
+      "route": "teachers",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/it/acteurs/enseignants.html",
+      "title": "Docenti | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "teachers",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/it/acteurs/enseignants.html",
+      "title": "Docenti | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "museums",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/it/acteurs/musees.html",
+      "title": "Musei e mediazione | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "museums",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/it/acteurs/musees.html",
+      "title": "Musei e mediazione | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "supports",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/it/ressources/supports-en-ligne.html",
+      "title": "Supporti online | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "supports",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/it/ressources/supports-en-ligne.html",
+      "title": "Supporti online | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "activity-01",
+      "viewport": "desktop",
+      "url": "http://127.0.0.1:8766/it/ressources/activite-01-trouver-astragale.html",
+      "title": "Attività 1 — Trovare l'astragalo | Histoires d'os"
+    },
+    {
+      "lang": "it",
+      "route": "activity-01",
+      "viewport": "mobile",
+      "url": "http://127.0.0.1:8766/it/ressources/activite-01-trouver-astragale.html",
+      "title": "Attività 1 — Trovare l'astragalo | Histoires d'os"
+    }
+  ],
+  "failures": []
+}
