@@ -465,7 +465,7 @@
       const key = node.dataset.i18n;
       if (typeof tr[key] === "string") node.textContent = tr[key];
     });
-    els.statusBadges.replaceChildren(...tr.badges.map(text => el("span", "badge", text)));
+    if (els.statusBadges) els.statusBadges.replaceChildren(...tr.badges.map(text => el("span", "badge", text)));
     els.tutorialList.replaceChildren(...tr.tutorial.map(text => el("li", "", text)));
     els.distinctionText.textContent = `${tr.historical} ${tr.adapted}`;
     els.stageNote.textContent = tr.stageNote;
