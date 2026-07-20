@@ -686,10 +686,36 @@ const setBackToTopState = () => {
   backToTop?.classList.toggle("is-visible", window.scrollY > 360);
 };
 
+const updateHomePrimaryNavigation = () => {
+  const isHomePage = window.location.pathname.endsWith("/")
+    || window.location.pathname.endsWith("/index.html");
+
+  if (!isHomePage) return;
+
+  const activitiesIsCurrent = window.location.hash === "#activites";
+
+  navLinks.forEach((link) => {
+    const target = new URL(link.href, window.location.href);
+    const targetsActivities = target.hash === "#activites";
+    const targetsHome = !target.hash
+      && (target.pathname.endsWith("/") || target.pathname.endsWith("/index.html"));
+
+    if (targetsActivities) {
+      if (activitiesIsCurrent) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    } else if (targetsHome) {
+      if (activitiesIsCurrent) link.removeAttribute("aria-current");
+      else link.setAttribute("aria-current", "page");
+    }
+  });
+};
+
 setHeaderState();
 setBackToTopState();
+updateHomePrimaryNavigation();
 window.addEventListener("scroll", setHeaderState, { passive: true });
 window.addEventListener("scroll", setBackToTopState, { passive: true });
+window.addEventListener("hashchange", updateHomePrimaryNavigation);
 
 const closeNavigation = (restoreFocus = false) => {
   if (!navToggle || !header) return;
