@@ -1,0 +1,48 @@
+{
+  "pages": 18,
+  "screenshots": [
+    "accueil-desktop.png",
+    "ecoles-desktop.png",
+    "musees-desktop.png",
+    "ressources-desktop.png",
+    "projet-desktop.png",
+    "activite-01-desktop.png",
+    "activite-02-desktop.png",
+    "activite-03-desktop.png",
+    "activite-04-desktop.png",
+    "accueil-mobile.png",
+    "ecoles-mobile.png",
+    "musees-mobile.png",
+    "ressources-mobile.png",
+    "projet-mobile.png",
+    "activite-01-mobile.png",
+    "activite-02-mobile.png",
+    "activite-03-mobile.png",
+    "activite-04-mobile.png"
+  ],
+  "overflows": [],
+  "imageErrors": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "responseErrors": [],
+  "placeholderChecks": [
+    "activité 2: 1 mention provisoire complète",
+    "activité 3: 1 mention provisoire complète",
+    "activité 4: 5 mentions provisoires complètes",
+    "ressources: 1 mention provisoire complète",
+    "aucune image chargée depuis une URL externe",
+    "aucun média manquant après chargement différé",
+    "aucun placeholder intégré aux imprimables ou PDF WIP"
+  ],
+  "interactions": [
+    "menu mobile: opened=true, visible=true, closed=false, hidden=true",
+    "Home hors contrôle spécialisé: scrollY=0",
+    "parcours accueil > écoles: /acteurs/enseignants.html",
+    "parcours écoles > activité 2: /ressources/activite-02-associer-astragale-animal.html",
+    "parcours activité 2 > guide: /ressources/print/activite-02-guide-enseignant.html",
+    "parcours musées > activité 4 > jeu: /ressources/jeu-message-secret.html",
+    "jeu initialisé: true",
+    "page ressources sans iframe: true",
+    "navigation masquée à l'impression: true"
+  ]
+}

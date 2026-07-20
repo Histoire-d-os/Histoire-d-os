@@ -1,423 +1,84 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Supports visuels en ligne du projet Histoires d'os : images, cartes et planches à projeter ou utiliser dans les activités."
-    >
-    <title>Supports en ligne | Histoires d'os</title>
-    <link rel="icon" href="../assets/logo-officiel-histoires-dos.jpg">
-    <link rel="stylesheet" href="../styles.css">
-  </head>
-  <body class="pedagogy-body">
-    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
-    <header class="site-header site-header-solid no-print" data-header>
-      <a class="brand" href="../index.html" aria-label="Accueil Histoires d'os">
-        <span class="brand-mark" aria-hidden="true">H</span>
-        <span>Histoires d'os</span>
-      </a>
-      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-        <a href="../index.html">Accueil</a>
-        <a href="../acteurs/enseignants.html">Écoles</a>
-        <a href="../acteurs/musees.html">Musées</a>
-        <a href="../index.html#activites">Activités</a>
-        <a href="supports-en-ligne.html" aria-current="page">Supports en ligne</a>
-        <a href="../acteurs/approfondir.html">Approfondir</a>
-      </nav>
-      <div class="header-actions translated-header-actions">
-        <nav class="language-switcher" aria-label="Langues"><a href="../ressources/supports-en-ligne.html" aria-current="page">FR</a><span aria-hidden="true">·</span><a href="../en/ressources/supports-en-ligne.html">EN</a><span aria-hidden="true">·</span><a href="../de/ressources/supports-en-ligne.html">DE</a><span aria-hidden="true">·</span><a href="../it/ressources/supports-en-ligne.html">IT</a></nav>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span class="nav-toggle-lines" aria-hidden="true"></span>
-          <span class="nav-toggle-label">Menu</span>
-        </button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bibliothèque des ressources Histoires d'os : visuels, imprimables, jeu interactif, modèles 3D, approfondissements, sources et crédits.">
+  <title>Ressources | Histoires d'os</title>
+  <link rel="icon" href="../assets/logo-officiel-histoires-dos.jpg">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="pedagogy-body">
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+  <header class="site-header site-header-solid no-print" data-header>
+    <a class="brand" href="../index.html" aria-label="Accueil Histoires d'os"><span class="brand-mark" aria-hidden="true">H</span><span>Histoires d'os</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale"><a href="../index.html">Accueil</a><a href="../index.html#activites">Activités</a><a href="../acteurs/enseignants.html">Écoles</a><a href="../acteurs/musees.html">Musées</a><a href="supports-en-ligne.html" aria-current="page">Ressources</a><a href="../projet.html">Le projet</a></nav>
+    <div class="header-actions translated-header-actions">
+      <nav class="language-switcher" aria-label="Langues"><a href="../ressources/supports-en-ligne.html" aria-current="page">FR</a><span aria-hidden="true">·</span><a href="../en/ressources/supports-en-ligne.html">EN</a><span aria-hidden="true">·</span><a href="../de/ressources/supports-en-ligne.html">DE</a><span aria-hidden="true">·</span><a href="../it/ressources/supports-en-ligne.html">IT</a></nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-lines" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button>
+    </div>
+  </header>
+
+  <main class="document-main" id="main-content">
+    <section class="document-hero document-hero-museum" aria-labelledby="document-title">
+      <p class="eyebrow">Bibliothèque du projet</p><h1 id="document-title">Ressources</h1>
+      <p>Choisissez une catégorie pour atteindre directement les visuels, imprimables, outils interactifs et contenus d'approfondissement.</p>
+      <dl class="doc-facts"><div><dt>Usages</dt><dd>Observer · projeter · imprimer</dd></div><div><dt>Publics</dt><dd>Écoles · musées</dd></div><div><dt>HTML</dt><dd>Sources imprimables</dd></div><div><dt>PDF</dt><dd>Versions de travail</dd></div></dl>
+    </section>
+
+    <nav class="resource-category-nav no-print" aria-label="Catégories de ressources">
+      <a href="#visuels"><span aria-hidden="true">01</span><strong>Visuels par activité</strong></a>
+      <a href="#imprimables"><span aria-hidden="true">02</span><strong>Fiches imprimables</strong></a>
+      <a href="#jeu"><span aria-hidden="true">03</span><strong>Jeu interactif</strong></a>
+      <a href="#modeles"><span aria-hidden="true">04</span><strong>Modèles 3D</strong></a>
+      <a href="#approfondissements"><span aria-hidden="true">05</span><strong>Approfondissements</strong></a>
+      <a href="#credits"><span aria-hidden="true">06</span><strong>Sources et crédits</strong></a>
+    </nav>
+
+    <p class="status-note" data-status="en-cours">L'activité 1 est prête à tester avec relecture adulte. Les ressources des activités 2 à 4 permettent de tester la méthode, avec les corpus et objets manquants clairement signalés.</p>
+
+    <section class="doc-section supports-section section-anchor" id="visuels" aria-labelledby="visuals-title">
+      <p class="eyebrow">Projeter et observer</p><h2 id="visuals-title">Visuels par activité</h2>
+      <div class="online-support-grid">
+        <article class="online-support-card"><div class="online-support-media"><img src="../assets/images/activite-01/pied-mouton-talus-dundee.jpg" alt="Pied de mouton squelettisé avec repères anatomiques." loading="lazy"></div><div><p class="eyebrow">Activité 1</p><h3>Trouver l'astragale</h3><p>Talus humain, pied et squelette de mouton, schéma bovin et planche comparative ancienne.</p><p class="status-note" data-status="impression">Prête à tester avec relecture adulte.</p><div class="resource-actions"><a class="button button-primary" href="print/activite-01-support-images.html">Ouvrir le support visuel</a><a class="text-link" href="activite-01-trouver-astragale.html">Voir l'activité</a></div></div></article>
+        <article class="online-support-card"><div class="online-support-media"><img src="../assets/images/activite-02/mouton-domestique-ribadeo.jpg" alt="Mouton domestique vu de profil." loading="lazy"></div><div><p class="eyebrow">Activité 2</p><h3>Associer un os à un animal</h3><p>Cartes animaux et supports anatomiques ; les photographies d'os A-D restent à compléter.</p><p class="status-note" data-status="validation-scientifique">Corpus d'os A-D à compléter.</p><div class="resource-actions"><a class="button button-primary" href="print/activite-02-support-images.html">Ouvrir le support visuel</a><a class="text-link" href="activite-02-associer-astragale-animal.html">Voir l'activité</a></div></div></article>
+        <article class="online-support-card"><div class="online-support-media"><img src="../assets/images/activite-03/thetis-achille-borel-tradition-tardive.jpg" alt="Représentation tardive de Thétis plongeant Achille dans l'eau." loading="lazy"></div><div><p class="eyebrow">Activité 3</p><h3>Achille : une histoire qui change</h3><p>Images tardives et modernes, appui anatomique et cartes de chronologie contextualisées.</p><p class="status-note" data-status="droits">Support pilote ; corpus antique à compléter.</p><div class="resource-actions"><a class="button button-primary" href="print/activite-03-support-images.html">Ouvrir le support visuel</a><a class="text-link" href="activite-03-achille-histoire-transformee.html">Voir l'activité</a></div></div></article>
+        <article class="online-support-card"><div class="online-support-media object-detail-media"><img src="../assets/images/activite-04/objet-b-osselet-bronze-met-a-valider.jpg" alt="Objet en bronze reprenant la forme d'un astragale." loading="lazy"></div><div><p class="eyebrow">Activité 4</p><h3>Un os, plusieurs vies</h3><p>Cinq visuels de maquette simulent l'emplacement d'un futur corpus ; ils ne déterminent ni datation, ni fonction, ni réponse attendue.</p><p class="placeholder-notice">Visuel provisoire — source, pertinence scientifique et droits à valider avant publication définitive.</p><div class="resource-actions"><a class="button button-primary" href="activite-04-un-os-plusieurs-vies.html#supports">Voir les visuels provisoires</a><a class="text-link" href="activite-04-un-os-plusieurs-vies.html">Voir l'activité</a></div></div></article>
       </div>
-    </header>
+    </section>
 
-    <main class="document-main" id="main-content">
-      <section class="document-hero document-hero-museum" aria-labelledby="document-title">
-        <p class="eyebrow">Images, cartes et planches</p>
-        <h1 id="document-title">Supports en ligne</h1>
-        <p>
-          Images, cartes, planches et ressources visuelles à projeter, imprimer ou utiliser pendant
-          les activités. Chaque support conserve ses légendes, ses crédits et son statut de validation.
-        </p>
-        <dl class="doc-facts">
-          <div><dt>Format</dt><dd>Pages HTML</dd></div>
-          <div><dt>Usage</dt><dd>Projection · observation</dd></div>
-          <div><dt>Public</dt><dd>Écoles · musées</dd></div>
-          <div><dt>PDF</dt><dd>Versions WIP pour tests</dd></div>
-        </dl>
-      </section>
+    <section class="doc-section supports-section section-anchor" id="imprimables" aria-labelledby="printables-title">
+      <p class="eyebrow">HTML et PDF de travail</p><h2 id="printables-title">Fiches imprimables — toutes les activités</h2>
+      <p>Le HTML reste la source éditoriale. Les PDF WIP servent aux tests de mise en page et ne constituent pas des versions finales.</p>
+      <div class="printable-library">
+        <article class="printable-group"><h3>Activité 1 — Trouver l'astragale</h3><p><strong>HTML :</strong> <a href="print/activite-01-fiche-eleve.html">Fiche élève</a> · <a href="print/activite-01-guide-enseignant.html">Guide d'encadrement</a> · <a href="print/activite-01-support-images.html">Support visuel</a> · <a href="print/activite-01-corrige.html">Corrigé / pistes</a></p><p><strong>PDF de travail :</strong> <a href="pdf-wip/activite-01-fiche-eleve-WIP.pdf">Fiche</a> · <a href="pdf-wip/activite-01-guide-enseignant-WIP.pdf">Guide</a> · <a href="pdf-wip/activite-01-support-images-WIP.pdf">Visuels</a> · <a href="pdf-wip/activite-01-corrige-WIP.pdf">Corrigé</a></p></article>
+        <article class="printable-group"><h3>Activité 2 — Associer un os à un animal</h3><p><strong>HTML :</strong> <a href="print/activite-02-fiche-eleve.html">Fiche élève</a> · <a href="print/activite-02-guide-enseignant.html">Guide d'encadrement</a> · <a href="print/activite-02-support-images.html">Support visuel</a> · <a href="print/activite-02-cartes-animaux.html">Cartes animaux</a> · <a href="print/activite-02-cartes-os.html">Cartes os</a> · <a href="print/activite-02-corrige.html">Corrigé / pistes</a></p><p><strong>PDF de travail :</strong> <a href="pdf-wip/activite-02-fiche-eleve-WIP.pdf">Fiche</a> · <a href="pdf-wip/activite-02-guide-enseignant-WIP.pdf">Guide</a> · <a href="pdf-wip/activite-02-support-images-WIP.pdf">Visuels</a> · <a href="pdf-wip/activite-02-cartes-animaux-WIP.pdf">Animaux</a> · <a href="pdf-wip/activite-02-cartes-os-WIP.pdf">Os</a> · <a href="pdf-wip/activite-02-corrige-WIP.pdf">Pistes</a></p></article>
+        <article class="printable-group"><h3>Activité 3 — Achille : une histoire qui change</h3><p><strong>HTML :</strong> <a href="print/activite-03-fiche-eleve.html">Fiche élève</a> · <a href="print/activite-03-guide-enseignant.html">Guide d'encadrement</a> · <a href="print/activite-03-support-images.html">Support visuel</a> · <a href="print/activite-03-cartes-chronologie.html">Cartes</a> · <a href="print/activite-03-corrige.html">Corrigé / pistes</a></p><p><strong>PDF de travail :</strong> <a href="pdf-wip/activite-03-fiche-eleve-WIP.pdf">Fiche</a> · <a href="pdf-wip/activite-03-guide-enseignant-WIP.pdf">Guide</a> · <a href="pdf-wip/activite-03-support-images-WIP.pdf">Visuels</a> · <a href="pdf-wip/activite-03-cartes-chronologie-WIP.pdf">Cartes</a> · <a href="pdf-wip/activite-03-corrige-WIP.pdf">Pistes</a></p></article>
+        <article class="printable-group"><h3>Activité 4 — Un os, plusieurs vies</h3><p><strong>HTML :</strong> <a href="print/activite-04-fiche-eleve.html">Fiche élève</a> · <a href="print/activite-04-guide-enseignant.html">Guide d'encadrement</a> · <a href="print/activite-04-cartes-objets.html">Cartes</a> · <a href="print/activite-04-support-images.html">Support visuel</a> · <a href="print/activite-04-corrige.html">Corrigé / pistes</a></p><p><strong>PDF de travail :</strong> <a href="pdf-wip/activite-04-fiche-eleve-WIP.pdf">Fiche</a> · <a href="pdf-wip/activite-04-guide-enseignant-WIP.pdf">Guide</a> · <a href="pdf-wip/activite-04-cartes-objets-WIP.pdf">Cartes</a> · <a href="pdf-wip/activite-04-support-images-WIP.pdf">Visuels</a> · <a href="pdf-wip/activite-04-corrige-WIP.pdf">Pistes</a></p></article>
+      </div>
+    </section>
 
-      <p class="status-note" data-status="en-cours">
-        Statut : l'activité 1 est prête à tester avec relecture adulte. Les supports des activités 2 à 4
-        peuvent servir à tester la méthode, avec les corpus ou objets manquants clairement signalés.
-      </p>
+    <section class="doc-section supports-section section-anchor" id="jeu" aria-labelledby="game-title">
+      <div class="game-resource-layout"><div class="game-preview" role="img" aria-label="Aperçu abstrait du jeu : lettres reliées par un fil autour d'un osselet."><span>A</span><span>Σ</span><span>T</span><i aria-hidden="true"></i></div><div><p class="eyebrow">Prototype interactif</p><h2 id="game-title">Coder un message avec un osselet</h2><p>Tournez un astragale 3D, suivez le fil et associez des trous à des lettres pour coder ou décoder un mot.</p><p class="status-note" data-status="prototype">Adaptation pédagogique moderne WIP, non reconstitution antique définitive.</p><a class="button button-primary" href="jeu-message-secret.html">Ouvrir le jeu</a></div></div>
+    </section>
 
-      <section class="doc-section supports-section embedded-game-section no-print" id="jeu-message-secret" aria-labelledby="secret-game-title">
-        <div class="embedded-game-heading">
-          <div>
-            <p class="eyebrow">Jeu interactif</p>
-            <h2 id="secret-game-title">Coder un message avec un osselet</h2>
-            <p>
-              Prototype jouable pour comprendre comment un message peut être associé à des trous, des lettres
-              et un fil. Il s'agit d'une adaptation pédagogique moderne, pas d'une reconstitution antique définitive.
-            </p>
-          </div>
-          <a class="button button-secondary" href="jeu-message-secret.html">Ouvrir en pleine page</a>
-        </div>
-        <iframe
-          class="embedded-game-frame"
-          title="Prototype interactif : coder un message avec un osselet"
-          src="jeu-message-secret.html?embed=1"
-          loading="eager"
-        ></iframe>
-      </section>
+    <section class="source-note supports-note section-anchor" id="modeles" aria-labelledby="models-title"><p class="eyebrow">En préparation</p><h2 id="models-title">Modèles 3D</h2><p>Les modèles destinés à l'anatomie comparée ne seront publiés que lorsque l'objet représenté, l'espèce, l'orientation, l'échelle, les modifications, les droits et l'usage pédagogique auront été vérifiés. Aucun modèle externe non validé n'est présenté comme disponible.</p></section>
 
-      <section class="doc-section supports-section" aria-labelledby="support-types-title">
-        <h2 id="support-types-title">Quels supports sont disponibles ?</h2>
-        <div class="support-type-grid">
-          <a class="support-type-card" href="#activite-1">
-            <div class="support-type-media">
-              <img
-                src="../assets/images/activite-01/talus-humain-vue-anterolaterale-bodyparts3d.png"
-                alt="Talus humain en rouge, vue antérolatérale."
-                loading="lazy"
-              >
-            </div>
-            <div>
-              <h3>Images anatomiques</h3>
-              <p>Talus humain, pied de mouton, squelettes et comparaisons animales.</p>
-            </div>
-          </a>
+    <section class="doc-section supports-section section-anchor" id="approfondissements" aria-labelledby="deep-title">
+      <p class="eyebrow">Récits, méthode et repères</p><h2 id="deep-title">Approfondissements</h2>
+      <div class="deep-links-grid">
+        <a href="recit-achille-astragale.html"><strong>Récit sur Achille</strong><span>Le petit os d'Achille, support pédagogique d'ouverture.</span></a>
+        <a href="document-vrai-prudent-verifier.html"><strong>Vrai, prudent, à vérifier</strong><span>Atelier pour distinguer affirmation, hypothèse et récit simplifié.</span></a>
+        <a href="glossaire-depart.md"><strong>Glossaire et repères</strong><span>Vocabulaire pour distinguer talus, astragale, osselet et interprétation.</span></a>
+        <a href="print/activite-03-cartes-chronologie.html"><strong>Chronologies</strong><span>Cartes imprimables pour comparer les statuts des récits et images.</span></a>
+        <a href="../projet.html#recherche"><strong>Explications scientifiques</strong><span>Axes de recherche, publications et méthode de validation.</span></a>
+        <a href="activite-04-un-os-plusieurs-vies.html#supports"><strong>Prolongements pédagogiques</strong><span>Jeu interactif et supports de raisonnement autour des usages possibles.</span></a>
+      </div>
+    </section>
 
-          <a class="support-type-card" href="#activite-2">
-            <div class="support-type-media">
-              <img
-                src="../assets/images/activite-02/cheval-quarter-horse.jpg"
-                alt="Cheval photographié de profil, utilisé sur une carte animal."
-                loading="lazy"
-              >
-            </div>
-            <div>
-              <h3>Cartes d'activités</h3>
-              <p>Cartes animaux, cartes objets, cartes de chronologie et supports à découper.</p>
-            </div>
-          </a>
-
-          <a class="support-type-card" href="#activite-3">
-            <div class="support-type-media">
-              <img
-                src="../assets/images/activite-01/planche-comparative-leconte-1922.jpg"
-                alt="Planche comparative ancienne montrant des membres de plusieurs mammifères."
-                loading="lazy"
-              >
-            </div>
-            <div>
-              <h3>Planches et illustrations</h3>
-              <p>Planches anciennes, images commentées et supports de discussion contextualisés.</p>
-            </div>
-          </a>
-
-          <a class="support-type-card" href="#modeles-3d">
-            <div class="support-type-media support-type-placeholder" aria-hidden="true">
-              <span>3D</span>
-            </div>
-            <div>
-              <h3>Modèles 3D</h3>
-              <p>Ressources en préparation : modèles à vérifier avant publication.</p>
-            </div>
-          </a>
-
-          <a class="support-type-card" href="#jeu-message-secret">
-            <div class="support-type-media support-type-placeholder" aria-hidden="true">
-              <span>Fil</span>
-            </div>
-            <div>
-              <h3>Jeu interactif — message secret</h3>
-              <p>
-                Prototype 3D pour comprendre comment un message peut être codé avec un astragale percé.
-                Version de travail, à utiliser comme démonstration ou prolongement de l'activité 4.
-              </p>
-            </div>
-          </a>
-
-          <a class="support-type-card" href="#credits">
-            <div class="support-type-media support-type-placeholder support-type-credits" aria-hidden="true">
-              <span>©</span>
-            </div>
-            <div>
-              <h3>Sources et crédits</h3>
-              <p>Auteurs, licences, provenance des images et limites d'usage.</p>
-            </div>
-          </a>
-
-          <a class="support-type-card" href="#fiches-imprimables">
-            <div class="support-type-media support-type-placeholder" aria-hidden="true">
-              <span>A4</span>
-            </div>
-            <div>
-              <h3>Fiches imprimables — toutes activités</h3>
-              <p>Versions HTML imprimables et PDF de travail pour les tests internes.</p>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="doc-section supports-section" aria-labelledby="activities-supports-title">
-        <h2 id="activities-supports-title">Supports par activité</h2>
-        <div class="online-support-grid">
-          <article class="online-support-card" id="activite-1">
-            <div class="online-support-media">
-              <img
-                src="../assets/images/activite-01/pied-mouton-talus-dundee.jpg"
-                alt="Pied de mouton squelettisé avec des repères anatomiques."
-                loading="lazy"
-              >
-            </div>
-            <div>
-              <p class="eyebrow">Activité 1</p>
-              <h3>Trouver l'astragale</h3>
-              <ul class="compact-support-list">
-                <li>Talus humain.</li>
-                <li>Pied et squelette de mouton.</li>
-                <li>Schéma ancien de jambe de vache.</li>
-                <li>Planche comparative ancienne contextualisée.</li>
-                <li>Fiche élève, guide enseignant et support images.</li>
-              </ul>
-              <p class="status-note" data-status="impression">Prêt à tester avec relecture adulte.</p>
-              <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-01-support-images.html">Support images</a>
-                <a class="button button-secondary" href="print/activite-01-fiche-eleve.html">Fiche élève</a>
-                <a class="button button-secondary" href="print/activite-01-guide-enseignant.html">Guide enseignant</a>
-                <a class="button button-secondary" href="print/activite-01-corrige.html">Corrigé</a>
-                <a class="text-link" href="activite-01-trouver-astragale.html">Voir l'activité</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="online-support-card" id="activite-2">
-            <div class="online-support-media">
-              <img
-                src="../assets/images/activite-02/mouton-domestique-ribadeo.jpg"
-                alt="Mouton domestique vu de profil."
-                loading="lazy"
-              >
-            </div>
-            <div>
-              <p class="eyebrow">Activité 2</p>
-              <h3>Associer un os à un animal</h3>
-              <ul class="compact-support-list">
-                <li>Cartes animaux.</li>
-                <li>Cartes os provisoires.</li>
-                <li>Support images et guide enseignant.</li>
-                <li><strong>À compléter :</strong> os A-D validés.</li>
-              </ul>
-              <p class="status-note" data-status="validation-scientifique">Support pilote : méthode testable, corpus d'os A-D à compléter.</p>
-              <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-02-cartes-animaux.html">Cartes animaux</a>
-                <a class="button button-secondary" href="print/activite-02-cartes-os.html">Cartes os</a>
-                <a class="button button-secondary" href="print/activite-02-fiche-eleve.html">Fiche élève</a>
-                <a class="button button-secondary" href="print/activite-02-support-images.html">Support images</a>
-                <a class="button button-secondary" href="print/activite-02-guide-enseignant.html">Guide enseignant</a>
-                <a class="button button-secondary" href="print/activite-02-corrige.html">Pistes</a>
-                <a class="text-link" href="activite-02-associer-astragale-animal.html">Voir l'activité</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="online-support-card" id="activite-3">
-            <div class="online-support-media">
-              <img
-                src="../assets/images/activite-03/thetis-achille-borel-tradition-tardive.jpg"
-                alt="Représentation tardive de Thétis plongeant Achille dans l'eau."
-                loading="lazy"
-              >
-            </div>
-            <div>
-              <p class="eyebrow">Activité 3</p>
-              <h3>Achille : une histoire qui change</h3>
-              <ul class="compact-support-list">
-                <li>Images de traditions tardives et modernes.</li>
-                <li>Cartes chronologie.</li>
-                <li>Support images et guide enseignant.</li>
-                <li><strong>À compléter :</strong> corpus antique validé.</li>
-              </ul>
-              <p class="status-note" data-status="droits">Support pilote : images commentées utilisables, corpus antique à compléter.</p>
-              <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-03-fiche-eleve.html">Fiche élève</a>
-                <a class="button button-secondary" href="print/activite-03-support-images.html">Support images</a>
-                <a class="button button-secondary" href="print/activite-03-cartes-chronologie.html">Chronologie</a>
-                <a class="button button-secondary" href="print/activite-03-guide-enseignant.html">Guide enseignant</a>
-                <a class="button button-secondary" href="print/activite-03-corrige.html">Pistes</a>
-                <a class="text-link" href="activite-03-achille-histoire-transformee.html">Voir l'activité</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="online-support-card" id="activite-4">
-            <div class="online-support-media online-support-placeholder" role="img" aria-label="Emplacement de support en attente de validation.">
-              <span>Objets A à E</span>
-              <strong>À documenter</strong>
-            </div>
-            <div>
-              <p class="eyebrow">Activité 4</p>
-              <h3>Un os, plusieurs vies</h3>
-              <ul class="compact-support-list">
-                <li>Cartes objets provisoires.</li>
-                <li>Fiche d'observation et guide enseignant.</li>
-                <li>Aucune fausse image archéologique publiée.</li>
-                <li><strong>À compléter :</strong> objets A-E avec notices et droits.</li>
-              </ul>
-              <p class="status-note" data-status="validation-scientifique">Support pilote : méthode testable, objets A-E à compléter.</p>
-              <div class="resource-actions">
-                <a class="button button-secondary" href="print/activite-04-cartes-objets.html">Cartes objets</a>
-                <a class="button button-secondary" href="print/activite-04-fiche-eleve.html">Fiche d'observation</a>
-                <a class="button button-secondary" href="print/activite-04-guide-enseignant.html">Guide enseignant</a>
-                <a class="button button-secondary" href="print/activite-04-support-images.html">Support images</a>
-                <a class="button button-secondary" href="print/activite-04-corrige.html">Pistes</a>
-                <a class="text-link" href="activite-04-un-os-plusieurs-vies.html">Voir l'activité</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="doc-section supports-section" id="fiches-imprimables" aria-labelledby="printables-title">
-        <h2 id="printables-title">Fiches imprimables — toutes activités</h2>
-        <p>
-          Versions HTML imprimables et PDF de travail pour tester les activités, préparer les séances
-          et relire les supports. Les PDF WIP ne constituent pas des versions finales.
-        </p>
-        <div class="teacher-dashboard-grid">
-          <article class="teacher-activity-card">
-            <p class="eyebrow">Activité 1</p>
-            <h3>Trouver l'astragale</h3>
-            <p><strong>HTML imprimables :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="print/activite-01-fiche-eleve.html">Fiche élève</a>
-              <a class="button button-secondary" href="print/activite-01-guide-enseignant.html">Guide</a>
-              <a class="button button-secondary" href="print/activite-01-support-images.html">Images</a>
-              <a class="button button-secondary" href="print/activite-01-corrige.html">Corrigé</a>
-            </div>
-            <p><strong>PDF WIP :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="pdf-wip/activite-01-fiche-eleve-WIP.pdf">Fiche élève</a>
-              <a class="button button-secondary" href="pdf-wip/activite-01-guide-enseignant-WIP.pdf">Guide</a>
-              <a class="button button-secondary" href="pdf-wip/activite-01-support-images-WIP.pdf">Images</a>
-              <a class="button button-secondary" href="pdf-wip/activite-01-corrige-WIP.pdf">Corrigé</a>
-            </div>
-          </article>
-
-          <article class="teacher-activity-card">
-            <p class="eyebrow">Activité 2</p>
-            <h3>Associer un os à un animal</h3>
-            <p><strong>HTML imprimables :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="print/activite-02-fiche-eleve.html">Fiche élève</a>
-              <a class="button button-secondary" href="print/activite-02-guide-enseignant.html">Guide</a>
-              <a class="button button-secondary" href="print/activite-02-support-images.html">Images</a>
-              <a class="button button-secondary" href="print/activite-02-cartes-animaux.html">Cartes animaux</a>
-              <a class="button button-secondary" href="print/activite-02-cartes-os.html">Cartes os</a>
-              <a class="button button-secondary" href="print/activite-02-corrige.html">Pistes</a>
-            </div>
-            <p><strong>PDF WIP :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="pdf-wip/activite-02-fiche-eleve-WIP.pdf">Fiche élève</a>
-              <a class="button button-secondary" href="pdf-wip/activite-02-guide-enseignant-WIP.pdf">Guide</a>
-              <a class="button button-secondary" href="pdf-wip/activite-02-support-images-WIP.pdf">Images</a>
-              <a class="button button-secondary" href="pdf-wip/activite-02-cartes-animaux-WIP.pdf">Cartes animaux</a>
-              <a class="button button-secondary" href="pdf-wip/activite-02-cartes-os-WIP.pdf">Cartes os</a>
-              <a class="button button-secondary" href="pdf-wip/activite-02-corrige-WIP.pdf">Pistes</a>
-            </div>
-          </article>
-
-          <article class="teacher-activity-card">
-            <p class="eyebrow">Activité 3</p>
-            <h3>Achille : une histoire qui change</h3>
-            <p><strong>HTML imprimables :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="print/activite-03-fiche-eleve.html">Fiche élève</a>
-              <a class="button button-secondary" href="print/activite-03-guide-enseignant.html">Guide</a>
-              <a class="button button-secondary" href="print/activite-03-support-images.html">Images</a>
-              <a class="button button-secondary" href="print/activite-03-cartes-chronologie.html">Chronologie</a>
-              <a class="button button-secondary" href="print/activite-03-corrige.html">Pistes</a>
-            </div>
-            <p><strong>PDF WIP :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="pdf-wip/activite-03-fiche-eleve-WIP.pdf">Fiche élève</a>
-              <a class="button button-secondary" href="pdf-wip/activite-03-guide-enseignant-WIP.pdf">Guide</a>
-              <a class="button button-secondary" href="pdf-wip/activite-03-support-images-WIP.pdf">Images</a>
-              <a class="button button-secondary" href="pdf-wip/activite-03-cartes-chronologie-WIP.pdf">Chronologie</a>
-              <a class="button button-secondary" href="pdf-wip/activite-03-corrige-WIP.pdf">Pistes</a>
-            </div>
-          </article>
-
-          <article class="teacher-activity-card">
-            <p class="eyebrow">Activité 4</p>
-            <h3>Un os, plusieurs vies</h3>
-            <p><strong>HTML imprimables :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="print/activite-04-fiche-eleve.html">Fiche élève</a>
-              <a class="button button-secondary" href="print/activite-04-guide-enseignant.html">Guide</a>
-              <a class="button button-secondary" href="print/activite-04-cartes-objets.html">Cartes objets</a>
-              <a class="button button-secondary" href="print/activite-04-corrige.html">Pistes</a>
-              <a class="button button-secondary" href="print/activite-04-support-images.html">Images</a>
-            </div>
-            <p><strong>PDF WIP :</strong></p>
-            <div class="resource-actions">
-              <a class="button button-secondary" href="pdf-wip/activite-04-fiche-eleve-WIP.pdf">Fiche élève</a>
-              <a class="button button-secondary" href="pdf-wip/activite-04-guide-enseignant-WIP.pdf">Guide</a>
-              <a class="button button-secondary" href="pdf-wip/activite-04-cartes-objets-WIP.pdf">Cartes objets</a>
-              <a class="button button-secondary" href="pdf-wip/activite-04-corrige-WIP.pdf">Pistes</a>
-              <a class="button button-secondary" href="pdf-wip/activite-04-support-images-WIP.pdf">Images</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="source-note supports-note" id="modeles-3d" aria-labelledby="models-title">
-        <h2 id="models-title">Modèles 3D</h2>
-        <p>
-          Des modèles 3D sont en cours de vérification. Ils seront publiés uniquement lorsque les droits,
-          les crédits et l'usage pédagogique seront confirmés. Aucun modèle Sketchfab ou MorphoSource
-          n'est intégré dans cette version.
-        </p>
-      </section>
-
-      <section class="doc-section supports-section" aria-labelledby="missing-title">
-        <h2 id="missing-title">Ressources à compléter</h2>
-        <div class="missing-resource-note supports-missing-list">
-          <ul>
-            <li>Os A-D validés pour l'activité 2.</li>
-            <li>Corpus antique validé pour l'activité 3.</li>
-            <li>Objets A-E documentés pour l'activité 4.</li>
-            <li>Modèles 3D avec droits, crédits et usage pédagogique vérifiés.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="source-box" id="credits" aria-labelledby="credits-title">
-        <h2 id="credits-title">Crédits principaux</h2>
-        <p>
-          Les crédits détaillés figurent sous chaque image et dans les pages d'activités. Parmi les sources
-          publiques utilisées : BodyParts3D / DBCLS, Caroline Eroline, Museum of Veterinary Anatomy FMVZ USP,
-          Antoine Borel, Peter Paul Rubens et Alexander Rothaug.
-        </p>
-        <p>
-          Pour comprendre les statuts, les droits et les limites scientifiques, consulter
-          <a href="../acteurs/approfondir.html">la page Approfondir</a>.
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>Histoires d'os</p>
-      <p>Supports en ligne - <span data-year></span></p>
-    </footer>
-
-    <script src="../script.js"></script>
-  </body>
+    <section class="source-box section-anchor" id="credits" aria-labelledby="credits-title"><p class="eyebrow">Traçabilité</p><h2 id="credits-title">Sources et crédits</h2><p>Les crédits détaillés figurent sous chaque image et dans les pages d'activité. Les sources publiques mobilisées comprennent notamment BodyParts3D / DBCLS, Caroline Eroline, le Museum of Veterinary Anatomy FMVZ USP, Antoine Borel, Peter Paul Rubens et Alexander Rothaug.</p><p><a href="../docs/credits-ressources.md">Consulter le document de crédits</a> · <a href="../projet.html#droits">Comprendre les droits et les statuts de diffusion</a></p></section>
+  </main>
+  <footer class="site-footer"><p>Histoires d'os</p><p>Ressources - <span data-year></span></p></footer>
+  <script src="../script.js"></script>
+</body>
 </html>
