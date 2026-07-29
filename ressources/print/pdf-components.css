@@ -1,0 +1,398 @@
+.student-fields {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 5mm;
+  margin-bottom: 7mm;
+}
+
+.student-fields span {
+  display: block;
+  min-height: 8mm;
+  border-bottom: 0.8pt solid var(--pdf-ink);
+  padding-top: 2mm;
+  color: var(--pdf-muted);
+  font-size: 9.5pt;
+}
+
+.mission-box {
+  margin: 0 0 6mm;
+  border: 1pt solid var(--pdf-accent);
+  border-left-width: 5pt;
+  padding: 4mm 5mm;
+}
+
+.mission-box strong {
+  display: block;
+  margin-bottom: 1mm;
+  color: var(--pdf-accent-dark);
+  font-size: 13pt;
+}
+
+.pdf-grid-2,
+.pdf-grid-3,
+.pdf-grid-4 {
+  display: grid;
+  gap: 4mm;
+}
+
+.pdf-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pdf-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pdf-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pdf-card {
+  border: 0.7pt solid var(--pdf-line);
+  border-top: 3pt solid var(--pdf-accent);
+  padding: 3.5mm;
+}
+
+.pdf-card p:last-child,
+.pdf-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.pdf-callout {
+  margin: 4mm 0;
+  border-left: 4pt solid var(--pdf-accent);
+  background: var(--pdf-accent-soft);
+  padding: 3.2mm 4mm;
+}
+
+.pdf-callout[data-kind]::before {
+  display: block;
+  margin-bottom: 1mm;
+  color: var(--pdf-accent-dark);
+  font-size: 8pt;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pdf-callout[data-kind="prepare"]::before {
+  content: "À préparer";
+}
+
+.pdf-callout[data-kind="say"]::before {
+  content: "À dire";
+}
+
+.pdf-callout[data-kind="observe"]::before {
+  content: "À observer";
+}
+
+.pdf-callout[data-kind="avoid"]::before {
+  content: "À ne pas affirmer";
+}
+
+.pdf-callout[data-kind="verify"]::before {
+  content: "À vérifier";
+}
+
+.numbered-steps {
+  margin: 0;
+  padding: 0;
+  counter-reset: pdf-step;
+  list-style: none;
+}
+
+.numbered-steps > li {
+  position: relative;
+  min-height: 12mm;
+  margin: 0 0 3mm;
+  border-bottom: 0.6pt solid var(--pdf-line);
+  padding: 1.5mm 0 3mm 12mm;
+  counter-increment: pdf-step;
+  break-inside: avoid;
+}
+
+.numbered-steps > li::before {
+  position: absolute;
+  top: 0.8mm;
+  left: 0;
+  display: grid;
+  width: 8mm;
+  height: 8mm;
+  place-items: center;
+  border: 1pt solid var(--pdf-accent);
+  border-radius: 50%;
+  color: var(--pdf-accent-dark);
+  content: counter(pdf-step);
+  font-size: 9pt;
+  font-weight: 900;
+}
+
+.answer-zone {
+  min-height: 26mm;
+  margin: 3mm 0 5mm;
+  border: 0.7pt solid var(--pdf-line);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 8mm,
+    #c4c9c6 8.2mm,
+    transparent 8.5mm
+  );
+  padding: 3mm;
+}
+
+.answer-zone.compact {
+  min-height: 17mm;
+}
+
+.answer-zone.tall {
+  min-height: 44mm;
+}
+
+.activity-01 .student-document .answer-zone.tall {
+  min-height: 36mm;
+}
+
+.word-bank {
+  margin: 4mm 0;
+  border: 0.7pt dashed var(--pdf-muted);
+  padding: 3mm 4mm;
+  font-size: 10pt;
+}
+
+.word-bank strong {
+  color: var(--pdf-accent-dark);
+}
+
+.observation-hypothesis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4mm;
+}
+
+.observation-hypothesis article:first-child {
+  border-top: 4pt solid var(--pdf-accent);
+}
+
+.observation-hypothesis article:last-child {
+  border-top: 4pt double var(--pdf-accent-dark);
+}
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5mm;
+}
+
+.visual-card {
+  margin: 0;
+  border: 0.7pt solid var(--pdf-line);
+  padding: 3mm;
+  break-inside: avoid;
+}
+
+.visual-card img {
+  width: 100%;
+  height: 62mm;
+  object-fit: contain;
+}
+
+.visual-card figcaption {
+  margin-top: 2.5mm;
+  font-size: 9pt;
+  line-height: 1.35;
+}
+
+.credit-line {
+  display: block;
+  margin-top: 1.5mm;
+  color: var(--pdf-muted);
+  font-size: 7.5pt;
+  line-height: 1.25;
+}
+
+.neutral-placeholder {
+  display: grid;
+  min-height: 52mm;
+  place-items: center;
+  border: 1.2pt dashed var(--pdf-muted);
+  background: repeating-linear-gradient(
+    135deg,
+    #fff,
+    #fff 5mm,
+    #f1f1ee 5mm,
+    #f1f1ee 10mm
+  );
+  padding: 5mm;
+  color: var(--pdf-muted);
+  font-weight: 800;
+  text-align: center;
+}
+
+.cut-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4mm;
+}
+
+.cut-card {
+  min-height: 112mm;
+  border: 1pt dashed var(--pdf-ink);
+  padding: 4mm;
+}
+
+.cut-card h3 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1pt solid var(--pdf-accent);
+  padding-bottom: 2mm;
+}
+
+.cut-card > img {
+  width: 100%;
+  height: 58mm;
+  margin-bottom: 3mm;
+  object-fit: contain;
+}
+
+.cut-card .neutral-placeholder {
+  min-height: 45mm;
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2mm 4mm;
+  margin: 3mm 0;
+}
+
+.metadata-grid div {
+  min-height: 9mm;
+  border-bottom: 0.6pt solid var(--pdf-line);
+  padding: 1mm 0;
+  font-size: 8.8pt;
+}
+
+.document-status-key {
+  display: inline-block;
+  border: 1pt solid var(--pdf-ink);
+  padding: 1mm 2mm;
+  font-size: 8pt;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.timeline-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4mm;
+}
+
+.timeline-card {
+  min-height: 72mm;
+  border: 1pt dashed var(--pdf-ink);
+  padding: 4mm;
+}
+
+.timeline-card .neutral-placeholder {
+  min-height: 30mm;
+}
+
+.quick-evaluation {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3mm;
+}
+
+.quick-evaluation article {
+  border: 0.7pt solid var(--pdf-line);
+  padding: 3mm;
+}
+
+.quick-evaluation article:nth-child(1) {
+  border-top: 4pt solid var(--pdf-accent);
+}
+
+.quick-evaluation article:nth-child(2) {
+  border-top: 4pt double var(--pdf-accent-dark);
+}
+
+.quick-evaluation article:nth-child(3) {
+  border-top: 4pt dotted var(--pdf-muted);
+}
+
+.print-plan {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3mm;
+}
+
+.print-plan div {
+  border: 0.7pt solid var(--pdf-line);
+  padding: 3mm;
+  font-size: 9pt;
+}
+
+.compact-list {
+  margin-bottom: 0;
+}
+
+.compact-list li + li {
+  margin-top: 0.8mm;
+}
+
+.pdf-resource-link {
+  margin: 7mm 0 0;
+  border-top: 0.6pt solid var(--pdf-line);
+  padding-top: 2mm;
+  color: var(--pdf-muted);
+  font-size: 7.8pt;
+  line-height: 1.3;
+  break-inside: avoid;
+  orphans: 1;
+  widows: 1;
+}
+
+.pdf-resource-link a {
+  font-weight: 700;
+}
+
+.pdf-resource-link-inline {
+  display: block;
+  margin-top: 1.5mm;
+  font-size: 7.8pt;
+  line-height: 1.3;
+}
+
+.pdf-resource-link-inline a {
+  font-weight: 700;
+}
+
+.page-break-before {
+  break-before: page;
+}
+
+@media print {
+  .answer-zone,
+  .neutral-placeholder {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media (max-width: 760px) {
+  .pdf-grid-3,
+  .pdf-grid-4,
+  .visual-grid,
+  .cut-grid,
+  .timeline-cards,
+  .quick-evaluation,
+  .print-plan,
+  .observation-hypothesis {
+    grid-template-columns: 1fr;
+  }
+
+  .student-fields {
+    grid-template-columns: 1fr;
+  }
+}

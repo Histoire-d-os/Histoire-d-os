@@ -1,0 +1,816 @@
+{
+  "summary": {
+    "expected": 80,
+    "documents": 80,
+    "missing": [],
+    "failures": [],
+    "by_language": {
+      "fr": 20,
+      "en": 20,
+      "de": 20,
+      "it": 20
+    }
+  },
+  "documents": [
+    {
+      "file": "ressources/docx/activite-01-fiche-eleve.docx",
+      "language": "fr",
+      "bytes": 39993,
+      "paragraphs": 44,
+      "tables": 3,
+      "table_rows": 4,
+      "list_items": 2,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-01-guide-encadrement.docx",
+      "language": "fr",
+      "bytes": 41896,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-01-supports.docx",
+      "language": "fr",
+      "bytes": 1264966,
+      "paragraphs": 21,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-01-corrige.docx",
+      "language": "fr",
+      "bytes": 40193,
+      "paragraphs": 15,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 3,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-01-kit-complet.docx",
+      "language": "fr",
+      "bytes": 1270857,
+      "paragraphs": 152,
+      "tables": 14,
+      "table_rows": 29,
+      "list_items": 28,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-02-fiche-eleve.docx",
+      "language": "fr",
+      "bytes": 40038,
+      "paragraphs": 38,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-02-guide-encadrement.docx",
+      "language": "fr",
+      "bytes": 41858,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-02-supports.docx",
+      "language": "fr",
+      "bytes": 1404108,
+      "paragraphs": 14,
+      "tables": 3,
+      "table_rows": 5,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-02-corrige.docx",
+      "language": "fr",
+      "bytes": 40124,
+      "paragraphs": 16,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-02-kit-complet.docx",
+      "language": "fr",
+      "bytes": 1410212,
+      "paragraphs": 140,
+      "tables": 16,
+      "table_rows": 37,
+      "list_items": 23,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-03-fiche-eleve.docx",
+      "language": "fr",
+      "bytes": 40113,
+      "paragraphs": 35,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-03-guide-encadrement.docx",
+      "language": "fr",
+      "bytes": 42235,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-03-supports.docx",
+      "language": "fr",
+      "bytes": 953535,
+      "paragraphs": 22,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-03-corrige.docx",
+      "language": "fr",
+      "bytes": 40404,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-03-kit-complet.docx",
+      "language": "fr",
+      "bytes": 960219,
+      "paragraphs": 143,
+      "tables": 14,
+      "table_rows": 32,
+      "list_items": 21,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-04-fiche-eleve.docx",
+      "language": "fr",
+      "bytes": 40027,
+      "paragraphs": 31,
+      "tables": 4,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-04-guide-encadrement.docx",
+      "language": "fr",
+      "bytes": 41999,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-04-supports.docx",
+      "language": "fr",
+      "bytes": 39537,
+      "paragraphs": 24,
+      "tables": 3,
+      "table_rows": 3,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-04-corrige.docx",
+      "language": "fr",
+      "bytes": 40271,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "ressources/docx/activite-04-kit-complet.docx",
+      "language": "fr",
+      "bytes": 45784,
+      "paragraphs": 135,
+      "tables": 17,
+      "table_rows": 36,
+      "list_items": 17,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-01-fiche-eleve.docx",
+      "language": "en",
+      "bytes": 39905,
+      "paragraphs": 44,
+      "tables": 3,
+      "table_rows": 4,
+      "list_items": 2,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-01-guide-encadrement.docx",
+      "language": "en",
+      "bytes": 41711,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-01-supports.docx",
+      "language": "en",
+      "bytes": 1264878,
+      "paragraphs": 21,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-01-corrige.docx",
+      "language": "en",
+      "bytes": 40133,
+      "paragraphs": 15,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 3,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-01-kit-complet.docx",
+      "language": "en",
+      "bytes": 1270569,
+      "paragraphs": 153,
+      "tables": 14,
+      "table_rows": 29,
+      "list_items": 28,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-02-fiche-eleve.docx",
+      "language": "en",
+      "bytes": 39976,
+      "paragraphs": 38,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-02-guide-encadrement.docx",
+      "language": "en",
+      "bytes": 41678,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-02-supports.docx",
+      "language": "en",
+      "bytes": 1404052,
+      "paragraphs": 14,
+      "tables": 3,
+      "table_rows": 5,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-02-corrige.docx",
+      "language": "en",
+      "bytes": 40008,
+      "paragraphs": 16,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-02-kit-complet.docx",
+      "language": "en",
+      "bytes": 1409973,
+      "paragraphs": 141,
+      "tables": 16,
+      "table_rows": 37,
+      "list_items": 23,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-03-fiche-eleve.docx",
+      "language": "en",
+      "bytes": 40049,
+      "paragraphs": 35,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-03-guide-encadrement.docx",
+      "language": "en",
+      "bytes": 42076,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-03-supports.docx",
+      "language": "en",
+      "bytes": 953463,
+      "paragraphs": 22,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-03-corrige.docx",
+      "language": "en",
+      "bytes": 40321,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-03-kit-complet.docx",
+      "language": "en",
+      "bytes": 959920,
+      "paragraphs": 144,
+      "tables": 14,
+      "table_rows": 32,
+      "list_items": 21,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-04-fiche-eleve.docx",
+      "language": "en",
+      "bytes": 39989,
+      "paragraphs": 31,
+      "tables": 4,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-04-guide-encadrement.docx",
+      "language": "en",
+      "bytes": 41811,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-04-supports.docx",
+      "language": "en",
+      "bytes": 39469,
+      "paragraphs": 24,
+      "tables": 3,
+      "table_rows": 3,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-04-corrige.docx",
+      "language": "en",
+      "bytes": 40188,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "en/ressources/docx/activite-04-kit-complet.docx",
+      "language": "en",
+      "bytes": 45582,
+      "paragraphs": 136,
+      "tables": 17,
+      "table_rows": 36,
+      "list_items": 17,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-01-fiche-eleve.docx",
+      "language": "de",
+      "bytes": 40121,
+      "paragraphs": 44,
+      "tables": 3,
+      "table_rows": 4,
+      "list_items": 2,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-01-guide-encadrement.docx",
+      "language": "de",
+      "bytes": 42141,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-01-supports.docx",
+      "language": "de",
+      "bytes": 1265045,
+      "paragraphs": 21,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-01-corrige.docx",
+      "language": "de",
+      "bytes": 40414,
+      "paragraphs": 15,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 3,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-01-kit-complet.docx",
+      "language": "de",
+      "bytes": 1271448,
+      "paragraphs": 153,
+      "tables": 14,
+      "table_rows": 29,
+      "list_items": 28,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-02-fiche-eleve.docx",
+      "language": "de",
+      "bytes": 40128,
+      "paragraphs": 38,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-02-guide-encadrement.docx",
+      "language": "de",
+      "bytes": 42108,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-02-supports.docx",
+      "language": "de",
+      "bytes": 1404189,
+      "paragraphs": 14,
+      "tables": 3,
+      "table_rows": 5,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-02-corrige.docx",
+      "language": "de",
+      "bytes": 40259,
+      "paragraphs": 16,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-02-kit-complet.docx",
+      "language": "de",
+      "bytes": 1410755,
+      "paragraphs": 141,
+      "tables": 16,
+      "table_rows": 37,
+      "list_items": 23,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-03-fiche-eleve.docx",
+      "language": "de",
+      "bytes": 40209,
+      "paragraphs": 35,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-03-guide-encadrement.docx",
+      "language": "de",
+      "bytes": 42573,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-03-supports.docx",
+      "language": "de",
+      "bytes": 953665,
+      "paragraphs": 22,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-03-corrige.docx",
+      "language": "de",
+      "bytes": 40612,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-03-kit-complet.docx",
+      "language": "de",
+      "bytes": 960985,
+      "paragraphs": 144,
+      "tables": 14,
+      "table_rows": 32,
+      "list_items": 21,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-04-fiche-eleve.docx",
+      "language": "de",
+      "bytes": 40163,
+      "paragraphs": 31,
+      "tables": 4,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-04-guide-encadrement.docx",
+      "language": "de",
+      "bytes": 42314,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-04-supports.docx",
+      "language": "de",
+      "bytes": 39641,
+      "paragraphs": 24,
+      "tables": 3,
+      "table_rows": 3,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-04-corrige.docx",
+      "language": "de",
+      "bytes": 40425,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "de/ressources/docx/activite-04-kit-complet.docx",
+      "language": "de",
+      "bytes": 46587,
+      "paragraphs": 136,
+      "tables": 17,
+      "table_rows": 36,
+      "list_items": 17,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-01-fiche-eleve.docx",
+      "language": "it",
+      "bytes": 39979,
+      "paragraphs": 44,
+      "tables": 3,
+      "table_rows": 4,
+      "list_items": 2,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-01-guide-encadrement.docx",
+      "language": "it",
+      "bytes": 41905,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-01-supports.docx",
+      "language": "it",
+      "bytes": 1264982,
+      "paragraphs": 21,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-01-corrige.docx",
+      "language": "it",
+      "bytes": 40210,
+      "paragraphs": 15,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 3,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-01-kit-complet.docx",
+      "language": "it",
+      "bytes": 1270974,
+      "paragraphs": 153,
+      "tables": 14,
+      "table_rows": 29,
+      "list_items": 28,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-02-fiche-eleve.docx",
+      "language": "it",
+      "bytes": 40016,
+      "paragraphs": 38,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-02-guide-encadrement.docx",
+      "language": "it",
+      "bytes": 41827,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-02-supports.docx",
+      "language": "it",
+      "bytes": 1404093,
+      "paragraphs": 14,
+      "tables": 3,
+      "table_rows": 5,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-02-corrige.docx",
+      "language": "it",
+      "bytes": 40119,
+      "paragraphs": 16,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-02-kit-complet.docx",
+      "language": "it",
+      "bytes": 1410214,
+      "paragraphs": 141,
+      "tables": 16,
+      "table_rows": 37,
+      "list_items": 23,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-03-fiche-eleve.docx",
+      "language": "it",
+      "bytes": 40105,
+      "paragraphs": 35,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-03-guide-encadrement.docx",
+      "language": "it",
+      "bytes": 42225,
+      "paragraphs": 44,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 11,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-03-supports.docx",
+      "language": "it",
+      "bytes": 953559,
+      "paragraphs": 22,
+      "tables": 1,
+      "table_rows": 1,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-03-corrige.docx",
+      "language": "it",
+      "bytes": 40408,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 7,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-03-kit-complet.docx",
+      "language": "it",
+      "bytes": 960324,
+      "paragraphs": 144,
+      "tables": 14,
+      "table_rows": 32,
+      "list_items": 21,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-04-fiche-eleve.docx",
+      "language": "it",
+      "bytes": 40037,
+      "paragraphs": 31,
+      "tables": 4,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-04-guide-encadrement.docx",
+      "language": "it",
+      "bytes": 41994,
+      "paragraphs": 42,
+      "tables": 6,
+      "table_rows": 16,
+      "list_items": 8,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-04-supports.docx",
+      "language": "it",
+      "bytes": 39524,
+      "paragraphs": 24,
+      "tables": 3,
+      "table_rows": 3,
+      "list_items": 4,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-04-corrige.docx",
+      "language": "it",
+      "bytes": 40304,
+      "paragraphs": 13,
+      "tables": 3,
+      "table_rows": 8,
+      "list_items": 0,
+      "problems": []
+    },
+    {
+      "file": "it/ressources/docx/activite-04-kit-complet.docx",
+      "language": "it",
+      "bytes": 45911,
+      "paragraphs": 136,
+      "tables": 17,
+      "table_rows": 36,
+      "list_items": 17,
+      "problems": []
+    }
+  ]
+}

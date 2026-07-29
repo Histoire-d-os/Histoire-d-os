@@ -6,3 +6,7 @@ dist/
 .env.local
 _private-inputs/
 tmp/
+__pycache__/
+*.py[cod]
+docs/qa/pdf-imprimables-professionnels/pages/
+docs/qa/pdf-imprimables-professionnels/grayscale/**/page-*.png
