@@ -95,3 +95,22 @@ Avant toute modification :
 10. Fournir un compte rendu honnête.
 
 Ne pas déclarer une validation, un test ou un fichier comme terminé s'il n'a pas réellement été vérifié.
+
+## Revue par agents spécialistes
+
+Pour toute modification substantielle d'une activité française, appliquer la séquence suivante :
+
+1. `scientific-reviewer` et `pedagogy-reviewer` interviennent en lecture seule avant la modification.
+2. `per-reviewer` intervient dès qu'un alignement avec le PER est annoncé ou modifié.
+3. `media-rights-reviewer` intervient dès qu'un média est ajouté, remplacé ou republié dans un autre format.
+4. `museum-mediation-reviewer` intervient pour toute variante destinée à un musée ou à une collection.
+5. `print-accessibility-reviewer` intervient après génération ou modification d'un rendu web, PDF ou DOCX.
+6. Les agents spécialistes commencent par une revue en lecture seule, citent leurs preuves et signalent les sources absentes.
+7. L'agent principal synthétise leurs rapports et reste seul responsable des modifications.
+8. Les mêmes spécialistes effectuent une seconde revue ciblée après modification.
+9. Aucun rapport d'agent ne remplace la validation de Barbara Carè, d'une personne enseignante, d'une institution muséale ou d'un conseil juridique.
+
+Les noms exacts, sources attribuées et limites de ces agents sont documentés dans
+`docs/knowledge/agent-source-map.md`. Le workflow éditorial reste défini par
+`.agents/skills/histoire-os-publisher/SKILL.md`, `docs/workflow-codex.md` et
+`docs/validation-checklist.md`.
