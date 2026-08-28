@@ -133,11 +133,13 @@ function headerTemplate() {
     </div>`;
 }
 
-function footerTemplate(locale) {
+function footerTemplate(locale, details = {}) {
   const labels = locales[locale];
+  const status = details.status || labels.pilot;
+  const date = details.date || labels.date;
   return `
     <div style="box-sizing:border-box;width:100%;padding:0 14mm;color:#56605c;font:8px Arial,sans-serif;display:flex;justify-content:space-between;align-items:center;">
-      <span>${labels.pilot} · ${labels.date}</span>
+      <span>${status} · ${date}</span>
       <span><span class="pageNumber"></span> / <span class="totalPages"></span></span>
     </div>`;
 }
@@ -146,6 +148,10 @@ async function printPdf(page, url, destination, locale) {
   await page.goto(url, { waitUntil: "networkidle" });
   await page.waitForFunction(() => document.documentElement.dataset.pdfReady === "true");
   await page.emulateMedia({ media: "print" });
+  const footerDetails = await page.evaluate(() => ({
+    status: document.body.dataset.footerStatus,
+    date: document.body.dataset.revisionDate,
+  }));
   await page.pdf({
     path: destination,
     format: "A4",
@@ -153,7 +159,7 @@ async function printPdf(page, url, destination, locale) {
     printBackground: true,
     displayHeaderFooter: true,
     headerTemplate: headerTemplate(),
-    footerTemplate: footerTemplate(locale),
+    footerTemplate: footerTemplate(locale, footerDetails),
     margin: { top: "15mm", right: "14mm", bottom: "18mm", left: "14mm" },
     tagged: true,
     outline: true,
@@ -196,7 +202,9 @@ async function printPdf(page, url, destination, locale) {
         await printPdf(page, `${baseUrl}${sourcePath}?doc=kit&pages=${pageCount}`, kitDestination, locale);
         generatedCount += 1;
       }
-      pythonOutput(python, [finalizer, "--directory", outputDirectory, "--language", locale]);
+      const finalizerArguments = [finalizer, "--directory", outputDirectory, "--language", locale];
+      if (requestedActivity) finalizerArguments.push("--activity", requestedActivity);
+      pythonOutput(python, finalizerArguments);
     }
   } finally {
     await browser.close();

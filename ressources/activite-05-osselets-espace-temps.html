@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carte interactive pour comparer des objets, images et pratiques liés aux astragales à travers le temps et l'espace.">
+  <title>Les osselets à travers l'espace et le temps | Histoires d'os</title>
+  <link rel="icon" href="../assets/logo-officiel-histoires-dos.jpg">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="../assets/vendor/leaflet/MarkerCluster.css">
+  <link rel="stylesheet" href="activite-05-carte.css">
+</head>
+<body class="atlas-body">
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+  <header class="site-header site-header-solid no-print" data-header>
+    <a class="brand" href="../index.html" aria-label="Accueil Histoires d'os"><span class="brand-mark" aria-hidden="true">H</span><span>Histoires d'os</span></a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale"><a href="../index.html">Accueil</a><a href="../acteurs/enseignants.html">Écoles</a><a href="../acteurs/musees.html">Musées</a><a href="supports-en-ligne.html">Ressources</a><a href="../sources-prolongements.html">Sources &amp; prolongements</a></nav>
+    <div class="header-actions"><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-lines" aria-hidden="true"></span><span class="nav-toggle-label">Menu</span></button></div>
+  </header>
+
+  <main id="main-content" class="atlas-main">
+    <header class="atlas-intro">
+      <div>
+        <p class="eyebrow">Activité 4 · Comparer sans généraliser</p>
+        <h1>Les osselets à travers l'espace et le temps</h1>
+        <p>Zoome, choisis un rond et examine les éléments de la zone. Un même petit os a pu devenir objet de jeu, forme artistique, support d'écriture ou source d'inspiration moderne.</p>
+      </div>
+      <p class="atlas-status"><strong>Sélection en cours de validation.</strong> Les ronds indiquent le nombre d'éléments à découvrir, pas leur fréquence dans le passé.</p>
+    </header>
+
+    <section class="atlas-downloads" aria-labelledby="downloads-title">
+      <div><p class="eyebrow">Dossier papier · version 2 · 15.08.2026</p><h2 id="downloads-title">Imprimer ou accompagner l'activité</h2></div>
+      <p><a href="pdf/activite-05-livret-eleve.pdf">Livret élève</a> · <a href="pdf/activite-05-guide-enseignant.pdf">Guide enseignant</a> · <a href="pdf/activite-05-guide-musee-autonomie.pdf">Guide musée et autonomie</a></p>
+      <p class="status-note">Les PDF portent encore l'ancien numéro 5 jusqu'à leur prochaine régénération éditoriale; la carte et la navigation utilisent désormais le numéro 4.</p>
+      <p>PDF A4 contrôlés en couleur et en niveaux de gris, mais pas encore balisés pour les lecteurs d'écran. La carte, la frise et la liste textuelle de cette page constituent l'alternative web structurée. Corpus et interprétations encore soumis à validation scientifique et institutionnelle.</p>
+    </section>
+
+    <section class="atlas-workspace" aria-labelledby="map-title">
+      <div class="atlas-map-column">
+        <div class="atlas-toolbar">
+          <div><h2 id="map-title">Explorer la carte</h2><p>À faible zoom, les éléments proches sont regroupés. Clique sur un rond pour les voir, puis zoome pour retrouver les lieux documentés. <span id="filter-count" aria-live="polite">Douze éléments affichés.</span></p></div>
+          <div class="atlas-filters" role="group" aria-label="Filtrer par nature de source">
+            <button type="button" class="is-active" data-kind="all" aria-pressed="true">Tout</button>
+            <button type="button" data-kind="object" aria-pressed="false">Objets</button>
+            <button type="button" data-kind="representation" aria-pressed="false">Images anciennes</button>
+            <button type="button" data-kind="practice" aria-pressed="false">Pratiques vivantes</button>
+            <button type="button" data-kind="modern" aria-pressed="false">Jeux modernes</button>
+          </div>
+        </div>
+
+        <div class="atlas-map-wrap">
+          <div id="atlas-map" class="atlas-map" role="region" aria-label="Carte du monde zoomable présentant les éléments liés aux astragales"></div>
+          <noscript><div class="atlas-map-fallback"><img src="../assets/images/activite-05/carte-monde-cc0.svg" alt="Planisphère statique"><p>Active JavaScript pour explorer la carte. La liste complète reste disponible ci-dessous.</p></div></noscript>
+        </div>
+
+        <section class="atlas-timeline" aria-labelledby="timeline-title">
+          <div class="atlas-timeline-heading"><div><h3 id="timeline-title">Du plus ancien au plus récent</h3><p>La couleur de chaque rond correspond à sa position dans le temps. Elle ne représente ni une culture ni un usage.</p></div><span aria-hidden="true">ancien → récent</span></div>
+          <div class="atlas-timeline-scale" aria-hidden="true"><span style="--timeline-position: 0%">3200 av. J.-C.</span><span style="--timeline-position: 33%">1500 av. J.-C.</span><span style="--timeline-position: 61%">1</span><span style="--timeline-position: 100%">Aujourd'hui</span></div>
+          <div class="atlas-timeline-track" aria-label="Frise chronologique en dégradé"><div id="atlas-timeline-points"></div></div>
+        </section>
+
+        <details class="atlas-list">
+          <summary>Lire tous les éléments sous forme de liste</summary>
+          <ol id="atlas-text-list"></ol>
+        </details>
+      </div>
+
+      <aside class="atlas-panel" id="atlas-panel" aria-label="Fiche de l'élément sélectionné" aria-live="polite">
+        <div class="atlas-panel-empty" id="panel-empty">
+          <span aria-hidden="true">＋</span>
+          <h2>Choisis un rond</h2>
+          <p>Le nombre au centre indique combien d'éléments sont disponibles dans la zone.</p>
+        </div>
+        <article id="panel-content" hidden>
+          <button class="atlas-close" type="button" aria-label="Fermer la fiche et revenir à la carte" title="Fermer">×</button>
+          <div class="atlas-panel-media">
+            <div class="atlas-media-viewport" id="panel-media-viewport">
+              <img id="panel-image" src="" alt="">
+              <div class="atlas-media-card" id="panel-media-card" hidden>
+                <p class="atlas-media-card-kicker" id="panel-media-card-kicker"></p>
+                <p class="atlas-media-card-headline" id="panel-media-card-headline"></p>
+                <p id="panel-media-card-body"></p>
+              </div>
+            </div>
+            <div class="atlas-media-caption" aria-live="polite">
+              <p><strong id="panel-media-role"></strong> <span id="panel-media-caption"></span></p>
+              <p class="atlas-media-credit" id="panel-media-credit"></p>
+            </div>
+            <div class="atlas-media-controls" id="panel-media-controls" hidden>
+              <button type="button" id="panel-media-prev" aria-label="Vue documentaire précédente">←</button>
+              <span id="panel-media-position"></span>
+              <button type="button" id="panel-media-next" aria-label="Vue documentaire suivante">→</button>
+            </div>
+            <div class="atlas-media-picker" id="panel-media-picker" aria-label="Vues documentaires"></div>
+            <a class="atlas-media-source" id="panel-media-source" href="#" target="_blank" rel="noreferrer">Consulter la source de cette vue</a>
+          </div>
+          <div class="atlas-panel-body">
+            <div class="atlas-selection-head">
+              <p id="panel-group-count"></p>
+              <div class="atlas-selection-controls" id="panel-controls" hidden><button type="button" id="panel-prev" aria-label="Élément précédent">←</button><span id="panel-position"></span><button type="button" id="panel-next" aria-label="Élément suivant">→</button></div>
+            </div>
+            <div class="atlas-object-picker" id="panel-picker" aria-label="Éléments de la zone"></div>
+            <p class="atlas-case-meta"><span id="panel-number"></span><span id="panel-period"></span><span id="panel-kind"></span></p>
+            <p class="atlas-location" id="panel-location"></p>
+            <h2 id="panel-title" tabindex="-1"></h2>
+            <dl class="atlas-reading-grid">
+              <div><dt>Je vois</dt><dd id="panel-observe"></dd></div>
+              <div><dt>Les sources permettent de proposer</dt><dd id="panel-propose"></dd></div>
+              <div><dt>On ne peut pas affirmer</dt><dd id="panel-limit"></dd></div>
+              <div><dt>Pour vérifier</dt><dd id="panel-check"></dd></div>
+            </dl>
+            <div class="atlas-sources"><h3>Notice, sources et crédit</h3><ul id="panel-sources"></ul><p id="panel-credit"></p></div>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <section class="atlas-conclusion" aria-labelledby="compare-title">
+      <div><p class="eyebrow">À retenir</p><h2 id="compare-title">Une forme semblable ne prouve pas une histoire continue</h2></div>
+      <p>Les osselets kazakhs, un vase grec en forme d'astragale et les petits cochons d'un jeu commercial produisent tous des positions après un lancer. Cela ne suffit pas à dire qu'ils ont les mêmes règles, la même fonction ou une origine commune. Il faut étudier chaque contexte séparément.</p>
+    </section>
+  </main>
+  <script src="../script.js"></script>
+  <script src="../assets/vendor/leaflet/leaflet.js"></script>
+  <script src="../assets/vendor/leaflet/leaflet.markercluster.js"></script>
+  <script src="activite-05-carte.js"></script>
+</body>
+</html>

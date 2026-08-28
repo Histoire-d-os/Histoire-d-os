@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import re
 from pathlib import Path
 
@@ -32,11 +33,12 @@ OUTPUT_DIRS = {
     "de": ROOT / "de" / "ressources" / "docx",
     "it": ROOT / "it" / "ressources" / "docx",
 }
+LANGUAGE_TAGS = {"fr": "fr-FR", "en": "en-US", "de": "de-DE", "it": "it-IT"}
 LABELS = {
-    "fr": {"pilot": "Version pilote", "trace": "Traçabilité", "page": "Page"},
-    "en": {"pilot": "Pilot version", "trace": "Traceability", "page": "Page"},
-    "de": {"pilot": "Pilotversion", "trace": "Nachvollziehbarkeit", "page": "Seite"},
-    "it": {"pilot": "Versione pilota", "trace": "Tracciabilità", "page": "Pagina"},
+    "fr": {"pilot": "Version pilote", "trace": "Traçabilité", "trace_link": "Page de l'activité, mises à jour et crédits en ligne", "page": "Page"},
+    "en": {"pilot": "Pilot version", "trace": "Traceability", "trace_link": "Activity page, updates and online credits", "page": "Page"},
+    "de": {"pilot": "Pilotversion", "trace": "Nachvollziehbarkeit", "trace_link": "Aktivitätsseite, Aktualisierungen und Online-Bildnachweise", "page": "Seite"},
+    "it": {"pilot": "Versione pilota", "trace": "Tracciabilità", "trace_link": "Pagina dell'attività, aggiornamenti e crediti online", "page": "Pagina"},
 }
 METADATA = {
     "fr": {
@@ -202,6 +204,37 @@ def add_field(paragraph, instruction: str) -> None:
     run._r.extend((begin, instr, separate, text_node, end))
 
 
+def set_document_language(document: Document, language_tag: str) -> None:
+    styles = document.styles.element
+    doc_defaults = styles.find(qn("w:docDefaults"))
+    if doc_defaults is None:
+        doc_defaults = OxmlElement("w:docDefaults")
+        styles.insert(0, doc_defaults)
+    r_pr_default = doc_defaults.find(qn("w:rPrDefault"))
+    if r_pr_default is None:
+        r_pr_default = OxmlElement("w:rPrDefault")
+        doc_defaults.append(r_pr_default)
+    r_pr = r_pr_default.find(qn("w:rPr"))
+    if r_pr is None:
+        r_pr = OxmlElement("w:rPr")
+        r_pr_default.append(r_pr)
+    lang = r_pr.find(qn("w:lang"))
+    if lang is None:
+        lang = OxmlElement("w:lang")
+        r_pr.append(lang)
+    for attribute in ("w:val", "w:eastAsia", "w:bidi"):
+        lang.set(qn(attribute), language_tag)
+
+    for style in document.styles:
+        style_r_pr = style.element.get_or_add_rPr()
+        style_lang = style_r_pr.find(qn("w:lang"))
+        if style_lang is None:
+            style_lang = OxmlElement("w:lang")
+            style_r_pr.append(style_lang)
+        for attribute in ("w:val", "w:eastAsia", "w:bidi"):
+            style_lang.set(qn(attribute), language_tag)
+
+
 def add_hyperlink(paragraph, text: str, url: str, color: str) -> None:
     relationship_id = paragraph.part.relate_to(
         url,
@@ -276,6 +309,8 @@ class DocxBuilder:
 
     def configure_document(self) -> None:
         document = self.document
+        language_tag = LANGUAGE_TAGS[self.language]
+        set_document_language(document, language_tag)
         section = document.sections[0]
         section.page_width = Mm(210)
         section.page_height = Mm(297)
@@ -366,7 +401,9 @@ class DocxBuilder:
         if theme is None:
             theme = OxmlElement("w:themeFontLang")
             settings.append(theme)
-        theme.set(qn("w:val"), self.language)
+        theme.set(qn("w:val"), language_tag)
+        theme.set(qn("w:eastAsia"), language_tag)
+        theme.set(qn("w:bidi"), language_tag)
 
     def add_inline(self, paragraph, node, bold=False, italic=False) -> None:
         def append_text(value: str | None, is_bold: bool, is_italic: bool) -> None:
@@ -405,8 +442,16 @@ class DocxBuilder:
 
     def add_heading(self, node) -> object:
         level = {"h1": 1, "h2": 2, "h3": 3}[node.tag]
-        paragraph = self.document.add_paragraph(style="Title" if self.in_cover and node.tag == "h1" else f"Heading {level}")
+        cover_title = self.in_cover and node.tag == "h1"
+        paragraph = self.document.add_paragraph(style=f"Heading {level}")
         self.add_inline(paragraph, node)
+        if cover_title:
+            paragraph.paragraph_format.space_after = Pt(12)
+            for run in paragraph.runs:
+                run.font.name = "Georgia"
+                run.font.size = Pt(28)
+                run.font.bold = True
+                run.font.color.rgb = RGBColor.from_string(self.accent)
         paragraph.paragraph_format.keep_with_next = True
         paragraph.paragraph_format.keep_together = True
         classes = set((node.get("class") or "").split())
@@ -489,7 +534,10 @@ class DocxBuilder:
         paragraph = container.add_paragraph() if container is not None else self.document.add_paragraph()
         paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
         paragraph.paragraph_format.keep_together = True
-        paragraph.add_run().add_picture(str(image_path), width=Mm(width_mm))
+        inline_shape = paragraph.add_run().add_picture(str(image_path), width=Mm(width_mm))
+        alt_text = " ".join((node.get("alt") or "Illustration pédagogique").split())
+        inline_shape._inline.docPr.set("descr", alt_text)
+        inline_shape._inline.docPr.set("title", alt_text[:120])
 
     def add_answer_zone(self, node) -> None:
         line_count = 3 if "compact" in (node.get("class") or "") else 5
@@ -510,20 +558,38 @@ class DocxBuilder:
     def add_grid(self, node) -> None:
         cards = node.xpath("./article")
         columns = 3 if "quick-evaluation" in (node.get("class") or "") else 2
-        rows = (len(cards) + columns - 1) // columns
-        table = self.document.add_table(rows=rows, cols=columns)
+        groups = (len(cards) + columns - 1) // columns
+        table = self.document.add_table(rows=groups * 2, cols=columns)
         table.style = "Table Grid"
         widths = [CONTENT_WIDTH_DXA // columns] * columns
         widths[-1] += CONTENT_WIDTH_DXA - sum(widths)
-        for index, card in enumerate(cards):
-            row = table.rows[index // columns]
-            prevent_row_split(row)
-            cell = row.cells[index % columns]
-            cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
-            set_cell_shading(cell, "F7F4EF")
-            set_cell_margins(cell, top=130, bottom=130, start=150, end=150)
-            cell.paragraphs[0]._element.getparent().remove(cell.paragraphs[0]._element)
-            self.add_children(card, container=cell, image_width=74 if columns == 2 else 48)
+        for group in range(groups):
+            header_row = table.rows[group * 2]
+            content_row = table.rows[group * 2 + 1]
+            prevent_row_split(header_row)
+            prevent_row_split(content_row)
+            set_repeat_table_header(header_row)
+            for column in range(columns):
+                index = group * columns + column
+                header_cell = header_row.cells[column]
+                content_cell = content_row.cells[column]
+                for cell in (header_cell, content_cell):
+                    cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
+                    set_cell_margins(cell, top=130, bottom=130, start=150, end=150)
+                set_cell_shading(header_cell, "F0F1EE")
+                set_cell_shading(content_cell, "F7F4EF")
+                if index >= len(cards):
+                    continue
+                card = cards[index]
+                headings = card.xpath("./h1 | ./h2 | ./h3")
+                if headings:
+                    header_cell.paragraphs[0]._element.getparent().remove(header_cell.paragraphs[0]._element)
+                    self.add_to_container_paragraph(header_cell, headings[0], "Heading 3")
+                content_cell.paragraphs[0]._element.getparent().remove(content_cell.paragraphs[0]._element)
+                body = copy.deepcopy(card)
+                for heading in body.xpath("./h1 | ./h2 | ./h3"):
+                    heading.getparent().remove(heading)
+                self.add_children(body, container=content_cell, image_width=74 if columns == 2 else 48)
         set_fixed_table_geometry(table, widths)
         self.document.add_paragraph().paragraph_format.space_after = Pt(0)
 
@@ -588,21 +654,29 @@ class DocxBuilder:
             elif child.tag == "dl" or "pdf-identification" in classes:
                 pairs = child.xpath(".//div[dt and dd]")
                 if pairs:
-                    table = self.document.add_table(rows=1, cols=len(pairs))
+                    table = self.document.add_table(rows=2, cols=len(pairs))
                     widths = [CONTENT_WIDTH_DXA // len(pairs)] * len(pairs)
                     widths[-1] += CONTENT_WIDTH_DXA - sum(widths)
-                    prevent_row_split(table.rows[0])
+                    for row in table.rows:
+                        prevent_row_split(row)
+                    set_repeat_table_header(table.rows[0])
                     for index, pair in enumerate(pairs):
-                        cell = table.cell(0, index)
-                        set_cell_shading(cell, "F0F1EE")
-                        cell.paragraphs[0]._element.getparent().remove(cell.paragraphs[0]._element)
-                        for part in pair:
-                            paragraph = cell.add_paragraph()
-                            self.add_inline(paragraph, part)
-                            if part.tag == "dt":
-                                for run in paragraph.runs:
-                                    run.bold = True
-                                paragraph.style = self.document.styles["Resource Credit"]
+                        header_cell = table.cell(0, index)
+                        value_cell = table.cell(1, index)
+                        set_cell_shading(header_cell, "F0F1EE")
+                        set_cell_shading(value_cell, "F7F4EF")
+                        header_cell.paragraphs[0]._element.getparent().remove(header_cell.paragraphs[0]._element)
+                        value_cell.paragraphs[0]._element.getparent().remove(value_cell.paragraphs[0]._element)
+                        terms = pair.xpath("./dt")
+                        values = pair.xpath("./dd")
+                        if terms:
+                            paragraph = header_cell.add_paragraph(style="Resource Credit")
+                            self.add_inline(paragraph, terms[0])
+                            for run in paragraph.runs:
+                                run.bold = True
+                        if values:
+                            paragraph = value_cell.add_paragraph()
+                            self.add_inline(paragraph, values[0])
                     set_fixed_table_geometry(table, widths)
             elif child.tag in ("div", "article", "section", "header", "nav", "aside"):
                 if "mission-box" in classes or "pdf-callout" in classes or "word-bank" in classes or "pilot-status" in classes:
@@ -622,7 +696,7 @@ class DocxBuilder:
         paragraph = self.document.add_paragraph(style="Resource Credit")
         paragraph.paragraph_format.space_before = Pt(8)
         paragraph.add_run(f"{LABELS[self.language]['trace']} : ").bold = True
-        add_hyperlink(paragraph, url, url, self.accent)
+        add_hyperlink(paragraph, LABELS[self.language]["trace_link"], url, self.accent)
 
     def build(self, document_node, include_traceability=True) -> None:
         self.in_cover = document_node.get("data-document") == "cover"
@@ -664,10 +738,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--languages", nargs="+", choices=sorted(OUTPUT_DIRS), default=sorted(OUTPUT_DIRS))
     parser.add_argument("--kinds", nargs="+", choices=sorted(OUTPUTS), default=list(OUTPUTS))
+    parser.add_argument("--activities", nargs="+", choices=("01", "02", "03", "04"), default=("01", "02", "03", "04"))
     args = parser.parse_args()
     outputs = []
     for language in args.languages:
-        for activity_id in ("01", "02", "03", "04"):
+        for activity_id in args.activities:
             for kind in args.kinds:
                 destination = build_one(activity_id, language, kind)
                 outputs.append(destination)

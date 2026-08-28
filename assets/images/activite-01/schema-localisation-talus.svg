@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Localisation du talus dans une vue latérale du pied humain</title>
+  <desc id="desc">Vue latérale BodyParts3D avec talus en rouge. Des flèches nomment le tibia, le talus ou astragale, le calcanéum, les autres os du pied, la cheville et la zone du talon.</desc>
+  <style>
+    .leader{fill:none;stroke:#242925;stroke-width:4}
+    .region{fill:none;stroke:#555c57;stroke-width:4;stroke-dasharray:12 9}
+    .highlight{fill:none;stroke:#171b18;stroke-width:6;stroke-dasharray:7 6}
+    .label{font:700 27px Arial,sans-serif;fill:#242925}
+    .small{font:20px Arial,sans-serif;fill:#414742}
+    .trace{font:18px Arial,sans-serif;fill:#555c57}
+  </style>
+  <rect width="1200" height="700" fill="#fff"/>
+  <text x="45" y="48" class="label">Localiser le talus, aussi appelé astragale dans le projet</text>
+  <text x="45" y="82" class="small">Le talus est repéré par la couleur, un contour discontinu, une flèche et une légende.</text>
+  <image href="talus-humain-vue-laterale-bodyparts3d.png" x="25" y="108" width="750" height="545" preserveAspectRatio="xMidYMid meet"/>
+  <ellipse cx="320" cy="399" rx="68" ry="48" class="highlight"/>
+  <ellipse cx="315" cy="367" rx="72" ry="52" class="region"/>
+  <text x="850" y="154" class="label">Tibia</text><path d="M830 160 L330 289" class="leader"/>
+  <text x="850" y="258" class="label">Articulation de la cheville</text><path d="M830 264 L384 352" class="leader"/>
+  <text x="850" y="362" class="label">Talus / astragale</text><path d="M830 368 L386 397" class="leader"/>
+  <text x="850" y="466" class="label">Calcanéum</text><path d="M830 472 L238 480" class="leader"/>
+  <text x="850" y="570" class="label">Autres os du pied</text><path d="M830 576 L620 510" class="leader"/>
+  <path d="M225 424 Q198 454 224 487" class="region"/>
+  <text x="50" y="620" class="label">Zone du talon</text><path d="M252 600 L212 486" class="leader"/>
+  <text x="600" y="672" text-anchor="middle" class="trace">BodyParts3D / DBCLS, CC BY-SA 2.1 JP : annotations et contour ajoutés; rendu redimensionné.</text>
+  <text x="600" y="695" text-anchor="middle" class="trace">Le talon est une région; le calcanéum et le talus sont deux os distincts. Validation humaine requise.</text>
+</svg>

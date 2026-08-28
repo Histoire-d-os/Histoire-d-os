@@ -40,12 +40,12 @@ Le fichier `docs/registre-ressources-manquantes.csv` contient la version détail
 
 | ID | Ressource à obtenir | Usage public concerné | Dépôt privé prévu | Priorité | Validation attendue | Statut |
 | --- | --- | --- | --- | --- | --- | --- |
-| A01-IMG-001 | Schéma ou photographie du pied humain montrant la région du tarse | `ressources/activite-01-fiche-reperage.html`, fiche classe et fiche musée | `_private-inputs/activite-01/images/` | Haute | Anatomie humaine, lisibilité élève, licence | À trouver |
-| A01-IMG-002 | Vue isolée d'un astragale humain ou animal | Page centrale, corrigé, lexique illustré | `_private-inputs/activite-01/images/` | Haute | Identification de l'os, orientation, licence | À trouver |
-| A01-IMG-003 | Membre postérieur de mouton ou squelette montrant le tarse | Fiche musée et planche de repérage | `_private-inputs/activite-01/images/` | Haute | Archéozoologie, espèce, échelle, licence | À trouver |
+| A01-IMG-001 | Schéma ou photographie du pied humain montrant la région du tarse | `ressources/activite-01-fiche-reperage.html`, fiche classe et fiche musée | `_private-inputs/activite-01/images/` | Haute | Anatomie humaine, lisibilité élève, licence | Prototype BodyParts3D produit; validation anatomique requise |
+| A01-IMG-002 | Vue isolée d'un astragale humain ou animal | Page centrale, corrigé, lexique illustré | `_private-inputs/activite-01/images/` | Haute | Identification de l'os, orientation, licence | Vues de talus humain produites; validation anatomique requise |
+| A01-IMG-003 | Membre postérieur de mouton ou squelette montrant le tarse | Fiche musée et planche de repérage | `_private-inputs/activite-01/images/` | Haute | Archéozoologie, espèce, échelle, licence | Squelette MAV-USP intégré comme comparaison régionale; validation comparative requise |
 | A01-IMG-004 | Troisième mammifère de comparaison | Transfert et différenciation | `_private-inputs/activite-01/images/` | Moyenne | Choix cohérent avec les collections ou sources disponibles | À définir |
 | A01-3D-001 | Modèle 3D d'astragale au format GLB ou GLTF | Bloc 3D réservé dans `ressources/activite-01-trouver-astragale.html` | `_private-inputs/activite-01/modeles-3d/` | Moyenne | Échelle, orientation, origine, droits, validation anatomique | À trouver |
-| A01-DOC-001 | Notice de crédits et légendes validées | Sources, alt text, exports PDF futurs | `_private-inputs/activite-01/sources/` | Haute | Cohérence scientifique et juridique | À produire |
+| A01-DOC-001 | Notice de crédits et légendes validées | Sources, alt text, exports PDF futurs | `_private-inputs/activite-01/sources/` | Haute | Cohérence scientifique et juridique | Produite dans le kit v2; validation juridique finale requise |
 
 ## Activité 2 - Associer un astragale à un animal
 

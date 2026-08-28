@@ -2,7 +2,7 @@
 
 Ce document recense les sources et droits identifiés pour les ressources candidates du projet. Il ne vaut pas autorisation générale de publication: chaque ressource publique doit conserver sa notice complète, ses crédits, sa licence et son statut de validation.
 
-Date de mise à jour: 2026-06-16
+Date de mise à jour: 2026-08-27
 
 ## Règle de publication
 
@@ -21,13 +21,13 @@ Les originaux restent dans `_private-inputs/`. Les PDF privés, figures d’arti
 
 | Ressource | Crédit court |
 | --- | --- |
-| Talus humain BodyParts3D, vues fixes | BodyParts3D / DBCLS, CC BY-SA 2.1 JP, via Wikimedia Commons. |
+| Talus humain BodyParts3D, vues fixes et dérivés A1 | BodyParts3D / DBCLS, CC BY-SA 2.1 JP, via Wikimedia Commons; indiquer chaque transformation. |
 | GIF talus BodyParts3D | BodyParts3D / DBCLS, CC BY-SA 2.1 JP, via Wikimedia Commons. |
 | Reconstruction CT du tibia distal | RoTTe, CC0, via Wikimedia Commons. |
-| Planche comparative LeConte 1922 | Internet Archive Book Images, no known restrictions, via Wikimedia Commons. |
+| Planche comparative LeConte 1922 | Statut non déterminé : « no known restrictions » n'est pas une licence; ne pas réutiliser avant vérification. |
 | Squelette de mouton MAV-USP | Museum of Veterinary Anatomy FMVZ USP / Wagner Souza e Silva, CC BY-SA 4.0, via Wikimedia Commons. |
-| Pied de mouton University of Dundee | Caroline Eroline, CC BY-SA 4.0, via Wikimedia Commons. |
-| Schéma ancien de jambe de vache | Ellenberger, Baum et Dittrich, domaine public, via Wikimedia Commons. |
+| Pied de mouton University of Dundee | Statut non déterminé : licences Commons et Sketchfab contradictoires; ne pas réutiliser avant résolution. |
+| Schéma ancien de jambe de vache | Statut non déterminé : édition, reproduction et preuve du domaine public à établir; exclu du kit candidat. |
 | Squelette de vache | Andryusha Romanov, CC BY 4.0, via Wikimedia Commons. |
 | Cheval entier | evelynbelgium, CC BY-SA 2.0, via Wikimedia Commons. |
 | Mouton entier | Fernando Losada Rodríguez, CC BY-SA 4.0, via Wikimedia Commons. |
@@ -40,6 +40,13 @@ Les originaux restent dans `_private-inputs/`. Les PDF privés, figures d’arti
 | Illustration contemporaine de Thétis et Achille | Sasanian1111, CC BY-SA 4.0, via Wikimedia Commons. |
 | Mort d’Achille, Rubens | Peter Paul Rubens, domaine public, via Wikimedia Commons. |
 | Mort d’Achille, Rothaug | Alexander Rothaug, domaine public, via Wikimedia Commons. |
+| Talus humain gauche 3D | Catherine Sulzmann, « Talus », via Sketchfab; embed externe uniquement, aucune licence exploitable affichée dans l'API, conditions à confirmer. |
+| Os du pied humain gauche 3D | Catherine Sulzmann, « Left human foot bones », via Sketchfab; la notice affiche une licence Sketchfab Standard, non ouverte, sans preuve d'acquisition par le projet; embed externe uniquement. |
+| Astragales mouton-chèvre 3D | Ozboneviz, spécimens UQ-276 et UQ-183, via Sketchfab; métadonnées techniques MorphoSource; embed externe uniquement, licence de republication non affichée. |
+| Astragales vache-mule 3D | Ozboneviz, collections ANU et IMNH, via Sketchfab; métadonnées techniques MorphoSource; embed externe uniquement, licence de republication non affichée. |
+| Pied postérieur de mouton 3D | University of Dundee Museum Collections, DUNUC 2063, CC BY-NC-SA 4.0, via Sketchfab. |
+| Capture du jeu « Coder un message avec un osselet » | Capture du jeu local produite le 27 août 2026; modèle 3D de travail, auteur, source et licence à confirmer; usage pilote uniquement. |
+| Animation marche et pronation | AAOS / OrthoInfo, lien externe uniquement; contenu protégé, republication et affichage en frame interdits par la politique du site. |
 
 ## Ressources publiables maintenant
 
@@ -50,8 +57,6 @@ Les originaux restent dans `_private-inputs/`. Les PDF privés, figures d’arti
 | `Left_Talus_bone_-_animation03.gif` | Ressource numérique ou guide adulte pour montrer le talus. | Prévoir une image fixe équivalente pour impression et accessibilité. |
 | `3D_CT_Reconstruction_of_Distal_tibia_fracture.gif` | Guide adulte, prolongement imagerie/anatomie. | Image médicale de fracture; éviter comme support principal élève. |
 | `Sheep_skeleton_at_MAV-USP.jpg` | Activité 1 ou 2, squelette de mouton. | Vérifier que la légende ne laisse pas croire que l’astragale est isolé. |
-| `Skeletal_sheep_foot_University_of_Dundee_Museum_collections.jpg` | Activité 1 ou 2, observation du pied de mouton. | Légender comme vue annotée, pas comme modèle validé par le projet. |
-| `shema jambe vache.jpg` | Activité 1 ou 2, comparaison bovine. | Schéma ancien: préciser le statut historique du dessin. |
 | `squelette vache.jpg` | Activité 1 ou 2, squelette de vache. | Vérifier l’URL exacte avant intégration finale. |
 | `American_quarter_horse.jpg` | Activité 2, carte animal cheval. | Image d’animal entier, pas de squelette. |
 | `Ovis_orientalis_aries.005_-_Ribadeo.jpg` | Activité 2, carte animal mouton. | Espèce domestique à expliciter simplement. |
@@ -68,7 +73,6 @@ Les originaux restent dans `_private-inputs/`. Les PDF privés, figures d’arti
 
 | Fichier local | Légende recommandée |
 | --- | --- |
-| `Evolution;_its_nature,_its_evidences,_and_its_relation_to_religious_thought_(1922)...jpg` | Planche comparative ancienne issue d’un ouvrage de 1922. Elle aide à observer des ressemblances et différences entre membres, mais ne remplace pas un schéma anatomique moderne validé. |
 | `Thetis_attempts_to_make_the_baby_Achilles_immortal.jpg` | Illustration contemporaine représentant l’épisode tardif de Thétis et Achille. Elle ne constitue pas une source antique. |
 
 ## Ressources à vérifier avant publication
@@ -77,6 +81,9 @@ Les originaux restent dans `_private-inputs/`. Les PDF privés, figures d’arti
 - `astragalus_faces.glb` et `astragalus_faces_copy_cleanest_6628_autosave_remesh.blend`: origine, auteur, transformations et licence à documenter.
 - `leg_collection_of_thunthu.glb`: source Sketchfab probable, à confirmer.
 - `skeletal_sheep_foot.glb`: image fixe sourcée, mais licence du modèle 3D local et conditions d’intégration WebGL à vérifier.
+- `Skeletal_sheep_foot_University_of_Dundee_Museum_collections.jpg`: chaîne de licence contradictoire entre Commons et Sketchfab; exclu du kit A1 actuel et retiré des liens publics recommandés.
+- `shema jambe vache.jpg` / `jambe-vache-ellenberger-baum.jpg`: édition, reproduction, transformation et preuve du domaine public non établies; ancien fichier suivi, exclu du kit candidat et à ne pas republier.
+- `Evolution;_its_nature,_its_evidences,_and_its_relation_to_religious_thought_(1922)...jpg`: notice « no known restrictions » insuffisante; auteur de l'illustration, édition et statut territorial à documenter avant republication.
 - `Bos_taurus_astragalus_R_ANU_M198-000458190.ply`: metadata MorphoSource/Smithsonian présente, mais conditions exactes à valider avant intégration publique.
 - Figures Achille `Figure 1`, `Figure 7` et `Figure 8`: sources Wikimedia ou licences indiquées dans les noms, mais URL, auteur et notice complète restent à documenter.
 

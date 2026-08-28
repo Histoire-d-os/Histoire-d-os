@@ -1,12 +1,12 @@
 # Activité 1 — suivi des ressources visuelles et scientifiques
 
-Ce dossier recense les ressources encore nécessaires pour finaliser les illustrations et modèles de l'activité 1. Aucune image anatomique provisoire ne doit être présentée comme scientifiquement exacte.
+Ce dossier recense les ressources encore nécessaires ou désormais produites pour l'activité 1. La source de vérité est `docs/production/kits-fr-v2/activite-01.md`. Aucun prototype anatomique ne doit être présenté comme scientifiquement définitif avant validation humaine.
 
 | Ressource | Statut | Source | Licence | Validation scientifique | Action |
 | --------- | ------ | ------ | ------- | ----------------------- | ------ |
-| Schéma ou photographie de pied humain montrant la région du tarse | à trouver | Source institutionnelle ou universitaire à identifier | à vérifier | à faire valider avant publication | Chercher une image anatomiquement correcte, indiquer auteur, institution, licence et modifications. |
-| Schéma ou photographie d'un membre postérieur de mouton avec région du tarse | à trouver | Collection partenaire, musée, université ou publication autorisée | à vérifier | à faire valider avant publication | Priorité haute pour la fiche musée et la planche de repérage. |
-| Image d'un troisième mammifère pour le transfert | à définir | Selon les collections disponibles | à vérifier | à faire valider avant publication | Choisir un animal réellement disponible dans le musée ou dans une banque d'images autorisée. |
-| Vue isolée d'un astragale humain ou animal | à valider | Référence anatomique ou collection du projet | à vérifier | à faire valider avant publication | Utiliser seulement si l'origine et la licence sont claires. |
-| Modèle 3D d'astragale | à trouver | Dépôt scientifique, scan de collection ou production validée | à vérifier | validation anatomique et juridique obligatoire | Format recommandé : GLB ou GLTF. Ne pas intégrer avant validation. |
-| Version imprimable PDF des documents HTML | à produire | Export navigateur depuis les pages HTML | n/a | contrôle visuel après export | Ne créer des liens PDF sur la page centrale que lorsque les fichiers existent réellement. |
+| Schémas élève et adulte du pied humain | prototype produit | Deux rendus BodyParts3D / DBCLS; notices exactes dans le manifeste | CC BY-SA 2.1 JP | validation anatomique humaine requise | Trois SVG modifiables et leurs PNG sont générés par `scripts/build-activite-01-anatomy-assets.cjs`. |
+| Photographie d'un squelette de mouton | support régional retenu sous conditions | Museum of Veterinary Anatomy FMVZ USP / Wagner Souza e Silva | CC BY-SA 4.0 | anatomie comparée à valider | Sert seulement à repérer une région du membre postérieur; ne permet pas l'identification précise du talus. |
+| Image d'un troisième mammifère pour le transfert | facultatif et différé | Selon les collections disponibles | à vérifier | à faire valider avant publication | Aucun troisième mammifère n'est nécessaire au test adulte A1. |
+| Vues isolées de l'os mystère | prototype produit | Dérivées des deux rendus BodyParts3D | CC BY-SA 2.1 JP | extraction et simplification à valider | Ne pas nommer l'os dans les textes alternatifs avant la révélation. |
+| Modèle 3D d'astragale | facultatif; aucun modèle public validé | Dépôt scientifique, scan de collection ou production validée | à vérifier | validation anatomique et juridique obligatoire | L'activité reste complète avec les vues fixes; ne pas intégrer avant validation. |
+| PDF et DOCX français canoniques | générés pour test adulte | Source HTML canonique de l'activité 1 | droits des médias sous conditions | QA automatisée et visuelle PDF effectuée; Word natif et impression physique à faire | Cinq PDF et cinq DOCX existent; ne pas utiliser les anciens WIP comme versions équivalentes. |

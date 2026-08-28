@@ -61,6 +61,7 @@ def main() -> None:
     parser.add_argument("--count", type=Path)
     parser.add_argument("--directory", type=Path)
     parser.add_argument("--language", choices=sorted(ACTIVITIES), default="fr")
+    parser.add_argument("--activity", choices=sorted(ACTIVITIES["fr"]))
     args = parser.parse_args()
 
     if args.count:
@@ -69,9 +70,13 @@ def main() -> None:
     if not args.directory:
         parser.error("--count ou --directory est requis")
 
-    pdfs = sorted(args.directory.glob("activite-*.pdf"))
-    if len(pdfs) != 20:
-        raise SystemExit(f"20 PDF attendus, {len(pdfs)} trouvés dans {args.directory}")
+    pattern = f"activite-{args.activity}-*.pdf" if args.activity else "activite-*.pdf"
+    pdfs = sorted(args.directory.glob(pattern))
+    expected_count = 5 if args.activity else 20
+    if len(pdfs) != expected_count:
+        raise SystemExit(
+            f"{expected_count} PDF attendus, {len(pdfs)} trouvés dans {args.directory}"
+        )
     for pdf in pdfs:
         finalize(pdf, args.language)
     print(f"Métadonnées finalisées pour {len(pdfs)} PDF.")

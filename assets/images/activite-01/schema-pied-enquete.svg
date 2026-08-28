@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Vue neutre du pied humain pour localiser un os</title>
+  <desc id="desc">Vue latérale neutre des os du pied humain. Les repères indiquent seulement la jambe, la cheville, le pied et la zone du talon; aucune réponse n'est indiquée.</desc>
+  <style>
+    .leader{fill:none;stroke:#242925;stroke-width:4}
+    .region{fill:none;stroke:#555c57;stroke-width:4;stroke-dasharray:12 9}
+    .label{font:700 28px Arial,sans-serif;fill:#242925}
+    .small{font:21px Arial,sans-serif;fill:#414742}
+    .trace{font:18px Arial,sans-serif;fill:#555c57}
+  </style>
+  <rect width="1200" height="700" fill="#fff"/>
+  <text x="45" y="48" class="label">Support d'enquête : où placerais-tu l'os mystère ?</text>
+  <text x="45" y="82" class="small">Vue latérale issue de BodyParts3D. Entoure un os ou une petite zone, puis justifie ton choix.</text>
+  <image href="talus-humain-vue-laterale-neutre-bodyparts3d.png" x="25" y="108" width="750" height="545" preserveAspectRatio="xMidYMid meet"/>
+  <ellipse cx="315" cy="367" rx="72" ry="52" class="region"/>
+  <text x="864" y="170" class="label">Jambe</text><path d="M845 176 L328 289" class="leader"/>
+  <text x="864" y="312" class="label">Cheville</text><path d="M845 318 L386 354" class="leader"/>
+  <text x="864" y="452" class="label">Pied</text><path d="M845 458 L665 500" class="leader"/>
+  <path d="M225 424 Q198 454 224 487" class="region"/>
+  <text x="50" y="620" class="label">Zone du talon</text><path d="M252 600 L212 486" class="leader"/>
+  <text x="600" y="672" text-anchor="middle" class="trace">BodyParts3D / DBCLS, CC BY-SA 2.1 JP : couleur du surlignage neutralisée et annotations ajoutées.</text>
+  <text x="600" y="695" text-anchor="middle" class="trace">La géométrie osseuse provient du rendu source; validation anatomique humaine requise.</text>
+</svg>

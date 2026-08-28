@@ -1,7 +1,7 @@
 # Contrôle des débordements et des pages
 
 - PDF contrôlés : 80 (20 par langue)
-- Pages rendues : 496
+- Pages rendues : 510
 - Pages vides détectées : 0
 - Caractères hors page : 0
 - Format A4 : oui

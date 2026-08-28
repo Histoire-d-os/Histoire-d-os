@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Deux vues neutres d'un os mystère</title>
+  <desc id="desc">Deux orientations du même os irrégulier présentées en niveaux de gris, sans nom ni indication d'emplacement.</desc>
+  <style>
+    .frame{fill:#fff;stroke:#343a36;stroke-width:3}
+    .label{font:700 31px Arial,sans-serif;fill:#242925}
+    .small{font:23px Arial,sans-serif;fill:#414742}
+    .trace{font:18px Arial,sans-serif;fill:#555c57}
+  </style>
+  <rect width="900" height="600" fill="#fff"/>
+  <text x="42" y="52" class="label">Os mystère : deux orientations à comparer</text>
+  <text x="42" y="88" class="small">Décris uniquement ce qui est visible avant de proposer sa place.</text>
+  <rect x="42" y="118" width="388" height="362" rx="3" class="frame"/>
+  <rect x="470" y="118" width="388" height="362" rx="3" class="frame"/>
+  <image href="talus-isole-vue-laterale-bodyparts3d.png" x="68" y="145" width="336" height="295" preserveAspectRatio="xMidYMid meet"/>
+  <image href="talus-isole-vue-anterolaterale-bodyparts3d.png" x="496" y="145" width="336" height="295" preserveAspectRatio="xMidYMid meet"/>
+  <text x="236" y="522" text-anchor="middle" class="label">Vue A</text>
+  <text x="664" y="522" text-anchor="middle" class="label">Vue B</text>
+  <text x="450" y="566" text-anchor="middle" class="trace">Dérivé de BodyParts3D / DBCLS, CC BY-SA 2.1 JP : extraction du surlignage, niveaux de gris.</text>
+  <text x="450" y="590" text-anchor="middle" class="trace">Support d'enquête à confronter aux vues complètes; validation anatomique humaine requise.</text>
+</svg>
